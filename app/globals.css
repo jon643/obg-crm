@@ -174,6 +174,149 @@
   .nav-link-active {
     @apply text-white;
   }
+
+  /* ---- Blog article prose styles ---- */
+  /* Applied to dangerouslySetInnerHTML content from WordPress */
+  .prose-obg {
+    @apply text-obg-gray leading-relaxed;
+    max-width: 72ch;
+  }
+
+  .prose-obg h1,
+  .prose-obg h2,
+  .prose-obg h3,
+  .prose-obg h4 {
+    @apply font-display font-bold text-white mt-10 mb-4;
+  }
+
+  .prose-obg h2 {
+    font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+    line-height: 1.25;
+    border-bottom: 1px solid rgba(61, 70, 102, 0.4);
+    padding-bottom: 0.5rem;
+  }
+
+  .prose-obg h3 {
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+    line-height: 1.3;
+  }
+
+  .prose-obg h4 {
+    @apply text-base;
+  }
+
+  .prose-obg p {
+    @apply text-obg-gray leading-relaxed mb-5;
+    font-size: 1.0625rem;
+  }
+
+  .prose-obg strong,
+  .prose-obg b {
+    @apply text-obg-offwhite font-semibold;
+  }
+
+  .prose-obg em,
+  .prose-obg i {
+    @apply italic;
+  }
+
+  .prose-obg a {
+    @apply text-obg-orange hover:underline;
+  }
+
+  .prose-obg ul {
+    @apply list-none space-y-2 mb-6 pl-0;
+  }
+
+  .prose-obg ul li {
+    @apply text-obg-gray flex items-start gap-3;
+    font-size: 1.0625rem;
+  }
+
+  .prose-obg ul li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--obg-orange);
+    flex-shrink: 0;
+    margin-top: 0.55em;
+  }
+
+  .prose-obg ol {
+    @apply list-decimal pl-6 space-y-2 mb-6;
+  }
+
+  .prose-obg ol li {
+    @apply text-obg-gray;
+    font-size: 1.0625rem;
+  }
+
+  .prose-obg ol li::marker {
+    color: var(--obg-orange);
+    font-weight: 700;
+  }
+
+  .prose-obg blockquote {
+    @apply border-l-4 border-obg-orange pl-5 py-2 my-6;
+    background: rgba(255, 121, 94, 0.05);
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .prose-obg blockquote p {
+    @apply text-obg-offwhite italic mb-0;
+  }
+
+  .prose-obg code {
+    @apply bg-obg-blue-light/40 text-obg-orange px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+
+  .prose-obg pre {
+    @apply bg-obg-blue p-5 rounded-xl mb-6 overflow-x-auto;
+  }
+
+  .prose-obg pre code {
+    @apply bg-transparent p-0 text-obg-offwhite;
+  }
+
+  .prose-obg table {
+    @apply w-full border-collapse mb-6;
+  }
+
+  .prose-obg th {
+    @apply text-obg-orange text-sm font-bold text-left px-4 py-3 border-b border-obg-blue-light/40;
+  }
+
+  .prose-obg td {
+    @apply text-obg-gray text-sm px-4 py-3 border-b border-obg-blue-light/20;
+  }
+
+  .prose-obg tr:hover td {
+    @apply bg-obg-blue/30;
+  }
+
+  .prose-obg img {
+    @apply rounded-xl my-6 max-w-full h-auto;
+  }
+
+  .prose-obg hr {
+    @apply border-obg-blue-light/30 my-10;
+  }
+
+  /* WordPress figure/figcaption */
+  .prose-obg figure {
+    @apply my-8;
+  }
+
+  .prose-obg figcaption {
+    @apply text-obg-gray text-xs text-center mt-2 italic;
+  }
+
+  /* First paragraph lead text */
+  .prose-obg > p:first-of-type {
+    @apply text-lg text-obg-offwhite;
+  }
 }
 
 @layer utilities {
