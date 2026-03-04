@@ -19,6 +19,14 @@ export const metadata: Metadata = {
   title: 'Amazon Agency Services | Online Brand Growth',
   description:
     'Full-service Amazon agency services: PPC advertising management, SEO & listing optimization, FBA logistics, strategic consulting, brand registry enforcement, and 360 Brand Protection™. Serving 7- and 8-figure brands.',
+  alternates: {
+    canonical: 'https://www.onlinebrandgrowth.com/services',
+  },
+  openGraph: {
+    title: 'Amazon Agency Services | Online Brand Growth',
+    description: 'Full-service Amazon brand management: PPC, SEO, logistics, and brand protection for 7- and 8-figure brands.',
+    url: 'https://www.onlinebrandgrowth.com/services',
+  },
 }
 
 const services = [

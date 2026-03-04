@@ -19,6 +19,14 @@ export const metadata: Metadata = {
   title: '360 Brand Protection™ | Stop Unauthorized Amazon Resellers',
   description:
     'OBG\'s proprietary 360 Brand Protection™ service uses 24/7 AI monitoring, automated cease & desist enforcement, and Amazon Transparency enrollment to stop unauthorized resellers fast.',
+  alternates: {
+    canonical: 'https://www.onlinebrandgrowth.com/360-brand-protection',
+  },
+  openGraph: {
+    title: '360 Brand Protection™ | Stop Unauthorized Amazon Resellers',
+    description: '24/7 AI monitoring, automated cease & desist enforcement, and Amazon Transparency enrollment to stop unauthorized resellers.',
+    url: 'https://www.onlinebrandgrowth.com/360-brand-protection',
+  },
 }
 
 const problems = [

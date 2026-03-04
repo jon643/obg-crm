@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   title: 'Case Studies | Real Amazon Growth Results',
   description:
     'Real outcomes. Repeatable systems. Profitable Amazon growth. See how Online Brand Growth helped brands 30X revenue, triple contribution margins, and launch from $0 to $500K.',
+  alternates: {
+    canonical: 'https://www.onlinebrandgrowth.com/case-studies',
+  },
+  openGraph: {
+    title: 'Amazon Growth Case Studies | Online Brand Growth',
+    description: 'See how OBG helped brands 30X revenue, triple contribution margins, and launch from $0 to $500K on Amazon.',
+    url: 'https://www.onlinebrandgrowth.com/case-studies',
+  },
 }
 
 const caseStudies = [

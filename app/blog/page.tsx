@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   title: 'Amazon Blog & Resources | Online Brand Growth',
   description:
     'Amazon strategy, advertising, SEO, logistics, and brand protection insights from the founders of Online Brand Growth. Practical guides for 7- and 8-figure brands.',
+  alternates: {
+    canonical: 'https://www.onlinebrandgrowth.com/blog',
+  },
+  openGraph: {
+    title: 'Amazon Strategy Blog | Online Brand Growth',
+    description: 'Practical Amazon advertising, SEO, logistics, and brand protection guides from founders managing $30M+ in annual Amazon revenue.',
+    url: 'https://www.onlinebrandgrowth.com/blog',
+  },
 }
 
 // Helper to infer category from URL slug

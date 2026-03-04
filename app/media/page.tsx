@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: 'Media & Thought Leadership | Online Brand Growth',
   description:
     'Watch Jon Klein and Dan Balda share their Amazon expertise. Podcast appearances, speaking engagements, and industry insights from the founders of Online Brand Growth.',
+  alternates: {
+    canonical: 'https://www.onlinebrandgrowth.com/media',
+  },
+  openGraph: {
+    title: 'Media & Thought Leadership | Online Brand Growth',
+    description: 'Podcast appearances, speaking engagements, and Amazon industry insights from OBG founders Jon Klein and Dan Balda.',
+    url: 'https://www.onlinebrandgrowth.com/media',
+  },
 }
 
 const featuredVideos = [
