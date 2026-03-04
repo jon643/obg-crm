@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 64" fill="none">
+  <!-- Shield icon -->
+  <path d="M32,4 L54,13 L54,35 Q54,52 32,60 Q10,52 10,35 L10,13 Z"
+        fill="white" opacity="0.85"/>
+  <!-- Shield inner highlight -->
+  <path d="M32,10 L49,18 L49,35 Q49,48 32,55 Q15,48 15,35 L15,18 Z"
+        fill="white" fill-opacity="0" stroke="white" stroke-width="1" opacity="0.3"/>
+  <!-- SW initials on shield -->
+  <text x="32" y="37" fill="white" fill-opacity="0" font-family="'Arial Black', Arial, sans-serif"
+        font-size="14" font-weight="900" text-anchor="middle">SW</text>
+  <!-- Star on shield -->
+  <polygon points="32,22 33.5,28 39,28 34.5,31.5 36,37.5 32,34 28,37.5 29.5,31.5 25,28 30.5,28"
+           fill="white" fill-opacity="0.15"/>
+
+  <!-- Wordmark -->
+  <text x="66" y="26" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="15" font-weight="900" letter-spacing="0">STREETWISE</text>
+  <text x="66" y="46" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="15" font-weight="900" letter-spacing="1">SECURITY</text>
+  <text x="66" y="58" fill="white" font-family="Arial, sans-serif"
+        font-size="7" font-weight="400" letter-spacing="0.5" opacity="0.6">PROTECTING WHAT MATTERS MOST</text>
+</svg>

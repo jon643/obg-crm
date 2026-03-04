@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" fill="none">
+  <!-- Fuel can silhouette -->
+  <rect x="8" y="18" width="28" height="34" rx="3" fill="white" opacity="0.85"/>
+  <!-- Handle -->
+  <path d="M14,18 L14,12 Q14,8 18,8 L26,8 Q30,8 30,12 L30,18" stroke="white" stroke-width="3"
+        stroke-linecap="round" fill="none" opacity="0.85"/>
+  <!-- Spout -->
+  <rect x="29" y="22" width="8" height="4" rx="2" fill="white" opacity="0.7"/>
+  <!-- Wave decoration on can -->
+  <path d="M12,32 C16,28 20,36 24,32 C28,28 32,36 36,32" stroke="white" stroke-width="0"
+        stroke-linecap="round" fill="none" opacity="0.3"/>
+  <!-- Cross vent mark on can -->
+  <rect x="14" y="28" width="16" height="10" rx="1" fill="white" fill-opacity="0" stroke="white" stroke-width="1" opacity="0.3"/>
+
+  <!-- Wordmark -->
+  <text x="52" y="30" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="22" font-weight="900" letter-spacing="-0.5">Wavian</text>
+  <text x="52" y="50" fill="white" font-family="Arial, sans-serif"
+        font-size="9.5" font-weight="400" letter-spacing="2" opacity="0.75">FUEL CANS</text>
+</svg>

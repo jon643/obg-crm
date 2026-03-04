@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 64" fill="none">
+  <!-- C shape: thick arc, open on the right -->
+  <path d="M 54,16 A 26,26 0 1,0 54,48"
+        stroke="white" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Wordmark -->
+  <text x="72" y="28" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="20" font-weight="900" letter-spacing="-0.5">CORE</text>
+  <text x="72" y="52" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="20" font-weight="900" letter-spacing="-0.5">FIBER</text>
+</svg>

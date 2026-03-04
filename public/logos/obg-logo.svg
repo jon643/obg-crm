@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 64" fill="none">
+  <!-- Isometric cube icon -->
+  <!-- Top face -->
+  <polygon points="24,4 50,18 24,32 0,18" fill="white"/>
+  <!-- Left face -->
+  <polygon points="0,18 24,32 24,58 0,44" fill="white" opacity="0.4"/>
+  <!-- Right face -->
+  <polygon points="50,18 24,32 24,58 50,44" fill="white" opacity="0.75"/>
+  <!-- Subtle edge -->
+  <line x1="24" y1="32" x2="24" y2="58" stroke="rgba(0,0,0,0.12)" stroke-width="1"/>
+
+  <!-- OBG wordmark — bold -->
+  <text x="64" y="37" fill="white"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-size="30" font-weight="900" letter-spacing="-1">OBG</text>
+
+  <!-- Thin rule -->
+  <line x1="64" y1="43" x2="232" y2="43" stroke="white" stroke-width="0.6" opacity="0.22"/>
+
+  <!-- ONLINE BRAND GROWTH sub-label -->
+  <text x="65" y="56" fill="white"
+        font-family="Arial, 'Helvetica Neue', sans-serif"
+        font-size="10" font-weight="400" letter-spacing="3.2" opacity="0.75">ONLINE BRAND GROWTH</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" fill="none">
+  <!-- Circle badge -->
+  <circle cx="32" cy="32" r="28" stroke="white" stroke-width="2" fill="white" fill-opacity="0.08"/>
+  <!-- Lion crown / rank star -->
+  <polygon points="32,10 34.5,20 44,20 36.5,26 39,36 32,30 25,36 27.5,26 20,20 29.5,20"
+           fill="white" opacity="0.9"/>
+  <!-- SGT text inside badge -->
+  <text x="32" y="48" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="7" font-weight="900" text-anchor="middle" letter-spacing="1.5">SGT</text>
+
+  <!-- Wordmark -->
+  <text x="72" y="26" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="20" font-weight="900" letter-spacing="-0.3">SGT.</text>
+  <text x="72" y="50" fill="white" font-family="'Arial Black', Arial, sans-serif"
+        font-size="20" font-weight="900" letter-spacing="-0.3">KNOTS</text>
+</svg>
