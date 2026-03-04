@@ -182,6 +182,30 @@ export default function MediaPage() {
                   </div>
                 </AnimatedSection>
               ))}
+
+              {/* OBG Brand Ad — hosted video */}
+              <AnimatedSection delay={200}>
+                <div className="card-dark h-full flex flex-col">
+                  <div className="relative aspect-video rounded-lg overflow-hidden mb-5 bg-black">
+                    <video
+                      src="/videos/obg-ads.mp4"
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <span className="text-xs font-bold text-obg-orange border border-obg-orange/30 rounded-full px-2.5 py-1 bg-obg-blue-darker/80 self-start mb-3">
+                    Brand Spotlight
+                  </span>
+                  <h3 className="text-white font-bold text-base leading-snug mb-3">
+                    Online Brand Growth — Who We Are
+                  </h3>
+                  <p className="text-obg-gray text-sm leading-relaxed flex-1">
+                    A quick look at who Online Brand Growth is, what we do, and why founder-led Amazon management delivers results that typical agencies can&apos;t match.
+                  </p>
+                </div>
+              </AnimatedSection>
             </div>
 
             <AnimatedSection delay={300}>
