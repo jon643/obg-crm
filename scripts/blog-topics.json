@@ -1,0 +1,251 @@
+{
+  "published": [
+    "what-is-fulfillment-by-amazon",
+    "product-information-management",
+    "sponsored-ad-amazon",
+    "amazon-backend-keywords",
+    "can-you-use-coupons-on-amazon",
+    "what-is-frustration-free-packaging",
+    "seller-fulfilled-prime-fulfillment",
+    "amazon-brand-guide",
+    "amazon-channel-management",
+    "ecommerce-conversion-rates",
+    "image-guidelines-amazon",
+    "inventory-turnover-ratio-explained",
+    "amazon-vendor-vs-seller",
+    "how-much-does-amazon-charge-to-sell",
+    "amazon-storefront-design",
+    "ecommerce-account-management",
+    "what-is-an-amazon-storefront",
+    "amazon-brand-protection-services",
+    "amazon-ppc-agency-pricing",
+    "how-to-calculate-contribution-margin",
+    "amazon-fba-fees",
+    "brand-registry-amazon",
+    "what-does-acos-stand-for",
+    "create-an-amazon-storefront",
+    "prep-center-fba",
+    "minimum-advertised-price-monitoring",
+    "how-to-make-an-amazon-storefront",
+    "amazon-product-photography",
+    "what-does-map-mean-in-pricing",
+    "digital-shelf-analytics",
+    "ecommerce-growth-strategies",
+    "amazon-fba-freight-forwarders",
+    "amazon-seller-central-vs-vendor-central",
+    "amazon-advertising-strategy",
+    "brand-protection-amazon",
+    "amazon-fba-vs-fbm",
+    "find-amazon-keywords",
+    "amazon-pricing-strategy",
+    "sell-on-amazon-worldwide",
+    "map-vs-msrp",
+    "amazon-brand-store",
+    "inventory-management-best-practices",
+    "amazon-images-requirements",
+    "best-amazon-storefronts",
+    "track-amazon-ranking",
+    "amazon-brand-guidelines",
+    "amazon-ppc-management-services",
+    "amazon-listing-optimization",
+    "amazon-fba-is-it-worth-it-2",
+    "amazon-ad-management",
+    "how-to-increase-amazon-sales",
+    "product-launch-strategies",
+    "global-selling-with-amazon",
+    "target-market-for-amazon",
+    "how-to-launch-product-on-amazon",
+    "ship-from-china-to-amazon-fba",
+    "amazon-brand-registry-benefits",
+    "what-is-amazon-brand-registry",
+    "best-amazon-inventory-management-software",
+    "amazon-account-suspension",
+    "unauthorized-sellers-on-amazon",
+    "how-to-win-amazon-buy-box",
+    "amazon-fba-profit-margin-calculator",
+    "minimum-advertised-price-policy",
+    "amazon-pricing-changes",
+    "cost-of-selling-on-amazon",
+    "amazon-pricing-strategies",
+    "amazon-dsp-advertising",
+    "amazon-ads-management",
+    "image-requirements-for-amazon",
+    "amazon-tacos-vs-acos"
+  ],
+  "queue": [
+    {
+      "slug": "amazon-ppc-bid-strategy",
+      "title": "Amazon PPC Bid Strategy: How OBG Sets and Adjusts Bids",
+      "keyword": "amazon ppc bid strategy",
+      "angle": "Bidding is a feedback loop, not a set-and-forget number. OBG's bid logic: start at breakeven CPC, let conversion data accumulate for 2-3 weeks, then adjust based on CVR vs target ACoS. The mistake most sellers make: adjusting bids daily without enough data."
+    },
+    {
+      "slug": "amazon-negative-keywords",
+      "title": "Amazon Negative Keywords: Why Cutting Spend Is As Important as Adding It",
+      "keyword": "amazon negative keywords",
+      "angle": "The fastest way to improve ACoS isn't to find better keywords. It's to stop paying for the wrong ones. OBG's negative keyword process during the Trimming phase of the PPC Lifecycle."
+    },
+    {
+      "slug": "amazon-a-plus-content",
+      "title": "Amazon A+ Content: What It Does (and What It Doesn't) for Conversions",
+      "keyword": "amazon a plus content",
+      "angle": "A+ content lifts conversion rate by 3-10% on average — but only when it's built around your customer's specific objections. Generic lifestyle photos don't move the needle. The Avatar Alignment process applied to A+ content."
+    },
+    {
+      "slug": "amazon-vine-program",
+      "title": "Amazon Vine: How to Use It Strategically in Your Product Launch",
+      "keyword": "amazon vine program",
+      "angle": "Vine is a launch tool, not a review hack. OBG enrolls every new product in Vine before running non-branded PPC. Why: you need verified reviews before your ads teach the algorithm who converts. Timing and eligibility requirements."
+    },
+    {
+      "slug": "amazon-search-query-performance",
+      "title": "Amazon Search Query Performance Report: The Underused Data That Drives OBG's Optimization",
+      "keyword": "amazon search query performance",
+      "angle": "SQP data shows your CVR vs market average on every keyword. If you're converting above market — advertise harder. Below market — fix the listing first. This is the engine of OBG's re-optimization phase."
+    },
+    {
+      "slug": "amazon-return-rate",
+      "title": "Amazon Return Rate: How to Diagnose and Reduce Product Returns",
+      "keyword": "amazon return rate",
+      "angle": "A high return rate is a signal, not just a cost. It means something in your listing is misaligning expectations. OBG's return audit process: return reason codes → listing gap analysis → image/copy fix."
+    },
+    {
+      "slug": "amazon-buy-box-percentage",
+      "title": "Amazon Buy Box Percentage: What It Tells You and How to Protect It",
+      "keyword": "amazon buy box percentage",
+      "angle": "Buy Box percentage is your share of the purchase button. If it drops below 95%, you have a problem — usually unauthorized sellers or price violations. 360 Brand Protection monitors this in real time."
+    },
+    {
+      "slug": "amazon-fba-reimbursements",
+      "title": "Amazon FBA Reimbursements: How to Recover Money Amazon Owes You",
+      "keyword": "amazon fba reimbursements",
+      "angle": "Amazon loses, damages, and miscounts inventory constantly. Most sellers don't audit for it. OBG runs quarterly reimbursement audits for every client. Typical recovery: $500-$5,000+ per year depending on volume."
+    },
+    {
+      "slug": "amazon-sponsored-brands-video",
+      "title": "Amazon Sponsored Brands Video: The Underused Ad Format With the Best CPCs",
+      "keyword": "amazon sponsored brands video",
+      "angle": "SBV ads cost less per click than SP ads on most keywords and appear in high-visibility placements. The catch: you need a video. OBG's video creative brief for SBV ads: 15-30 seconds, product in first 3 seconds, no sound required, tight keyword targeting."
+    },
+    {
+      "slug": "amazon-account-health-rating",
+      "title": "Amazon Account Health Rating: What It Is and How to Keep It Green",
+      "keyword": "amazon account health rating",
+      "angle": "Account Health Rating (AHR) is Amazon's 0-1000 score for your seller account. Below 200 risks deactivation. OBG monitors AHR weekly for every client and proactively resolves policy warnings before they compound."
+    },
+    {
+      "slug": "amazon-listing-suppression",
+      "title": "Amazon Listing Suppression: Why Your Product Disappears and How to Fix It",
+      "keyword": "amazon listing suppression",
+      "angle": "A suppressed listing generates zero organic traffic and can't receive PPC. Common causes: missing required attributes, compliance issues, image violations. OBG resolves suppressions within 24 hours as part of standard catalog management."
+    },
+    {
+      "slug": "amazon-fba-storage-fees",
+      "title": "Amazon FBA Storage Fees: How to Avoid Paying Amazon to Hold Your Excess Inventory",
+      "keyword": "amazon fba storage fees",
+      "angle": "Long-term storage fees kick in at 365 days and can quickly exceed the product's value. The fix is inventory velocity management — knowing your sell-through rate and setting reorder points accordingly. OBG's IPI score optimization process."
+    },
+    {
+      "slug": "amazon-subscribe-and-save",
+      "title": "Amazon Subscribe & Save: How to Build Recurring Revenue on Amazon",
+      "keyword": "amazon subscribe and save",
+      "angle": "S&S customers have 3-4x lifetime value vs one-time buyers. Enrollment is free but often overlooked. OBG enables S&S for every eligible consumable or replenishable product and tracks enrollment rate as a KPI."
+    },
+    {
+      "slug": "amazon-brand-analytics",
+      "title": "Amazon Brand Analytics: The Data Dashboard Most Brand Owners Ignore",
+      "keyword": "amazon brand analytics",
+      "angle": "Brand Analytics contains your top-of-funnel keyword data, market basket analysis, and demographic insights. OBG uses it every month for keyword expansion and SQP-driven listing optimization. Walk through each report and what to look for."
+    },
+    {
+      "slug": "amazon-rufus-ai-optimization",
+      "title": "Amazon Rufus AI: What It Means for Your Product Listing Strategy",
+      "keyword": "amazon rufus ai",
+      "angle": "Rufus is Amazon's AI shopping assistant. It answers customer questions by reading your listing content. Listings optimized for traditional keyword density may not answer conversational queries well. OBG's Rufus-ready listing checklist."
+    },
+    {
+      "slug": "amazon-amc-audiences",
+      "title": "Amazon Marketing Cloud Audiences: The Advanced Targeting Most Sellers Miss",
+      "keyword": "amazon marketing cloud audiences",
+      "angle": "AMC lets you build custom audiences from your purchase and view data. OBG tested 'High Interest Based on Shopping History' audiences across multiple accounts and saw strong CVR lift vs standard auto targeting. How to set it up."
+    },
+    {
+      "slug": "amazon-inventory-planning",
+      "title": "Amazon Inventory Planning: How to Never Run Out of Stock (or Drown in It)",
+      "keyword": "amazon inventory planning",
+      "angle": "Stockouts kill organic rank. Overstock kills cash flow. The OBG inventory formula: sell-through rate × lead time × safety stock buffer = reorder point. Applies per-ASIN, seasonality-adjusted."
+    },
+    {
+      "slug": "amazon-product-research",
+      "title": "Amazon Product Research: How to Validate a New ASIN Before You Invest",
+      "keyword": "amazon product research",
+      "angle": "Most sellers do market size research. OBG does margin research first. A $10M category with 35% average margins and strong incumbent reviews is not a good opportunity. The pre-launch validation checklist OBG uses for every new product."
+    },
+    {
+      "slug": "amazon-catalogue-management",
+      "title": "Amazon Catalogue Management: The Invisible Work That Protects Your Revenue",
+      "keyword": "amazon catalogue management",
+      "angle": "Page takedowns, incorrect browse nodes, suppressed listings, hijacked bullet points — catalogue issues happen constantly and silently. OBG's catalogue team runs weekly audits across every ASIN for every client."
+    },
+    {
+      "slug": "amazon-ppc-for-new-products",
+      "title": "Amazon PPC for New Products: Why You Should Start Small and Expand Deliberately",
+      "keyword": "amazon ppc new products",
+      "angle": "Launch phase PPC is about positioning, not domination. Early aggression is not always smart aggression. OBG restricts new product ads to branded + exact match for the first 30 days. Non-branded broad match before you have reviews and CVR data just bleeds money."
+    },
+    {
+      "slug": "amazon-external-traffic",
+      "title": "Amazon External Traffic: When It Makes Sense (and When It Doesn't)",
+      "keyword": "amazon external traffic",
+      "angle": "External traffic gets a 10% Brand Referral Bonus credit on qualifying sales. But before you spend on Meta or Google Ads, your listing has to convert. OBG's rule: achieve 15%+ listing CVR organically before buying external traffic."
+    },
+    {
+      "slug": "amazon-seller-fees-explained",
+      "title": "Every Amazon Seller Fee Explained: The Full Cost Stack in 2025",
+      "keyword": "amazon seller fees explained",
+      "angle": "Referral fees, FBA fees, storage, returns, advertising, Brand Registry, professional plan. Add it up for a typical product: you're at 35-50% of revenue before COGS. This is why margin engineering before launch is non-negotiable."
+    },
+    {
+      "slug": "dtc-brand-on-amazon",
+      "title": "How DTC Brands Should Approach Amazon Without Destroying Their Channel Economics",
+      "keyword": "dtc brand selling on amazon",
+      "angle": "Amazon is often the #2 or #3 revenue channel for DTC brands — but it has the most complexity. Price parity with your DTC store, MAP enforcement, distribution control, and brand experience all need to be managed simultaneously. OBG's DTC-first Amazon playbook."
+    },
+    {
+      "slug": "amazon-keyword-research-process",
+      "title": "Amazon Keyword Research: The OBG Process for Finding High-Value Search Terms",
+      "keyword": "amazon keyword research",
+      "angle": "Keyword research isn't just finding high-volume terms. It's finding terms where (1) your product is the right answer, (2) buyers convert, and (3) you can win. OBG uses DataDive + SQP data together. Walk through the full process."
+    },
+    {
+      "slug": "amazon-holiday-prep",
+      "title": "Amazon Q4 Preparation: How to Set Up for Peak Season Without Running Out of Stock",
+      "keyword": "amazon q4 preparation",
+      "angle": "Q4 can be 30-50% of annual revenue for many brands. OBG starts Q4 prep in August: inventory forecasting, deal planning (Prime Day, Black Friday, Cyber Monday), PPC budget allocation, and creative refresh. The week-by-week checklist."
+    },
+    {
+      "slug": "amazon-reseller-control",
+      "title": "How to Control Who Sells Your Products on Amazon",
+      "keyword": "control resellers amazon",
+      "angle": "Unauthorized resellers undercut your price, damage your brand presentation, and steal your Buy Box. OBG's approach: Authorized Reseller Policy → systematic monitoring via 360 Brand Protection™ → automated C&D → clean distribution agreements."
+    },
+    {
+      "slug": "amazon-review-strategy",
+      "title": "Amazon Review Strategy: How to Build a Legitimate Review Profile That Converts",
+      "keyword": "amazon review strategy",
+      "angle": "Reviews drive 2 things: social proof for buyers and conversion signals for the algorithm. OBG's review process: Vine at launch → 'Request a Review' automation → post-purchase email sequence (compliant) → review monitoring with Sellerise."
+    },
+    {
+      "slug": "amazon-listing-images-strategy",
+      "title": "Amazon Listing Images: The 7-Image Framework OBG Uses for Every Client",
+      "keyword": "amazon listing images",
+      "angle": "Main image: pure white, 85% fill. Image 2: lifestyle. Image 3: benefits infographic. Image 4: ingredient/feature callout. Image 5: comparison. Image 6: size/dimensions. Image 7: social proof/UGC. Each image has a job. Walk through why and how."
+    },
+    {
+      "slug": "amazon-price-war",
+      "title": "How to Escape the Amazon Price War Before It Destroys Your Margins",
+      "keyword": "amazon price war",
+      "angle": "A price war on Amazon ends when one brand runs out of margin. OBG's way out: MAP enforcement + distribution control + brand differentiation (A+, storefront, review profile) that makes price comparison less relevant."
+    }
+  ]
+}
