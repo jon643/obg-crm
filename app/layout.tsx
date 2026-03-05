@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Sora } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({
@@ -135,6 +136,22 @@ const organizationSchema = {
   ],
 }
 
+// JSON-LD for the website (enables sitelinks searchbox signal)
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Online Brand Growth',
+  url: BASE_URL,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${BASE_URL}/blog?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 // JSON-LD for the professional service
 const professionalServiceSchema = {
   '@context': 'https://schema.org',
@@ -168,8 +185,24 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </head>
       <body className="antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E2P4SNJWFB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E2P4SNJWFB');
+          `}
+        </Script>
         {children}
       </body>
     </html>
