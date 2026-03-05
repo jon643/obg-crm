@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer'
 import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import { Quote, ArrowRight, CheckCircle2 } from 'lucide-react'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Case Studies | Real Amazon Growth Results',
@@ -367,6 +368,12 @@ function CaseStudyBlock({ cs, index }: { cs: typeof caseStudies[0]; index: numbe
 export default function CaseStudiesPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.onlinebrandgrowth.com' },
+          { name: 'Case Studies', url: 'https://www.onlinebrandgrowth.com/case-studies' },
+        ]}
+      />
       <Header />
       <main>
         <section className="relative bg-gradient-hero pt-32 pb-20 overflow-hidden">

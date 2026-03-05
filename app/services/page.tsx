@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import SectionLabel from '@/components/ui/SectionLabel'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import {
   BarChart2,
   Search,
@@ -144,6 +145,12 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.onlinebrandgrowth.com' },
+          { name: 'Services', url: 'https://www.onlinebrandgrowth.com/services' },
+        ]}
+      />
       <Header />
       <main>
 

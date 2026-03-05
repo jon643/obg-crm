@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import {
   ShieldCheck,
   Bot,
@@ -72,6 +73,12 @@ const features = [
 export default function BrandProtectionPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.onlinebrandgrowth.com' },
+          { name: '360 Brand Protection', url: 'https://www.onlinebrandgrowth.com/360-brand-protection' },
+        ]}
+      />
       <Header />
       <main>
 

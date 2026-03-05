@@ -1,0 +1,33 @@
+[2026-03-05T18:18:59.588Z] === OBG Outreach Email Generator Starting ===
+[2026-03-05T18:18:59.607Z] Found 1 target(s) to process
+[2026-03-05T18:18:59.607Z] Processing guest_post target: EcommerceFastlane (Amazon-Specific) (ecommercefastlane)
+[2026-03-05T18:19:09.337Z] === Done. Generated 1 outreach email(s) ===
+[2026-03-05T18:19:42.214Z] === OBG Outreach Email Generator Starting ===
+[2026-03-05T18:19:42.232Z] Found 1 target(s) to process
+[2026-03-05T18:19:42.232Z] Processing listicle target: Influencer Marketing Hub Best Amazon Marketing Agencies (influencermarketinghub)
+[2026-03-05T18:19:50.505Z] === Done. Generated 1 outreach email(s) ===
+[2026-03-05T18:21:04.021Z] === OBG Outreach Email Generator Starting ===
+[2026-03-05T18:21:04.039Z] Found 11 target(s) to process
+[2026-03-05T18:21:04.039Z] Processing listicle target: SmartScout Top 50 Amazon Marketing Agencies (smartscout_top50)
+[2026-03-05T18:21:12.801Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/smartscout_top50.json
+[2026-03-05T18:21:14.302Z] Processing listicle target: Influencer Marketing Hub Best Amazon Marketing Agencies (influencermarketinghub)
+[2026-03-05T18:21:21.310Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/influencermarketinghub.json
+[2026-03-05T18:21:22.812Z] Processing listicle target: inBeat Leading Amazon Marketing Agencies (inbeat)
+[2026-03-05T18:21:29.235Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/inbeat.json
+[2026-03-05T18:21:30.736Z] Processing listicle target: AIHello Top 40 Amazon Marketing Agencies (aihello)
+[2026-03-05T18:21:38.186Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/aihello.json
+[2026-03-05T18:21:39.687Z] Processing listicle target: EVA.guru Top Amazon Marketing Agencies (eva_guru)
+[2026-03-05T18:21:45.838Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/eva_guru.json
+[2026-03-05T18:21:47.340Z] Processing guest_post target: EcommerceFastlane (Amazon-Specific) (ecommercefastlane)
+[2026-03-05T18:21:56.793Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/ecommercefastlane.json
+[2026-03-05T18:21:58.295Z] Processing guest_post target: ZonGuru Blog (zonguru)
+[2026-03-05T18:22:07.442Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/zonguru.json
+[2026-03-05T18:22:08.943Z] Processing guest_post target: BigCommerce Blog (bigcommerce)
+[2026-03-05T18:22:18.029Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/bigcommerce.json
+[2026-03-05T18:22:19.530Z] Processing guest_post target: Practical Ecommerce (practical_ecommerce)
+[2026-03-05T18:22:28.466Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/practical_ecommerce.json
+[2026-03-05T18:22:29.968Z] Processing guest_post target: eCommerce Insiders (ecommerce_insiders)
+[2026-03-05T18:22:38.777Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/ecommerce_insiders.json
+[2026-03-05T18:22:40.279Z] Processing guest_post target: Helium 10 Blog (helium10_blog)
+[2026-03-05T18:22:48.742Z] ✓ Saved outreach draft: /Users/onlinebrandgrowth/Online Brand Growth Website Rebuild/scripts/backlinks/outreach/helium10_blog.json
+[2026-03-05T18:22:50.243Z] === Done. Generated 11 outreach email(s) ===

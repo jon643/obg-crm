@@ -2,14 +2,14 @@ import { MetadataRoute } from 'next'
 
 const BASE_URL = 'https://www.onlinebrandgrowth.com'
 
-// All blog post slugs (matching the existing posts array in blog/page.tsx)
+// Canonical blog post slugs only — duplicates removed and 301-redirected in next.config.js
 const blogSlugs = [
   'what-is-fulfillment-by-amazon',
   'product-information-management',
   'sponsored-ad-amazon',
   'amazon-backend-keywords',
   'can-you-use-coupons-on-amazon',
-  'what-is-frustration-free-packaging',
+  'what-is-frustration-free-packaging',          // canonical (duplicates → here)
   'seller-fulfilled-prime-fulfillment',
   'amazon-brand-guide',
   'amazon-channel-management',
@@ -19,162 +19,135 @@ const blogSlugs = [
   'amazon-vendor-vs-seller',
   'how-much-does-amazon-charge-to-sell',
   'amazon-storefront-design',
-  'suspended-from-amazon',
   'ecommerce-account-management',
   'what-is-an-amazon-storefront',
   'amazon-brand-protection-services',
   'amazon-ppc-agency-pricing',
   'how-to-calculate-contribution-margin',
   'amazon-fba-fees',
-  'amazon-listing-optimisation',
   'brand-registry-amazon',
-  'photography-for-amazon',
-  'what-does-acos-stand-for',
+  'what-does-acos-stand-for',                    // canonical (acos-in-amazon, acos-on-amazon → here)
   'create-an-amazon-storefront',
   'prep-center-fba',
   'minimum-advertised-price-monitoring',
   'how-to-make-an-amazon-storefront',
-  'amazon-product-photography',
-  'acos-in-amazon',
+  'amazon-product-photography',                  // canonical (photography-for-amazon, product-photography-* → here)
   'what-does-map-mean-in-pricing',
   'digital-shelf-analytics',
   'ecommerce-growth-strategies',
-  'amazon-fba-freight-forwarders',
-  'amazon-suspending-accounts',
+  'amazon-fba-freight-forwarders',               // canonical (fba-freight-forwarder, freight-forwarder-* → here)
   'amazon-seller-central-vs-vendor-central',
-  'amazon-advertising-strategy',
+  'amazon-advertising-strategy',                 // canonical (amazon-advertising-strategies → here)
   'brand-protection-amazon',
-  'what-is-frustration-free-packaging-on-amazon',
-  'product-photography-for-amazon',
   'amazon-fba-vs-fbm',
   'find-amazon-keywords',
   'amazon-pricing-strategy',
-  'fba-freight-forwarder',
   'sell-on-amazon-worldwide',
-  'freight-forwarder-for-amazon-fba',
-  'account-suspension-amazon',
-  'map-vs-msrp',
-  'amazon-brand-store',
+  'map-vs-msrp',                                 // canonical (msrp-vs-map, map-vs-msrp-price, map-pricing-vs-msrp → here)
+  'amazon-brand-store',                          // canonical (amazon-brand-stores → here)
   'inventory-management-best-practices',
   'amazon-images-requirements',
-  'amazon-deactivated-seller-account',
-  'msrp-vs-map',
-  'amazon-account-suspended',
-  'product-photography-amazon',
   'best-amazon-storefronts',
-  'listing-optimization-on-amazon',
-  'amazon-account-suspensions',
-  'freight-forwarders-for-amazon-fba',
-  'amazon-brand-stores',
-  'listing-optimization-amazon',
-  'amazon-advertising-strategies',
-  'map-vs-msrp-price',
   'track-amazon-ranking',
   'amazon-brand-guidelines',
   'amazon-ppc-management-services',
-  'amazon-listing-optimization',
+  'amazon-listing-optimization',                 // canonical (amazon-listing-optimisation, listing-optimization-* → here)
   'amazon-fba-is-it-worth-it-2',
-  'suspended-amazon-account',
   'amazon-ad-management',
-  'how-to-increase-amazon-sales',
+  'how-to-increase-amazon-sales',                // canonical (improve-amazon-sales, increase-amazon-sales, how-to-improve-* → here)
   'product-launch-strategies',
-  'optimizing-amazon-listings',
   'global-selling-with-amazon',
-  'account-suspended-amazon',
-  'optimizing-amazon-product-listings',
-  'optimize-amazon-product-listings',
-  'improve-amazon-sales',
-  'increase-amazon-sales',
-  'how-to-improve-amazon-sales',
   'target-market-for-amazon',
   'how-to-launch-product-on-amazon',
-  'what-is-frustration-free-packaging-at-amazon',
-  'freight-forwarder-amazon-fba',
   'ship-from-china-to-amazon-fba',
   'amazon-brand-registry-benefits',
   'what-is-amazon-brand-registry',
   'best-amazon-inventory-management-software',
-  'amazon-account-suspension',
+  'amazon-account-suspension',                   // canonical (suspended-from-amazon, amazon-account-suspended, etc. → here)
   'unauthorized-sellers-on-amazon',
   'how-to-win-amazon-buy-box',
   'amazon-fba-profit-margin-calculator',
-  'map-pricing-vs-msrp',
   'minimum-advertised-price-policy',
   'amazon-pricing-changes',
   'cost-of-selling-on-amazon',
   'amazon-pricing-strategies',
   'amazon-dsp-advertising',
-  'acos-on-amazon',
   'amazon-ads-management',
   'image-requirements-for-amazon',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
+  // Dates — differentiated per content type rather than all using build time
+  const now = new Date()                        // homepage: always today
+  const serviceDate  = new Date('2026-03-04')   // core service pages last updated
+  const blogDate     = new Date('2026-03-04')   // blog index reflects recent posts
+  const mediaDate    = new Date('2026-03-01')   // media / careers
+  const legalDate    = new Date('2025-01-01')   // privacy / terms
+  const blogPostDate = new Date('2025-06-01')   // individual posts fallback
 
-  // Core pages
+  // Core static pages
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: now,
+      lastModified: now,          // dynamic: always reflects today's date
       changeFrequency: 'weekly',
       priority: 1.0,
     },
     {
       url: `${BASE_URL}/services`,
-      lastModified: now,
+      lastModified: serviceDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/case-studies`,
-      lastModified: now,
+      lastModified: serviceDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/360-brand-protection`,
-      lastModified: now,
+      lastModified: serviceDate,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/blog`,
-      lastModified: now,
+      lastModified: blogDate,     // dynamic: reflects most recent publish
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/media`,
-      lastModified: now,
+      lastModified: mediaDate,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/careers`,
-      lastModified: now,
+      lastModified: mediaDate,
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
       url: `${BASE_URL}/privacy`,
-      lastModified: now,
+      lastModified: legalDate,
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
       url: `${BASE_URL}/terms`,
-      lastModified: now,
+      lastModified: legalDate,
       changeFrequency: 'yearly',
       priority: 0.3,
     },
   ]
 
-  // Blog post pages — pointing to the old domain for now since articles live there
-  // TODO: migrate blog posts to this domain as new articles are written
+  // Blog post pages — fallback date 2025-06-01; update individual slugs below
+  // when a more precise publish date is known.
   const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}/`,
-    lastModified: now,
+    lastModified: blogPostDate,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }))

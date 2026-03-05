@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { ArrowRight, BookOpen } from 'lucide-react'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Amazon Blog & Resources | Online Brand Growth',
@@ -145,6 +146,12 @@ const remainingPosts = posts.slice(1)
 export default function BlogPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.onlinebrandgrowth.com' },
+          { name: 'Blog', url: 'https://www.onlinebrandgrowth.com/blog' },
+        ]}
+      />
       <Header />
       <main>
 
