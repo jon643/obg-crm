@@ -156,7 +156,7 @@ export default post
     }
 
     // Get the current file SHA if it exists (required for update, not needed for create)
-    const githubApiBase = 'https://api.github.com/repos/jonny-vibes/online-brand-growth/contents'
+    const githubApiBase = 'https://api.github.com/repos/jon643/online-brand-growth/contents'
     const filePath = `content/blog/${filename}`
 
     let fileSha: string | undefined
