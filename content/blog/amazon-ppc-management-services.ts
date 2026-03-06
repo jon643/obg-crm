@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon PPC Management Services: Why Most Agencies Fail and What Actually Works',
   description: 'Most Amazon PPC agencies optimize for ACoS. OBG optimizes for TACoS and daily profit. Here is how to evaluate any PPC service — and what separates real results from polished reporting.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-12-16',
   htmlContent: `
     <p>AI is going to eliminate most Amazon PPC agencies within the next two years. Not the good ones — the ones charging retainers to move bids up and down on a weekly cadence with no strategic framework underneath it.</p>
 

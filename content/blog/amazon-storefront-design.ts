@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Storefront Design: Building a Store That Converts, Not Just Impresses',
   description: 'Most Amazon storefronts look good and do nothing. OBG builds storefronts with conversion paths, not just aesthetics. Here is how we do it.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-02-09',
   htmlContent: `
     <h2>Your Storefront Is a Sales Asset. Treat It Like One.</h2>
     <p>Most Amazon storefronts are vanity projects. Brands spend weeks agonizing over fonts and hero images, then publish a store that gets zero structured traffic, has no conversion logic, and sits largely ignored while their ad spend bleeds onto competitor listing pages.</p>

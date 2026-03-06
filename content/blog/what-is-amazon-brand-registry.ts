@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'What Is Amazon Brand Registry? A Plain-English Explanation',
   description: 'Amazon Brand Registry explained: what it is, who needs it, what problems it solves, and why enrolling is the first move every legitimate Amazon brand must make.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-27',
   htmlContent: `
 <p>If you have a product with your name on it and you are selling on Amazon, Brand Registry is not optional. It is the foundational step that separates a legitimate brand operation from an anonymous reseller. Without it, Amazon treats you like everyone else — which means no A+ Content, no Sponsored Brands ads, no Brand Analytics, no meaningful IP protection, and no real authority over your own listing pages.</p>
 

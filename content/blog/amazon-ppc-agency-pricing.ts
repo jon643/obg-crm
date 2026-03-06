@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon PPC Agency Pricing: What It Really Costs You to Go Cheap',
   description: 'Cheap Amazon PPC management costs more than it saves. The question is not what you pay the agency — it is what your TACoS looks like 90 days in. Here is how to evaluate real value.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-02-03',
   htmlContent: `
     <p>The question most brands ask when evaluating Amazon PPC agencies: "How much does it cost?" That is the wrong question.</p>
 

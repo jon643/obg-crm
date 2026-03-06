@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon FBA Profit Margin Calculator: How to Know Your True Profitability',
   description: 'Most Amazon sellers overestimate their margins by 20-40%. Here is every cost you need to account for to calculate your real FBA profitability on every SKU.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-11-18',
   htmlContent: `
 <p>Most Amazon sellers are less profitable than they think. Not because their business is failing, but because they're calculating margins the wrong way. They look at revenue minus COGS minus FBA fees and call it profit. They're missing six to ten cost categories that can represent 15 to 30% of their revenue.</p>
 

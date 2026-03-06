@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Make an Amazon Storefront: Design Tips That Drive Traffic and Sales',
   description: 'Your Amazon Storefront is your brand\'s home on the platform. Learn how to design and optimize it to convert traffic into revenue.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-01-20',
   htmlContent: `
 <p>Most brands treat their Amazon Storefront as a nice-to-have — something to set up once, then largely ignore. That is a significant missed opportunity. A well-built Amazon Storefront is a brand asset that drives organic discovery, supports your advertising strategy, improves conversion for new-to-brand customers, and gives you a destination URL you actually control within the Amazon ecosystem.</p>
 

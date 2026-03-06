@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Increase Amazon Sales: Diagnose Before You Prescribe',
   description: 'Increasing Amazon sales without fixing the root cause just burns more ad spend. OBG\'s Revenue Rescue Decision Tree shows you how to diagnose the real problem first.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-12-08',
   htmlContent: `
 <p>Increasing your Amazon sales is not the hard part. The hard part is diagnosing why your sales are where they are before you try to move them. Most brands skip the diagnosis entirely. They see a sales decline or a plateau and immediately reach for more advertising spend, a price cut, or a listing tweak. Sometimes that works. More often, it accelerates the bleed without fixing anything.</p>
 

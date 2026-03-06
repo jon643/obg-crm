@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Product Photography: The Image Strategy That Drives Conversion',
   description: 'Your main image is your most expensive real estate on Amazon. Most brands never test it. Here is OBG\'s image strategy — from keyword-driven headlines to Jungle Ace split testing.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-18',
   htmlContent: `
     <p>Your main image is the most expensive real estate on your Amazon listing. Not because of what it costs to produce — because of what a weak one costs you in lost clicks every single day it is live.</p>
 

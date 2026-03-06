@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Brand Registry: How to Enroll and What You Actually Unlock',
   description: 'Brand Registry is table stakes, not a strategy. Here is how to enroll, what you unlock, and why most brands miss the most valuable feature entirely: SQP data.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-29',
   htmlContent: `
 <p>Enrolling in Amazon Brand Registry is the minimum viable move. It is not a competitive advantage. Every serious brand does it. The brands that pull ahead are the ones that actually use what Brand Registry unlocks — specifically the data tools that almost nobody is using correctly.</p>
 

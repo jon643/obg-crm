@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Brand Store: How to Build One That Drives Sales and Loyalty',
   description: 'Your Amazon Brand Store is more than a vanity page. Learn how to build a storefront that converts, retains customers, and supports your ad strategy.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-26',
   htmlContent: `
 <p>Most Amazon Brand Stores are an afterthought. Brands get Brand Registry access, someone puts together a basic page with a logo and a product grid, and it sits there — largely unvisited, generating no meaningful business value. Meanwhile, the brands that treat their Store as a strategic asset are using it to drive incremental revenue, reduce customer acquisition costs, and build brand equity that a product listing page simply cannot deliver.</p>
 

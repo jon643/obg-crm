@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'FBA Prep Centers: When They Make Sense and When They Are Costing You Margin',
   description: 'Prep centers are a bridge, not a destination. OBG breaks down when FBA prep services add value and when building direct manufacturer-to-FBA relationships is the right move.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-24',
   htmlContent: `
 <p>Prep centers made sense when you were new, when your volume was low, and when you did not yet have the manufacturer relationship to handle compliance at the factory. At that stage, they solve a real problem. The issue is that most brands stay in that stage long after they should have moved on.</p>
 

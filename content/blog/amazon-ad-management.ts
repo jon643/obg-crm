@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Ad Management: What It Actually Involves Day-to-Day',
   description: 'Real Amazon ad management is not bid changes. It is reading SQP data, managing TACoS across product lifecycle phases, and knowing exactly when not to spend.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-12-10',
   htmlContent: `
     <p>Most people think Amazon ad management means adjusting bids. Move a bid up, move a bid down, check ACoS, write a monthly report. That is not management. That is maintenance. And maintenance, alone, does not grow a business.</p>
 

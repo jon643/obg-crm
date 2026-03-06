@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Track Your Amazon Ranking: Tools, Metrics, and What to Do With the Data',
   description: 'Amazon ranking data is only useful if you know what to track, how to interpret it, and what actions it should drive. Here is the full framework.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-20',
   htmlContent: `
 <p>Tracking your Amazon ranking is straightforward. Knowing what to do with the data is where most brands fall short. Ranking position is a symptom — the underlying causes are the metrics that actually deserve your attention: conversion rate, click-through rate, sales velocity, and relevance signals. If you focus only on rank and not on the levers that drive rank, you will spend a lot of time watching a number fluctuate without understanding why.</p>
 

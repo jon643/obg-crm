@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Inventory Management Best Practices: How to Stop Running Out and Stop Overstocking',
   description: 'Stockouts destroy organic rank. Overstocking destroys margins. OBG uses 90-day rolling forecasts and ASIN-level turnover analysis to solve both problems at once.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-12-25',
   htmlContent: `
 <p>Most brands treat inventory management like a logistics problem. It is not. It is a profitability lever — and most brands ignore it until it becomes a crisis.</p>
 

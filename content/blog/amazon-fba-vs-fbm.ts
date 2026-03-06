@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon FBA vs FBM: How to Make the Right Call (Not the Reflex One)',
   description: 'FBA vs FBM is a math decision, not a default. OBG breaks down when each model wins, when to run both, and what the Buy Box implications actually cost you.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-04',
   htmlContent: `
 <p>Most sellers default to FBA without running the math. That is usually fine — but it is not always right, and when it is wrong, you are paying for it on every unit shipped.</p>
 

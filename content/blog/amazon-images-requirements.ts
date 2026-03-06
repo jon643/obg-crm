@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Image Requirements: The Specs, the Rules, and the Strategy to Win',
   description: 'Meeting Amazon image requirements keeps your listing live. A real image strategy makes it convert. Here are the specs and the conversion framework serious brands use.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-12-23',
   htmlContent: `
     <p>Requirements are the floor, not the ceiling. You can meet every Amazon image specification and still lose the click to a competitor with a better visual strategy. Most brands treat compliance as the goal. The goal is conversion.</p>
 

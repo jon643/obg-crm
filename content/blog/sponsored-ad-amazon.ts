@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Sponsored Ads: SP, SB, and SD Explained — And How to Use Each One Right',
   description: 'Sponsored Products are the foundation. Sponsored Brands and Display amplify what is already working. Here is how to build a sponsored ad strategy that compounds over time.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-03-03',
   htmlContent: `
     <p>There are three types of Amazon sponsored ads. Most brands use all three. Most brands are not using two of them correctly.</p>
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Backend Keywords: How to Use Search Terms to Boost Organic Ranking',
   description: 'A technical, no-fluff guide to optimizing Amazon backend search terms for maximum indexing and organic rank improvement across your catalog.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-03-02',
   htmlContent: `
 <p>Backend keywords are one of the few Amazon listing elements that give you direct control over indexing without affecting the customer-facing content of your listing. Used correctly, they extend your indexing footprint into search terms that do not fit naturally in your title or bullets. Used incorrectly — or ignored entirely — they represent a permanent ceiling on your organic reach. This guide covers how backend keywords actually work, what belongs in them, and how to build a systematic approach to filling all 250 bytes available to you.</p>
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Brand Building: The Complete Guide for Serious Brand Owners',
   description: 'How established brands build lasting competitive advantages on Amazon — from Brand Registry and A+ Content to Brand Store strategy and brand defense.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-22',
   htmlContent: `
 <p>Building a brand on Amazon is fundamentally different from building a brand anywhere else. The platform controls the customer experience, owns the customer relationship, and algorithmically determines who sees your products. But within those constraints, the gap between brands that simply sell on Amazon and brands that build lasting, defensible positions is enormous — and almost entirely attributable to how deliberately and systematically they invest in brand infrastructure. This guide covers the specific components that matter.</p>
 

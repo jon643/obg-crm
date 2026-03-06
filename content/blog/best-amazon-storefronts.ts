@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Best Amazon Storefronts: What Makes a Great Brand Store (With Examples)',
   description: 'What separates top-performing Amazon Brand Stores from mediocre ones? A breakdown of the design, structure, and strategy behind storefronts that actually work.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-22',
   htmlContent: `
 <p>Amazon Brand Stores range from genuinely impressive brand experiences to placeholder pages that communicate nothing about the brand and convert even less. After managing hundreds of brands and reviewing thousands of storefronts across virtually every product category, OBG has a clear picture of what separates the best Amazon storefronts from the average ones.</p>
 

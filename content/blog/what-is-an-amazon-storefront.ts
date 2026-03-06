@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'What Is an Amazon Storefront? Everything Brand Owners Need to Know',
   description: 'An Amazon storefront is a multi-page brand microsite inside Amazon — free with Brand Registry. Here is what it does, who can create one, and what it cannot do.',
-  publishDate: '2025-06-02',
+  publishDate: '2026-02-06',
   htmlContent: `
     <h2>It Is Not a Listing. It Is Not a Shop. It Is Something More Specific.</h2>
     <p>Amazon storefronts get lumped in with a lot of other things — seller profiles, product listings, A+ pages — and the confusion costs brands. When you understand exactly what a storefront is and what it is designed to do, you can use it correctly. When you treat it as a generic "brand page," you end up with something that looks fine and does very little.</p>

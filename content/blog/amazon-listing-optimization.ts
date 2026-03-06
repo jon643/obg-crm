@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Listing Optimization: The Process That Actually Moves Conversion Rate',
   description: 'Most brands optimize for keywords. OBG optimizes for conversion rate above market average. The Avatar Alignment framework and SQP data is how we build listings that convert.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-12-14',
   htmlContent: `
     <p>Most Amazon listing optimization is keyword stuffing with better copywriting. You research high-volume keywords, you put them in your title and bullets, you call it optimized. Then you wonder why your conversion rate is still mediocre.</p>
 

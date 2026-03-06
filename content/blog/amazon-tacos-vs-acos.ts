@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'TACoS vs ACoS: The Amazon Advertising Metric That Actually Matters',
   description: 'ACoS measures campaign efficiency. TACoS measures business growth. Learn why OBG targets 8-12% TACoS and why most agencies optimize the wrong metric.',
-  publishDate: '2026-03-05',
+  publishDate: '2025-11-03',
   htmlContent: `
     <p>Your agency sends you a report showing 25% ACoS. They're celebrating. You should be worried.</p>
     <p>Here's why: ACoS only tells you how efficiently you spent money inside your ad campaigns. It says nothing about whether those campaigns actually grew your business. You could have a "great" ACoS while your overall profitability craters. We see this constantly.</p>

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Ecommerce Growth Strategies for Amazon Brands: What Actually Works at Scale',
   description: 'Discover the ecommerce growth strategies that move the needle for seven and eight-figure Amazon brands — and which tactics are just noise.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-01-12',
   htmlContent: `
 <p>The internet has no shortage of advice on how to grow an Amazon brand. Most of it is written for sellers doing their first $100K and is entirely irrelevant — or even counterproductive — for brands already operating at seven or eight figures. Growth strategies that work at scale look different from tactics that work at launch. If you are already doing meaningful volume and wondering why growth has plateaued, the answer is almost never "add another keyword to your campaigns."</p>
 

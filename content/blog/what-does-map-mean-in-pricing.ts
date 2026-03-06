@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'What Does MAP Mean in Pricing? A Plain-English Explanation',
   description: 'MAP means Minimum Advertised Price — not minimum selling price. The legal difference is significant, and Amazon will never enforce it for you.',
-  publishDate: '2025-06-02',
+  publishDate: '2026-01-17',
   htmlContent: `
 <p>Brands use the term MAP constantly and correctly about half the time. The other half of the time they are describing a legal concept that does not exist, or confusing MAP with something that would actually expose them to antitrust liability if they tried to enforce it the way they intend.</p>
 

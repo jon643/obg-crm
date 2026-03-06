@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Product Launch Strategies: How to Drive Velocity Without Destroying Margin',
   description: 'How to launch a new Amazon product with the velocity needed to rank without sacrificing margin — practical strategy for serious brand operators.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-07',
   htmlContent: `
 <p>Launching a new product on Amazon is not a moment — it is a campaign that spans weeks, requires deliberate sequencing, and demands that you make intentional tradeoffs between short-term margin and long-term ranking position. The brands that execute launches well understand this. The brands that fail at launches usually do one of two things: they underinvest in early velocity and the product never builds enough momentum to rank organically, or they chase velocity so aggressively that the launch destroys margin and the product never achieves sustainable economics. This guide is about threading that needle.</p>
 

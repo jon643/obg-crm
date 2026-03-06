@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Global Selling With Amazon: How to Expand Internationally Without the Headaches',
   description: 'How established Amazon brands should approach international expansion — marketplace selection, compliance, logistics, and what to expect from international performance.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-06',
   htmlContent: `
 <p>International expansion on Amazon is one of the most significant growth levers available to established brands — and also one of the most frequently botched. Brands that rush into global selling without understanding the operational, regulatory, and logistical differences between markets end up either pulling back with losses or managing international marketplaces so poorly that they create liability rather than opportunity. This guide is for brands that are serious about international expansion and want to do it right.</p>
 

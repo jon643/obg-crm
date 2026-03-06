@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon DSP Advertising: Why Most Brands Use It Too Early',
   description: 'Amazon DSP is powerful — but only for brands that have already built a profitable organic and Sponsored Products foundation. Here is when DSP actually makes sense.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-09',
   htmlContent: `
     <p>Amazon DSP is one of the most oversold tools in the Amazon advertising ecosystem. Agencies pitch it as a growth lever. Brands buy it expecting scale. Then they look at the numbers three months in and realize they have been paying for programmatic impressions on a listing that has not yet proven it can convert.</p>
 

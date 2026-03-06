@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Inventory Turnover Ratio for Amazon Sellers: What It Means and What to Do About It',
   description: 'Low inventory turnover quietly kills FBA margins through storage fees, tied-up capital, and IPI score damage. OBG breaks down how to calculate it and fix it.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-02-15',
   htmlContent: `
 <p>Low inventory turnover does not announce itself. It shows up as creeping storage fees on ASINs you forgot you had, as capital tied up in product that is not contributing to revenue, and eventually as an IPI score that starts restricting your FBA storage limits. By the time most brands notice, they are already paying for the problem.</p>
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Win the Amazon Buy Box: The Complete Guide for Brand Owners',
   description: 'The Buy Box determines who gets the sale. Learn exactly what Amazon measures, how to optimize each factor, and how to maintain Buy Box dominance at scale.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-11-20',
   htmlContent: `
 <p>Roughly 83% of Amazon sales go through the Buy Box. If you're a brand owner selling on Amazon, your Buy Box win rate is one of the most important metrics in your entire business. Lose it, and your advertising spend drives traffic to your competitors. Win it consistently, and every impression you generate converts at the highest possible rate.</p>
 

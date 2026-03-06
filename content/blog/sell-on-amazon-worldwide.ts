@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Sell on Amazon Worldwide: International Expansion Strategy for Brands',
   description: 'A practical guide to Amazon international expansion for established brands. Learn how to enter new marketplaces without destroying your domestic operation.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-30',
   htmlContent: `
 <p>Expanding to international Amazon marketplaces sounds like a straightforward growth lever: you have a proven product, an established brand, and Amazon operates in dozens of countries. Just flip the switch and collect revenue in new currencies, right?</p>
 

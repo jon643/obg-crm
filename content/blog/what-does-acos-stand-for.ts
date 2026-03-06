@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'What Does ACoS Stand For? Why It\'s the Wrong Number to Optimize',
   description: 'ACoS is the most-watched Amazon ad metric — and the most misused. Learn what it really means, how to calculate your breakeven, and why TACoS is the number that actually matters.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-27',
   htmlContent: `
     <p>ACoS stands for Advertising Cost of Sale. It is the ratio of what you spent on ads to what those ads generated in attributed revenue. Simple formula. Wildly misunderstood metric.</p>
 

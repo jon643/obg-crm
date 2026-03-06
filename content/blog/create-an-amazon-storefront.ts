@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Create an Amazon Storefront: Step-by-Step Guide',
   description: 'A complete step-by-step guide to creating an Amazon storefront — from Brand Registry enrollment to Store Builder setup, page structure, and Sponsored Brands linking.',
-  publishDate: '2025-06-03',
+  publishDate: '2026-01-26',
   htmlContent: `
     <h2>Before You Build Anything, Get the Prerequisites Right</h2>
     <p>Brands want to jump straight into Store Builder and start designing. We get it — the creative part is more interesting than the setup. But skipping or rushing the prerequisites creates problems that are annoying to unwind later. Do these things in order and the actual build goes smoothly.</p>

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'MAP vs MSRP: Understanding the Difference and Why Both Matter on Amazon',
   description: 'MAP is your advertised price floor. MSRP is a suggestion sellers can ignore. Confusing them creates policy documents that protect nothing.',
-  publishDate: '2025-06-03',
+  publishDate: '2025-12-29',
   htmlContent: `
 <p>Most brands that come to us have a pricing policy. Most of those policies conflate MAP and MSRP in ways that make them nearly impossible to enforce. The confusion is understandable. The consequences are not acceptable.</p>
 

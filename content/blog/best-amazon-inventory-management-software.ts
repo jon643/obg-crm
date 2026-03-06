@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Best Amazon Inventory Management Software: What OBG Actually Uses (And Why)',
   description: 'The best Amazon inventory software is the one with the right process behind it. OBG breaks down Sellerise, Scale Insights, DataDive, and what to look for when choosing.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-25',
   htmlContent: `
 <p>Software does not manage your inventory. A process does. The tool is only as good as the decisions you make with the data it surfaces.</p>
 

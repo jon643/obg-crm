@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Brand Registry Benefits: What You Actually Get (and What Most Brands Miss)',
   description: 'The official Brand Registry benefits list is fine. The real benefit nobody talks about is SQP data — your CVR vs market average on every keyword. Here is what that unlocks.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-28',
   htmlContent: `
 <p>Every Amazon guide lists the same Brand Registry benefits: A+ Content, Sponsored Brands, Brand Store, IP protection. That list is accurate. It is also incomplete in the way that matters most.</p>
 

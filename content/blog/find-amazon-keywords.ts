@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Find Amazon Keywords: OBG\'s Process From SQP to Search Term Gold',
   description: 'The best Amazon keywords are not found in a tool — they are found in your own SQP data. Here is the exact OBG process for keyword research that drives rank and revenue.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-02',
   htmlContent: `
     <p>Most Amazon sellers start keyword research with a tool. Type in a seed keyword, export a list, pick the ones with high volume and medium competition. Done.</p>
 

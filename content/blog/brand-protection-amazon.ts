@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Protect Your Brand on Amazon: The System Serious Brands Build',
   description: 'Brand protection on Amazon is more than Brand Registry. It is a system: monitoring, enforcement, MAP compliance, and legal follow-through. Here is how it works.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-05',
   htmlContent: `
     <p>Brand Registry is not brand protection. It is one tool inside a protection system. Brands that mistake enrollment for protection end up surprised when a hijacker wins their Buy Box the week after they registered, or when an unauthorized reseller cuts MAP by 30% and their entire retail channel follows.</p>
 

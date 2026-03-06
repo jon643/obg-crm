@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Pricing Strategy: Price What You Are Worth and Defend It',
   description: 'Pricing on Amazon is a brand decision, not a competitive reflex. Race to the bottom destroys your brand. Here is how to hold premium positioning and actually win.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-01',
   htmlContent: `
 <p>The worst pricing decision on Amazon is not charging too much. It is charging what everyone else charges because you are afraid of losing the sale. That instinct — match the competition, stay in range, keep the price low enough to feel safe — is what drives brands into margin compression, buy box warfare, and ultimately a race to the bottom that destroys brand equity and contribution margin simultaneously.</p>
 

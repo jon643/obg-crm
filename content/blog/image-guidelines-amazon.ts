@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Product Image Requirements and Best Practices for Maximum Conversion',
   description: 'A complete guide to Amazon image requirements, what separates high-converting image sets from average ones, and how to test your way to better performance.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-16',
   htmlContent: `
 <p>Product images are the highest-leverage element of your Amazon listing. They are the first thing a shopper evaluates in search results, the primary way they assess product quality and fit before purchasing, and often the deciding factor between your product and a competitor's. Despite this, most brands treat imagery as a one-time production cost rather than an ongoing optimization investment. The brands that consistently outperform in their categories are almost always the ones who take their image sets more seriously. This guide covers both the technical requirements and the strategic best practices that separate average image sets from great ones.</p>
 

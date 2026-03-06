@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Coupons for Sellers: How They Work and When to Use Them',
   description: 'A strategic guide to Amazon seller coupons — how they affect visibility, conversion, and margin, and when they are actually worth running.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-28',
   htmlContent: `
 <p>Amazon coupons are one of those tools that look simple on the surface but have meaningful strategic depth when you think about them carefully. They affect more than just your effective selling price — they influence where your product appears, how it is perceived on the search results page, and how your promotion history is interpreted by Amazon's algorithm. This guide is for sellers who already know coupons exist and want to understand when to run them, how to structure them for maximum return, and what the traps are.</p>
 

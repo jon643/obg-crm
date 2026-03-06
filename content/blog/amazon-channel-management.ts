@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Channel Management: How to Control Your Brand Across Every Touchpoint',
   description: 'How serious Amazon brands manage distribution, pricing, seller relationships, and listing control to protect margin and brand equity at scale.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-21',
   htmlContent: `
 <p>Channel management is one of the most consequential and least glamorous aspects of running a brand on Amazon. While most of the attention in the Amazon ecosystem goes to advertising, listing optimization, and review strategy, the brands that maintain pricing integrity, protect their margins, and build durable platform positions are almost always the ones that have done the harder work of managing their distribution channels with intention. This guide covers what effective Amazon channel management looks like at the seven and eight-figure level.</p>
 

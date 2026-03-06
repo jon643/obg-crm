@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: "Digital Shelf Analytics for Amazon: How to Track and Improve Your Brand's Visibility",
   description: 'Digital shelf analytics give Amazon brands the data they need to compete effectively. Learn what to track and how to act on the insights.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-01-14',
   htmlContent: `
 <p>Running an Amazon brand without systematic visibility data is like managing a retail business without knowing your shelf position, stock levels, or competitive pricing — you are making decisions based on incomplete information and hoping for good outcomes. Digital shelf analytics changes that. It gives you the objective data to understand how your brand is performing across the Amazon search landscape, where you are winning and where you are losing, and what actions will move the needle.</p>
 

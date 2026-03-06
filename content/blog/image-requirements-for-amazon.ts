@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Image Requirements for Amazon: The Practical Checklist and Conversion Strategy',
   description: 'Amazon image requirements in plain terms — every spec, every rule, and the conversion strategy that turns compliant images into revenue. Built for brands who want both.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-05',
   htmlContent: `
     <p>There are two reasons to care about Amazon image requirements. The first is obvious: non-compliant images get your listing suppressed. The second is the one most brands miss: compliant images that do not convert are almost as bad as no images at all.</p>
 

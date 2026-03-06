@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Seller Central vs Vendor Central: The Complete Comparison for Brands',
   description: 'Seller Central vs Vendor Central is one of the most consequential decisions for Amazon brands. Here is the full comparison to help you choose.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-01-10',
   htmlContent: `
 <p>The Seller Central versus Vendor Central decision is one of the most consequential choices an Amazon brand makes — and it is one that many brands make without fully understanding the long-term implications. Some brands never have to choose: Vendor Central requires an invitation from Amazon and is not available to all brands. But for brands that operate on both platforms, or are being courted by Amazon to transition from one to the other, the choice deserves serious analysis.</p>
 

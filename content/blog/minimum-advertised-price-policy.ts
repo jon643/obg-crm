@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Minimum Advertised Price Policy: Why Most Brands Have One and Almost None Actually Enforce It',
   description: 'A MAP policy document without enforcement is a wish. Learn what your MAP policy must include and how to enforce it automatically on Amazon.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-17',
   htmlContent: `
 <p>You probably have a MAP policy. You probably sent it to your distributors when you launched. You probably have not looked at it since.</p>
 

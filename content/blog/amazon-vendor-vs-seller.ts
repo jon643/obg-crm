@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Vendor Central vs Seller Central: Which Is Right for Your Brand?',
   description: 'Vendor Central vs Seller Central: understand the real trade-offs in margin, control, and growth potential before making the switch.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-14',
   htmlContent: `
 <p>At some point, most successful Amazon brands face a fork in the road: Amazon sends an invite to become a vendor, and suddenly the question is whether to take it. Or you're already a vendor and wondering whether Seller Central would give you more control over your margins and brand experience.</p>
 

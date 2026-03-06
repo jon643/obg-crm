@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Pricing Changes: How to Respond Without Destroying Your Margins',
   description: 'Amazon pricing pressure is constant. Learn how to evaluate when to match, when to hold, and when to walk away, without sacrificing the margins that keep your business viable.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-11-15',
   htmlContent: `
 <p>Pricing pressure on Amazon is relentless. Competitors drop prices. Amazon retail undercuts you. Unauthorized sellers dump product at below-cost prices. Your repricing tool chases someone else's repricing tool in a spiral you didn't intend to start. And somewhere in the middle of all of this, you need to protect the margins that make your business worth running.</p>
 

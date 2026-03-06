@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Unauthorized Sellers on Amazon: How to Identify, Remove, and Prevent Them',
   description: 'Unauthorized sellers cost you Buy Box wins, MAP compliance, and brand reputation every day they operate. Here is the process to identify, remove, and prevent them.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-21',
   htmlContent: `
     <p>The damage starts before you notice it. An unauthorized seller appears on your listing. They win the Buy Box at $3 below your price. Your MAP-compliant authorized retailers see the Amazon price and start calling. Another seller reprices to match. Within two weeks, your entire pricing structure is compromised — and you still may not know how it started.</p>
 

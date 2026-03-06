@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Ship From China to Amazon FBA: The Step-by-Step Process OBG Uses',
   description: 'A practical guide to shipping from China to Amazon FBA — from manufacturer handoff to FBA receiving. Covers FNSKU labeling, carton marks, customs, and compliance checkpoints.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-30',
   htmlContent: `
 <p>Shipping from China to Amazon FBA sounds straightforward until the first time a shipment gets refused at an Amazon fulfillment center, sits in customs for two weeks, or arrives with labeling that triggers a discrepancy investigation. Then it stops being straightforward and starts being expensive.</p>
 

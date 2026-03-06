@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'The Real Cost of Selling on Amazon: A Full Fee Breakdown for Brand Sellers',
   description: 'Amazon sellers are often surprised to find total costs reach 35 to 45% of revenue. Here is every fee, what it actually costs, and how to build margins that survive it.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-12',
   htmlContent: `
 <p>Most brands underestimate what it actually costs to sell on Amazon. Not by a little. By a lot. When you add up referral fees, FBA fees, advertising spend, storage, returns, and the operational infrastructure required to run a real Amazon channel, many sellers are at 35 to 45 cents in costs for every dollar of revenue. Some are higher.</p>
 

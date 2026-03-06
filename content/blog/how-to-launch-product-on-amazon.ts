@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Launch a Product on Amazon: The Step-by-Step Playbook',
   description: 'A complete, step-by-step Amazon product launch playbook for established brands — from pre-launch preparation through velocity strategy and post-launch optimization.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-01',
   htmlContent: `
 <p>A successful Amazon product launch is not an event — it is a structured campaign with distinct phases, each of which determines whether the next phase can succeed. Brands that treat a launch as "we listed the product and started some ads" routinely underperform against their potential, building products that plateau at mediocre organic ranking and remain permanently dependent on paid traffic to generate sales. This playbook covers how to launch a product the right way: from pre-launch preparation through the critical early velocity window and into the sustained optimization phase that builds long-term organic performance.</p>
 

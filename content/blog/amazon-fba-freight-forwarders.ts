@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon FBA Freight Forwarders: What a Good One Does That a Bad One Does Not',
   description: 'Your freight forwarder is a compliance checkpoint, not just a logistics vendor. OBG breaks down how to evaluate, select, and work with the right FBA freight partner.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-11',
   htmlContent: `
 <p>A bad freight forwarder does not just cost you money. It costs you time — and on Amazon, time is rank. A shipment delayed at customs, a refused delivery at an Amazon fulfillment center, a missed window before a product launch — these are not just logistics inconveniences. They are events that kill your momentum at the worst possible moment.</p>
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Is Amazon FBA Worth It in 2025? An Honest Answer',
   description: 'FBA is worth it only if your margins are built for it. Here\'s the actual math — referral fees, FBA fees, storage, PPC, returns — and OBG\'s 55-65% gross margin threshold.',
-  publishDate: '2025-06-04',
+  publishDate: '2025-12-13',
   htmlContent: `
     <h2>FBA Is Worth It. For the Right Products. With the Right Margins.</h2>
     <p>If you want a simple yes or no — it is not that simple. FBA is worth it for products with strong gross margins, manageable return rates, and standard dimensions. FBA is a margin destroyer for products with thin margins, high return rates, or outsized dimensions. The difference between those two outcomes is arithmetic, not Amazon.</p>

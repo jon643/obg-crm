@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How to Calculate Contribution Margin on Amazon (The Number That Actually Matters)',
   description: 'Revenue is vanity. Contribution margin is sanity. Here is the exact formula Amazon sellers need, why gross margin gets you in trouble, and how TACoS ties it all together.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-02-02',
   htmlContent: `
 <p>Revenue is vanity. Contribution margin is sanity. Most Amazon brands track revenue obsessively and have a vague sense of their margins. Almost none of them track contribution margin correctly — and that gap is why brands can show impressive top-line growth while the bank account barely moves.</p>
 

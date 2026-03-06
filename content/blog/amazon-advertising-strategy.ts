@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Advertising Strategy: When to Be Aggressive and When to Pull Back',
   description: 'Most Amazon advertising advice tells you to spend more. Smart strategy tells you when to spend, when to cut, and how to build organic rank that compounds over time.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-08',
   htmlContent: `
     <p>Early aggression is not always smart aggression.</p>
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Brand Guidelines: How to Protect Your Brand Identity on the Marketplace',
   description: 'Brand protection on Amazon is active work, not passive hope. Learn the tools, policies, and strategies that serious brands use to defend their identity and market position.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-17',
   htmlContent: `
 <p>Building a brand on Amazon takes years of investment: product development, listing optimization, advertising spend, review acquisition, creative assets, and consistent customer experience. Protecting that brand should command the same level of intentionality. Yet most brands treat brand protection as reactive — they respond to violations when they discover them rather than building systematic defenses that prevent violations from occurring in the first place.</p>
 

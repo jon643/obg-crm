@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Seller Fulfilled Prime: When FBA Isn\'t the Right Answer',
   description: 'Seller Fulfilled Prime gives you the Prime badge without FBA fees — essential for heavy or bulky products. Here\'s what SFP requires and when OBG recommends it.',
-  publishDate: '2025-06-02',
+  publishDate: '2026-02-24',
   htmlContent: `
     <h2>The Prime Badge Does Not Require Amazon's Warehouse</h2>
     <p>Most sellers assume that if they want Prime, they need FBA. That assumption costs them margin every month. Seller Fulfilled Prime — SFP — lets you ship Prime orders directly from your own warehouse or a third-party logistics provider. The customer sees the Prime badge. The customer gets two-day delivery. You never pay Amazon's fulfillment fees.</p>

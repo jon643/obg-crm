@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Conversion Rate Optimization: What Good Looks Like and How to Get There',
   description: 'A data-driven guide to Amazon CVR benchmarks, the factors that drive conversion, and how established brands systematically improve their listing performance.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-18',
   htmlContent: `
 <p>Conversion rate is the most direct measure of listing quality on Amazon. Traffic is a function of ranking and advertising spend. Conversion rate is a function of how well your listing convinces someone who sees your product to buy it. For established brands, improving conversion rate by even a few percentage points on high-traffic ASINs is often worth more in incremental revenue than a comparable increase in ad spend — because it makes every existing impression more valuable rather than buying new ones. This guide covers what good conversion rates actually look like, what drives them, and how to improve them systematically.</p>
 

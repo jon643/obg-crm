@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Ecommerce Account Management: What It Is and Why Your Brand Needs It',
   description: 'What ecommerce account management actually means, what a strong agency does, and how to evaluate whether yours is driving real business results.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-08',
   htmlContent: `
 <p>If you've managed your Amazon account in-house for any significant period of time, you've probably noticed that it's not really one job — it's about twelve jobs, each requiring specialized knowledge, running simultaneously. Listing optimization, PPC management, inventory planning, brand protection, A+ content, analytics, case management, pricing strategy. The brands that try to handle all of this with a single generalist in-house employee, or with a part-time consultant who does a little of everything, almost always hit a ceiling. The brands that treat their Amazon account as a strategic asset requiring dedicated, expert management grow past that ceiling consistently.</p>
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'MAP Monitoring on Amazon: How to Stop the Race to the Bottom Before It Starts',
   description: 'MAP violations compound fast on Amazon. One seller cuts price and others follow. Automated MAP monitoring is the only way to stay ahead. Here is how it works.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-21',
   htmlContent: `
     <p>It starts with one seller. They drop $4 below your MAP. Maybe they are running a promotion. Maybe they misconfigured their repricer. Maybe they just do not care about your policy. Within 48 hours, two other sellers have repriced to match. Your authorized retail partners call to ask why Amazon is undercutting them. By Friday, your MAP policy exists only on paper.</p>
 

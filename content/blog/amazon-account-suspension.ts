@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Account Suspension: How to Prevent It and What to Do If It Happens',
   description: 'Learn how to prevent Amazon account suspension, identify warning signs early, and craft an effective appeal that gets your account reinstated fast.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-11-24',
   htmlContent: `
 <p>Amazon suspended your account. Or worse, you just got a warning email and you're not sure if suspension is coming. Either way, you're dealing with one of the most stressful situations in e-commerce, and how you respond in the next 24 to 72 hours will determine whether you recover or not.</p>
 

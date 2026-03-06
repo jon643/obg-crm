@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Pricing Strategies: The Tactical Playbook for Brand Sellers',
   description: 'Dynamic pricing, promotional pricing, MAP compliance, competitive response — when to use each Amazon pricing tactic and how to avoid the moves that destroy margin.',
-  publishDate: '2025-06-01',
+  publishDate: '2025-11-11',
   htmlContent: `
 <p>Pricing strategy is the "why" — what your price communicates about your brand and where you position in the market. Pricing tactics are the "how" — the specific mechanisms you use to hit your revenue and margin targets at any given moment. This post is about the tactics.</p>
 

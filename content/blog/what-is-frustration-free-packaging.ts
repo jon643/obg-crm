@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'What Is Frustration-Free Packaging? Amazon\'s FFP Program Explained',
   description: 'Amazon\'s FFP program cuts packaging waste, lowers shipping costs, and signals product quality. Here\'s how the three tiers work and when certification is worth pursuing.',
-  publishDate: '2025-06-03',
+  publishDate: '2026-02-25',
   htmlContent: `
     <h2>Packaging Is Not Just a Box. Amazon Is Grading It.</h2>
     <p>Most Amazon sellers think about packaging once — when they design it — and never revisit the decision. Amazon thinks about your packaging constantly. They are paying to move it, store it, ship it, and process returns of it. Your packaging choices affect their costs. And now they have a formal program to reward sellers who make their logistics network more efficient.</p>

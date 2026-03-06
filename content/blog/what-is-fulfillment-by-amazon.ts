@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'What Is Fulfillment by Amazon (FBA)? The Complete Guide',
   description: 'FBA is infrastructure, not strategy. Learn how Amazon FBA works, what it actually costs, and whether your margins support the full fee stack.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-03-06',
   htmlContent: `
     <h2>FBA Is Infrastructure. Treat It Like Infrastructure.</h2>
     <p>Most brands approach Fulfillment by Amazon the same way they approach setting up a bank account. You do it once, check the box, and move on. That is the wrong mental model. FBA is a cost structure decision that determines whether your Amazon business is profitable or merely busy.</p>

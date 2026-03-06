@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Defining Your Target Market on Amazon: How Audience Clarity Drives Better Results',
   description: 'How established Amazon brands use audience clarity to make better listing, advertising, and product decisions — and why vague targeting is a hidden growth killer.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-12-04',
   htmlContent: `
 <p>Most Amazon brands know generally who buys their products. Far fewer have done the rigorous work of defining their target customer with enough precision to actually change how they make decisions. This distinction matters more than it sounds. Vague audience understanding leads to listing copy that tries to appeal to everyone and resonates with no one, advertising that targets broadly and converts poorly, and product development that chases market size instead of market fit. Audience clarity is not a marketing exercise — it is a lever for operational performance across everything you do on Amazon.</p>
 

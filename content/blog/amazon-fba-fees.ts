@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon FBA Fees: The Complete Breakdown (And Why Most Sellers Are Missing the Real Number)',
   description: 'Amazon FBA fees go far beyond the fulfillment fee. Storage, inbound placement, aged inventory, and returns all compound. Here is how OBG models the real cost.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-01-30',
   htmlContent: `
 <p>Most sellers know their fulfillment fee. Almost none know their true FBA cost per unit — because fulfillment is just one line in a longer list that, when you add them all up, can quietly destroy a margin that looked healthy on a spreadsheet.</p>
 

@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Ads Management: How to Build a Program That Actually Scales',
   description: 'Most Amazon ad accounts are structurally broken. Here is how to build a campaign architecture, bidding strategy, and optimization cadence that scales profitably.',
-  publishDate: '2026-03-04',
+  publishDate: '2025-11-08',
   htmlContent: `
 <p>There are two kinds of Amazon advertising programs. The first is an account where someone set up a few automatic campaigns years ago, added some manual campaigns when they heard that was best practice, and has been adjusting bids sporadically ever since. The second is a structured program with a clear architecture, deliberate targeting logic, and a systematic optimization cadence that improves performance month over month.</p>
 

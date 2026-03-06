@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'How Much Does Amazon Charge to Sell? A Complete Breakdown of Fees',
   description: 'A complete breakdown of Amazon seller fees in 2026 — referral fees, FBA fees, storage, and the hidden costs most brands underestimate.',
-  publishDate: '2026-03-04',
+  publishDate: '2026-02-12',
   htmlContent: `
 <p>One of the most common mistakes we see with brands that come to us after struggling on Amazon is that they've fundamentally misunderstood their cost structure. They modeled a product at 30% margin, launched it, and discovered their actual take-home was closer to 8% — or they were losing money outright. Amazon's fee structure is not complicated once you understand it, but it has more layers than most sellers account for upfront.</p>
 

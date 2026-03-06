@@ -3,7 +3,7 @@ import type { BlogPost } from '@/lib/blog'
 const post: BlogPost = {
   title: 'Amazon Brand Protection Services: What They Include and Why Your Brand Needs Them Now',
   description: 'Unauthorized sellers are a silent revenue killer on Amazon. Learn what real brand protection services include and how OBG\'s 360 Brand Protection™ stops the damage.',
-  publishDate: '2025-06-01',
+  publishDate: '2026-02-05',
   htmlContent: `
     <p>You are losing revenue right now, and you probably do not know exactly how much. An unauthorized seller is winning your Buy Box at $4 below your price. A counterfeit unit shipped last week under your brand name. A customer left a one-star review on your listing because of a product they received from a reseller you have never heard of. And your MAP agreement with your distributor is quietly becoming meaningless.</p>
 
