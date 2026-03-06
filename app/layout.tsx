@@ -115,15 +115,24 @@ const organizationSchema = {
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'sales',
+    telephone: '+1-516-860-8488',
     email: 'growth@onlinebrandgrowth.com',
     url: `${BASE_URL}/#book-call`,
   },
+  telephone: '+1-516-860-8488',
   sameAs: [
     'https://www.linkedin.com/company/online-brand-growth/',
     'https://www.youtube.com/@onlinebrandgrowthYT',
+    'https://www.instagram.com/onlinebrandgrowth/',
+    'https://x.com/jonmidas1',
+    'https://www.facebook.com/people/Online-Brand-Growth/61579553361931/',
   ],
   address: {
     '@type': 'PostalAddress',
+    streetAddress: '4909 Linden Forest Lane',
+    addressLocality: 'Charlotte',
+    addressRegion: 'NC',
+    postalCode: '28270',
     addressCountry: 'US',
   },
   areaServed: 'Worldwide',
@@ -160,6 +169,15 @@ const professionalServiceSchema = {
   url: BASE_URL,
   description:
     'Founder-led Amazon brand management agency helping brands maximize revenue and profitability on Amazon.',
+  telephone: '+1-516-860-8488',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4909 Linden Forest Lane',
+    addressLocality: 'Charlotte',
+    addressRegion: 'NC',
+    postalCode: '28270',
+    addressCountry: 'US',
+  },
   priceRange: '$$$$',
   aggregateRating: {
     '@type': 'AggregateRating',
