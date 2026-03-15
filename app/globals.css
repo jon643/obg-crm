@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0F0F0F;
+  color: #F0EDE8;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+}
+
+select option {
+  background: #1A1A1A;
+  color: #F0EDE8;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #444;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #E8B84B55 !important;
+}
