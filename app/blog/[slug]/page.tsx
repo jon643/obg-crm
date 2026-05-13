@@ -5,84 +5,9 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import { ArrowLeft, BookOpen } from 'lucide-react'
-import { getPost } from '@/lib/blog'
+import { getPost, getAllSlugs } from '@/lib/blog'
 
 const BASE_URL = 'https://www.onlinebrandgrowth.com'
-
-// Canonical blog post slugs — must match sitemap.ts and content/blog/
-const blogSlugs = [
-  'what-is-fulfillment-by-amazon',
-  'product-information-management',
-  'sponsored-ad-amazon',
-  'amazon-backend-keywords',
-  'can-you-use-coupons-on-amazon',
-  'what-is-frustration-free-packaging',
-  'seller-fulfilled-prime-fulfillment',
-  'amazon-brand-guide',
-  'amazon-channel-management',
-  'ecommerce-conversion-rates',
-  'image-guidelines-amazon',
-  'inventory-turnover-ratio-explained',
-  'amazon-vendor-vs-seller',
-  'how-much-does-amazon-charge-to-sell',
-  'amazon-storefront-design',
-  'ecommerce-account-management',
-  'what-is-an-amazon-storefront',
-  'amazon-brand-protection-services',
-  'amazon-ppc-agency-pricing',
-  'how-to-calculate-contribution-margin',
-  'amazon-fba-fees',
-  'brand-registry-amazon',
-  'what-does-acos-stand-for',
-  'create-an-amazon-storefront',
-  'prep-center-fba',
-  'minimum-advertised-price-monitoring',
-  'how-to-make-an-amazon-storefront',
-  'amazon-product-photography',
-  'what-does-map-mean-in-pricing',
-  'digital-shelf-analytics',
-  'ecommerce-growth-strategies',
-  'amazon-fba-freight-forwarders',
-  'amazon-seller-central-vs-vendor-central',
-  'amazon-advertising-strategy',
-  'brand-protection-amazon',
-  'amazon-fba-vs-fbm',
-  'find-amazon-keywords',
-  'amazon-pricing-strategy',
-  'sell-on-amazon-worldwide',
-  'map-vs-msrp',
-  'amazon-brand-store',
-  'inventory-management-best-practices',
-  'amazon-images-requirements',
-  'best-amazon-storefronts',
-  'track-amazon-ranking',
-  'amazon-brand-guidelines',
-  'amazon-ppc-management-services',
-  'amazon-listing-optimization',
-  'amazon-fba-is-it-worth-it-2',
-  'amazon-ad-management',
-  'how-to-increase-amazon-sales',
-  'product-launch-strategies',
-  'global-selling-with-amazon',
-  'target-market-for-amazon',
-  'how-to-launch-product-on-amazon',
-  'ship-from-china-to-amazon-fba',
-  'amazon-brand-registry-benefits',
-  'what-is-amazon-brand-registry',
-  'best-amazon-inventory-management-software',
-  'amazon-account-suspension',
-  'unauthorized-sellers-on-amazon',
-  'how-to-win-amazon-buy-box',
-  'amazon-fba-profit-margin-calculator',
-  'minimum-advertised-price-policy',
-  'amazon-pricing-changes',
-  'cost-of-selling-on-amazon',
-  'amazon-pricing-strategies',
-  'amazon-dsp-advertising',
-  'amazon-ads-management',
-  'image-requirements-for-amazon',
-  'amazon-tacos-vs-acos',
-]
 
 // Infer category from slug
 function getCategory(slug: string): string {
@@ -96,9 +21,10 @@ function getCategory(slug: string): string {
   return 'Strategy'
 }
 
-// Pre-render all blog pages at build time
+// Pre-render all blog pages at build time — slugs discovered from content/blog/.
+// Adding a new .ts file to that folder (e.g. via the Outrank webhook) auto-generates the route.
 export function generateStaticParams() {
-  return blogSlugs.map((slug) => ({ slug }))
+  return getAllSlugs().map((slug) => ({ slug }))
 }
 
 // Generate per-page metadata
@@ -142,8 +68,8 @@ export default async function BlogPostPage({
 }) {
   const { slug } = params
 
-  // Validate slug
-  if (!blogSlugs.includes(slug)) notFound()
+  // Validate slug (filesystem is the source of truth)
+  if (!getAllSlugs().includes(slug)) notFound()
 
   const post = await getPost(slug)
   if (!post) notFound()

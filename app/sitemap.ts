@@ -1,9 +1,11 @@
 import { MetadataRoute } from 'next'
+import { getAllSlugs } from '@/lib/blog'
 
 const BASE_URL = 'https://www.onlinebrandgrowth.com'
 
-// Canonical blog post slugs only — duplicates removed and 301-redirected in next.config.js
-const blogSlugs = [
+// Curated canonical slugs — duplicates removed and 301-redirected in next.config.js.
+// New posts (e.g. from Outrank webhook) are appended automatically from content/blog/ below.
+const curatedCanonicalSlugs = [
   'what-is-fulfillment-by-amazon',
   'product-information-management',
   'sponsored-ad-amazon',
@@ -112,6 +114,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/unauthorized-seller-playbook`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/blog`,
       lastModified: blogDate,     // dynamic: reflects most recent publish
       changeFrequency: 'weekly',
@@ -143,8 +151,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Blog post pages — fallback date 2025-06-01; update individual slugs below
-  // when a more precise publish date is known.
+  // Blog post pages.
+  // Sitemap = curated canonical slugs PLUS any new slug present in content/blog/ that isn't
+  // already on the curated list. This lets the Outrank webhook drop a file in content/blog/
+  // and have the new post auto-appear in the sitemap on the next build.
+  const filesystemSlugs = getAllSlugs()
+  const knownCuratedSet = new Set(curatedCanonicalSlugs)
+  const newSlugs = filesystemSlugs.filter((slug) => !knownCuratedSet.has(slug))
+  const blogSlugs = [...curatedCanonicalSlugs, ...newSlugs]
+
   const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}/`,
     lastModified: blogPostDate,
