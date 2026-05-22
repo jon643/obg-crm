@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Sora } from 'next/font/google'
 import Script from 'next/script'
+import { GoogleTagManager } from '@next/third-parties/google'
 import './globals.css'
 
 const inter = Inter({
@@ -194,6 +195,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+      <GoogleTagManager gtmId="GTM-5NB3VGQ" />
       <head>
         <script
           type="application/ld+json"
@@ -209,6 +211,16 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5NB3VGQ"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-E2P4SNJWFB"
           strategy="afterInteractive"
