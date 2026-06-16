@@ -32,7 +32,7 @@ export default function BookCall() {
               <div className="p-10 lg:p-14 bg-gradient-to-br from-obg-orange/10 to-transparent border-r border-obg-blue-light/20">
                 <AnimatedSection direction="left">
                   <SectionLabel>Free Consultation</SectionLabel>
-                  <h2 className="text-white mb-4">Get Your FREE OBG360 Amazon Account Audit</h2>
+                  <h2 className="text-white mb-4">Get Your FREE OBG360 Audit</h2>
                   <p className="text-obg-gray leading-relaxed mb-8">
                     On this free call via Google Meet, we&apos;ll learn about your brand and, if you&apos;re a fit, set you
                     up with your complimentary OBG360 Amazon Account Audit — a deep dive into your account with
