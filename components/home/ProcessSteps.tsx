@@ -79,7 +79,7 @@ export default function ProcessSteps() {
         <AnimatedSection delay={500}>
           <div className="text-center mt-12">
             <Link href="/#book-call" className="btn-primary text-base px-8 py-4">
-              Get Your FREE OBG360 Amazon Account Audit
+              Get Your FREE OBG360 Audit
             </Link>
           </div>
         </AnimatedSection>
