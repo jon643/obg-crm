@@ -166,7 +166,7 @@ export default async function BlogPage() {
                 rel="noopener noreferrer"
                 className="btn-primary text-lg px-9 py-4"
               >
-                Get Your FREE OBG360 Amazon Account Audit
+                Get Your FREE OBG360 Audit
               </Link>
             </AnimatedSection>
           </div>
