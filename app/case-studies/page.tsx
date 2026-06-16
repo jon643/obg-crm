@@ -406,7 +406,7 @@ export default function CaseStudiesPage() {
               <h2 className="text-white mb-4">Want Results Like This?</h2>
               <p className="text-obg-gray text-lg leading-relaxed mb-10">If you&apos;re looking for a team that can operate your Amazon channel like a business system — not a collection of tactics — let&apos;s talk.</p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link href="https://app.usemotion.com/meet/dan-balda/obg-intro-45" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-8 py-4">Book a Strategy Call</Link>
+                <Link href="https://app.usemotion.com/meet/dan-balda/obg-intro-45" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-8 py-4">Get Your FREE OBG360 Amazon Account Audit</Link>
                 <Link href="/#book-call" className="btn-secondary text-base px-8 py-4">Request an Amazon Growth Audit</Link>
               </div>
             </AnimatedSection>
