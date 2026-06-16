@@ -103,7 +103,7 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
             className="btn-primary w-full text-center block"
           >
-            Book a Call
+            Get Your FREE OBG360 Amazon Account Audit
           </Link>
         </div>
       </div>
@@ -157,7 +157,7 @@ export default function Header() {
               href="/#book-call"
               className="btn-primary text-sm px-5 py-3"
             >
-              Book a Call
+              Get Your Free Audit
             </Link>
           </div>
 
