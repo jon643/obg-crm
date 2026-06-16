@@ -89,7 +89,7 @@
            transition-all duration-300
            shadow-glow-orange hover:shadow-none
            hover:scale-[1.02] active:scale-[0.98]
-           text-base whitespace-nowrap;
+           text-base;
   }
 
   .btn-secondary {
@@ -99,7 +99,7 @@
            font-semibold
            px-7 py-3.5 rounded-full
            transition-all duration-300
-           text-base whitespace-nowrap;
+           text-base;
   }
 
   .btn-ghost {
