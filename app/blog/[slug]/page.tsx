@@ -199,13 +199,13 @@ export default async function BlogPostPage({
                     Ready to Grow on Amazon?
                   </h3>
                   <p className="text-obg-gray text-sm leading-relaxed mb-4">
-                    Book a free strategy call with OBG&apos;s founders. No fluff — just an honest audit of your Amazon presence and a plan to grow it.
+                    Get Your FREE OBG360 Amazon Account Audit with OBG&apos;s founders. No fluff — just an honest audit of your Amazon presence and a plan to grow it.
                   </p>
                   <Link
                     href="/#book-call"
                     className="btn-primary text-sm px-5 py-2.5 w-full text-center block"
                   >
-                    Book a Free Call
+                    Get Your Free Audit
                   </Link>
                 </div>
 
@@ -231,13 +231,13 @@ export default async function BlogPostPage({
               Turn Amazon Knowledge Into Real Results
             </h2>
             <p className="text-obg-gray text-lg mb-10">
-              Reading is just the start. Book a free strategy call and let&apos;s audit your Amazon presence, identify your biggest opportunities, and build a plan together.
+              Reading is just the start. Get Your FREE OBG360 Amazon Account Audit and let&apos;s audit your Amazon presence, identify your biggest opportunities, and build a plan together.
             </p>
             <Link
               href="/#book-call"
               className="btn-primary text-lg px-9 py-4 inline-block"
             >
-              Book a Free Strategy Call
+              Get Your FREE OBG360 Amazon Account Audit
             </Link>
           </div>
         </section>
