@@ -32,10 +32,11 @@ export default function BookCall() {
               <div className="p-10 lg:p-14 bg-gradient-to-br from-obg-orange/10 to-transparent border-r border-obg-blue-light/20">
                 <AnimatedSection direction="left">
                   <SectionLabel>Free Consultation</SectionLabel>
-                  <h2 className="text-white mb-4">Book a Free Strategy Call</h2>
+                  <h2 className="text-white mb-4">Get Your FREE OBG360 Amazon Account Audit</h2>
                   <p className="text-obg-gray leading-relaxed mb-8">
-                    In this call via Google Meet, we&apos;ll simply see if we&apos;re a good fit to work together.
-                    No pressure, no pitch deck — just an honest conversation about your Amazon business.
+                    On this free call via Google Meet, we&apos;ll learn about your brand and, if you&apos;re a fit, set you
+                    up with your complimentary OBG360 Amazon Account Audit — a deep dive into your account with
+                    specific recommendations to grow sales and profit. No pressure, no pitch deck.
                   </p>
 
                   <div className="space-y-4">
@@ -73,7 +74,7 @@ export default function BookCall() {
                   {iframeVisible ? (
                     <iframe
                       src="https://app.usemotion.com/meet/dan-balda/obg-intro-45"
-                      title="Book a Strategy Call with OBG"
+                      title="Book your OBG360 Account Audit call"
                       width="100%"
                       height="600"
                       frameBorder="0"
