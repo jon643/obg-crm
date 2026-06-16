@@ -11,11 +11,12 @@ const footerLinks = {
     { label: 'Careers', href: '/careers' },
   ],
   Services: [
-    { label: 'Amazon PPC Advertising', href: '/services#advertising' },
-    { label: 'SEO & Listing Optimization', href: '/services#seo' },
-    { label: 'Logistics & Operations', href: '/services#logistics' },
-    { label: 'Strategic Growth Consulting', href: '/services#consulting' },
-    { label: 'Brand Registry Enforcement', href: '/services#brand-registry' },
+    { label: 'Amazon PPC Management', href: '/services/amazon-ppc-management' },
+    { label: 'SEO & Listing Optimization', href: '/services/amazon-seo-listing-optimization' },
+    { label: 'FBA Logistics & Operations', href: '/services/fba-logistics-operations' },
+    { label: 'Strategic Growth Consulting', href: '/services/amazon-strategic-consulting' },
+    { label: 'Brand Registry & Enforcement', href: '/services/brand-registry-enforcement' },
+    { label: 'Full Account Management', href: '/services/full-account-management' },
   ],
 }
 
@@ -129,7 +130,7 @@ export default function Footer() {
 
             <div className="mt-6">
               <Link href="/#book-call" className="btn-primary text-sm px-5 py-3">
-                Book a Free Call
+                Get Your Free Audit
               </Link>
             </div>
           </div>
