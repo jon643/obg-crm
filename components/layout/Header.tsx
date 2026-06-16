@@ -103,7 +103,7 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
             className="btn-primary w-full text-center block"
           >
-            Get Your FREE OBG360 Amazon Account Audit
+            Get Your FREE OBG360 Audit
           </Link>
         </div>
       </div>
