@@ -110,7 +110,7 @@ export default function BrandProtectionPage() {
                 rel="noopener noreferrer"
                 className="btn-primary text-lg px-9 py-4"
               >
-                Get Your FREE OBG360 Amazon Account Audit
+                Get Your FREE OBG360 Audit
               </Link>
             </AnimatedSection>
           </div>
@@ -250,7 +250,7 @@ export default function BrandProtectionPage() {
               </h2>
               <p className="text-obg-gray text-lg mb-10">
                 If you want to take down unauthorized resellers and gain full control of your
-                Amazon channel, get your free OBG360 Amazon Account Audit from Online Brand Growth today.
+                Amazon channel, Get Your FREE OBG360 Audit from Online Brand Growth today.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
@@ -259,7 +259,7 @@ export default function BrandProtectionPage() {
                   rel="noopener noreferrer"
                   className="btn-primary text-lg px-9 py-4"
                 >
-                  Get Your FREE OBG360 Amazon Account Audit
+                  Get Your FREE OBG360 Audit
                 </Link>
                 <Link href="/services" className="btn-secondary text-lg px-9 py-4">
                   View All Services
