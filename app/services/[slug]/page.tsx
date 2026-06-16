@@ -350,7 +350,7 @@ export default function ServiceDetailPage({
                   rel="noopener noreferrer"
                   className="btn-primary text-lg px-9 py-4"
                 >
-                  Get Your FREE OBG360 Amazon Account Audit
+                  Get Your FREE OBG360 Audit
                 </Link>
                 <Link href="/services" className="btn-secondary text-lg px-9 py-4">
                   View All Services
