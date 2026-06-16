@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import AnimatedSection from '@/components/ui/AnimatedSection'
+import TrackedLink from '@/components/ui/TrackedLink'
 
 export default function Hero() {
   return (
@@ -44,9 +45,14 @@ export default function Hero() {
 
           <AnimatedSection direction="up" delay={300}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/#book-call" className="btn-primary text-lg px-9 py-4">
+              <TrackedLink
+                href="/#book-call"
+                className="btn-primary text-lg px-9 py-4"
+                eventName="book_call_click"
+                eventParams={{ cta_location: 'hero' }}
+              >
                 Book a Free Strategy Call
-              </Link>
+              </TrackedLink>
               <Link href="/case-studies" className="btn-secondary text-lg px-9 py-4">
                 View Case Studies
               </Link>
