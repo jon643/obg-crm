@@ -186,6 +186,29 @@ const professionalServiceSchema = {
     reviewCount: '3',
     bestRating: '5',
   },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Doug Gonterman' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody:
+        "OBG literally 30X'd our Amazon sales in less than 18 months — from $100K to $3M per year. This growth enabled us to scale into retail and ultimately exit the business.",
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Lynn Cartwright' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody:
+        "We were leaving so much potential on the table. OBG reoptimized our listings, restructured PPC, and increased our contribution margin. Their expertise and dedication are unmatched.",
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Lori Cortright' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody:
+        "Working with Jon, Dan and the team at Online Brand Growth has been a game changer. Since we started, our sales and profit are up over 50% YOY.",
+    },
+  ],
 }
 
 export default function RootLayout({
