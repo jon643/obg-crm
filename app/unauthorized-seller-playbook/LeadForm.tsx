@@ -3,6 +3,7 @@
 import { useState, FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import { AlertCircle, ArrowRight, Loader2 } from 'lucide-react'
+import { trackEvent } from '@/lib/analytics'
 
 const THANK_YOU_PATH = '/unauthorized-seller-playbook/thank-you'
 
@@ -48,6 +49,10 @@ export default function LeadForm({ location = 'hero' }: LeadFormProps) {
       // Mark success briefly (button morphs) and then redirect to the
       // thank-you page where the user can download the playbook.
       setStatus('success')
+      trackEvent('generate_lead', {
+        form_location: location,
+        source: 'unauthorized-seller-playbook',
+      })
       router.push(THANK_YOU_PATH)
     } catch (err) {
       setStatus('error')
