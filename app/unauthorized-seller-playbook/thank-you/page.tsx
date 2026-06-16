@@ -201,7 +201,7 @@ export default function ThankYouPage() {
                     className="btn-primary text-base px-8 py-4"
                   >
                     <Calendar size={18} />
-                    Get Your FREE OBG360 Amazon Account Audit
+                    Get Your FREE OBG360 Audit
                   </Link>
                   <span className="text-obg-gray text-xs">
                     45 min · Google Meet · You pick the time
