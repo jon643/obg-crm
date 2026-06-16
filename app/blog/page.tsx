@@ -157,7 +157,7 @@ export default async function BlogPage() {
                 Turn Amazon Knowledge Into Real Results
               </h2>
               <p className="text-obg-gray text-lg mb-10">
-                Reading is just the start. Get Your FREE OBG360 Amazon Account Audit and let&apos;s audit your Amazon
+                Reading is just the start. Book a free strategy call and let&apos;s audit your Amazon
                 presence, identify your biggest opportunities, and build a plan together.
               </p>
               <Link
