@@ -51,7 +51,7 @@ export default function Hero() {
                 eventName="book_call_click"
                 eventParams={{ cta_location: 'hero' }}
               >
-                Book a Free Strategy Call
+                Get Your FREE OBG360 Amazon Account Audit
               </TrackedLink>
               <Link href="/case-studies" className="btn-secondary text-lg px-9 py-4">
                 View Case Studies
