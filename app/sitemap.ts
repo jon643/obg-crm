@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllSlugs } from '@/lib/blog'
+import { servicePages } from '@/lib/services-data'
 
 const BASE_URL = 'https://www.onlinebrandgrowth.com'
 
@@ -151,6 +152,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  // Dedicated service pages (Tier 1 + Tier 2)
+  const servicePagesEntries: MetadataRoute.Sitemap = servicePages.map((svc) => ({
+    url: `${BASE_URL}/services/${svc.slug}`,
+    lastModified: serviceDate,
+    changeFrequency: 'monthly' as const,
+    priority: svc.tier === 1 ? 0.8 : 0.7,
+  }))
+
   // Blog post pages.
   // Sitemap = curated canonical slugs PLUS any new slug present in content/blog/ that isn't
   // already on the curated list. This lets the Outrank webhook drop a file in content/blog/
@@ -167,5 +176,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...staticPages, ...blogPages]
+  return [...staticPages, ...servicePagesEntries, ...blogPages]
 }
