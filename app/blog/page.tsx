@@ -9,7 +9,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import { getAllPostsMeta } from '@/lib/blog'
 
 export const metadata: Metadata = {
-  title: 'Amazon Blog & Resources | Online Brand Growth',
+  title: 'Amazon Blog & Resources',
   description:
     'Amazon strategy, advertising, SEO, logistics, and brand protection insights from the founders of Online Brand Growth. Practical guides for 7- and 8-figure brands.',
   alternates: {
