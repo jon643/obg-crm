@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import { ArrowLeft, BookOpen } from 'lucide-react'
-import { getPost, getAllSlugs } from '@/lib/blog'
+import { getPost, getAllSlugs, getAllPostsMeta } from '@/lib/blog'
 
 const BASE_URL = 'https://www.onlinebrandgrowth.com'
 
@@ -21,7 +21,7 @@ function getCategory(slug: string): string {
   return 'Strategy'
 }
 
-// Pre-render all blog pages at build time — slugs discovered from content/blog/.
+// Pre-render all blog pages at build time â slugs discovered from content/blog/.
 // Adding a new .ts file to that folder (e.g. via the Outrank webhook) auto-generates the route.
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -75,6 +75,12 @@ export default async function BlogPostPage({
   if (!post) notFound()
 
   const category = getCategory(slug)
+
+  const allPosts = await getAllPostsMeta()
+  const relatedPosts = [
+    ...allPosts.filter((p) => p.slug !== slug && getCategory(p.slug) === category),
+    ...allPosts.filter((p) => p.slug !== slug && getCategory(p.slug) !== category),
+  ].slice(0, 4)
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -166,7 +172,7 @@ export default async function BlogPostPage({
               <span>By <strong className="text-obg-offwhite">Online Brand Growth</strong></span>
               {post.publishDate && (
                 <>
-                  <span className="text-obg-gray/30">·</span>
+                  <span className="text-obg-gray/30">Â·</span>
                   <time dateTime={post.publishDate}>
                     {new Date(post.publishDate).toLocaleDateString('en-US', {
                       year: 'numeric', month: 'long', day: 'numeric',
@@ -199,7 +205,7 @@ export default async function BlogPostPage({
                     Ready to Grow on Amazon?
                   </h3>
                   <p className="text-obg-gray text-sm leading-relaxed mb-4">
-                    Book a free strategy call with OBG&apos;s founders. No fluff — just an honest audit of your Amazon presence and a plan to grow it.
+                    Book a free strategy call with OBG&apos;s founders. No fluff â just an honest audit of your Amazon presence and a plan to grow it.
                   </p>
                   <Link
                     href="/#book-call"
@@ -220,6 +226,27 @@ export default async function BlogPostPage({
             </div>
           </div>
         </section>
+
+        {/* Related Articles */}
+        {relatedPosts.length > 0 && (
+          <section className="section bg-obg-blue-darker border-t border-obg-blue-light/10">
+            <div className="container-obg px-6 md:px-8 lg:px-12 max-w-5xl mx-auto">
+              <h2 className="text-white text-2xl mb-8">Related Articles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {relatedPosts.map((rp) => (
+                  <Link
+                    key={rp.slug}
+                    href={`/blog/${rp.slug}`}
+                    className="group block p-5 rounded-xl bg-obg-blue border border-obg-blue-light/15 hover:border-obg-orange/40 transition-colors duration-200"
+                  >
+                    <span className="text-obg-orange text-xs font-semibold tracking-widest uppercase">{getCategory(rp.slug)}</span>
+                    <span className="block text-white font-semibold mt-2 leading-snug group-hover:text-obg-orange transition-colors duration-200">{rp.title}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Bottom CTA */}
         <section className="section bg-obg-blue border-t border-obg-blue-light/20">
