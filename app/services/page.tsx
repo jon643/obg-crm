@@ -44,14 +44,14 @@ const iconMap: Record<ServiceIcon, typeof BarChart2> = {
 }
 
 export const metadata: Metadata = {
-  title: 'Amazon Agency Services | Online Brand Growth',
+  title: 'Amazon Agency Services',
   description:
     'Full-service Amazon agency: PPC management, SEO & listing optimization, FBA logistics, strategic consulting, brand registry enforcement, and full account management for 7- and 8-figure brands.',
   alternates: {
     canonical: 'https://www.onlinebrandgrowth.com/services',
   },
   openGraph: {
-    title: 'Amazon Agency Services | Online Brand Growth',
+    title: 'Amazon Agency Services',
     description:
       'Full-service Amazon brand management: PPC, SEO, logistics, and brand protection for 7- and 8-figure brands.',
     url: 'https://www.onlinebrandgrowth.com/services',
