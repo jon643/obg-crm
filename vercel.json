@@ -4,5 +4,14 @@
       "path": "/api/cron/generate-blog-post",
       "schedule": "0 13 * * *"
     }
+  ],
+  "rewrites": [
+    { "source": "/calculator", "destination": "https://obg-profit-calculator.vercel.app/calculator" },
+    { "source": "/calculator/:path*", "destination": "https://obg-profit-calculator.vercel.app/calculator/:path*" },
+    { "source": "/fees", "destination": "https://obg-profit-calculator.vercel.app/fees" },
+    { "source": "/fees/:path*", "destination": "https://obg-profit-calculator.vercel.app/fees/:path*" },
+    { "source": "/tools/:path*", "destination": "https://obg-profit-calculator.vercel.app/tools/:path*" },
+    { "source": "/guide/:path*", "destination": "https://obg-profit-calculator.vercel.app/guide/:path*" },
+    { "source": "/vs/:path*", "destination": "https://obg-profit-calculator.vercel.app/vs/:path*" }
   ]
 }

@@ -122,7 +122,7 @@ export default function ThankYouPage() {
               </div>
 
               <p className="text-obg-gray text-xs">
-                24 pages · 0.2 MB · PDF · No password
+                23 pages · 0.2 MB · PDF · No password
               </p>
             </AnimatedSection>
           </div>

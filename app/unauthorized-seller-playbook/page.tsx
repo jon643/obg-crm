@@ -191,7 +191,7 @@ export default function UnauthorizedSellerPlaybookPage() {
               <div className="text-center max-w-2xl mx-auto mb-14">
                 <SectionLabel>What&apos;s Inside</SectionLabel>
                 <h2 className="text-white mb-4">
-                  24 pages. The full system, end&#8209;to&#8209;end.
+                  23 pages. The full system, end&#8209;to&#8209;end.
                 </h2>
                 <p className="text-obg-gray">
                   Audit → Foundation → Removal → Prevention. Work it section by section.
