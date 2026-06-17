@@ -60,11 +60,11 @@ export function generateMetadata({
   if (!service) return {}
   const url = `${BASE_URL}/services/${service.slug}`
   return {
-    title: service.metaTitle,
+    title: service.metaTitle.replace(/\s*\|\s*Online Brand Growth\s*$/i, ''),
     description: service.metaDescription,
     alternates: { canonical: url },
     openGraph: {
-      title: service.metaTitle,
+      title: service.metaTitle.replace(/\s*\|\s*Online Brand Growth\s*$/i, ''),
       description: service.metaDescription,
       url,
     },
