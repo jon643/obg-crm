@@ -18,6 +18,7 @@ const WeHateAgencies  = dynamic(() => import('@/components/home/WeHateAgencies')
 const BookCall        = dynamic(() => import('@/components/home/BookCall'))
 const FAQ             = dynamic(() => import('@/components/home/FAQ'))
 const PlaybookCTA     = dynamic(() => import('@/components/home/PlaybookCTA'))
+const CalculatorCTA   = dynamic(() => import('@/components/home/CalculatorCTA'))
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -99,6 +100,7 @@ export default function HomePage() {
         <ProcessSteps />
         <Testimonials />
         <Services />
+        <CalculatorCTA />
         <Team />
         <WhyChooseUs />
         <WeHateAgencies />

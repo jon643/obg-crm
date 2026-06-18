@@ -13,6 +13,7 @@ const navLinks = [
   { label: '360 Brand Protection™', href: '/360-brand-protection', highlight: true },
   { label: 'Case Studies', href: '/case-studies' },
   { label: 'Blog', href: '/blog' },
+  { label: 'Free Calculator', href: '/calculator', tool: true },
   { label: 'Media', href: '/media' },
   { label: 'Careers', href: '/careers' },
 ]
@@ -88,6 +89,8 @@ export default function Header() {
                 'text-lg font-semibold py-3 px-3 rounded-lg transition-colors duration-200',
                 (link as { highlight?: boolean }).highlight
                   ? 'text-obg-orange hover:bg-obg-orange/10'
+                  : (link as { tool?: boolean }).tool
+                  ? 'text-emerald-400 hover:bg-emerald-400/10'
                   : 'text-obg-gray hover:text-white hover:bg-obg-blue-light/10'
               )}
             >
@@ -142,8 +145,11 @@ export default function Header() {
                 href={link.href}
                 className={cn(
                   'nav-link underline-orange text-sm',
-                  (link as { highlight?: boolean }).highlight &&
-                    'text-obg-orange hover:text-obg-orange-light font-semibold'
+                  (link as { highlight?: boolean }).highlight
+                    ? 'text-obg-orange hover:text-obg-orange-light font-semibold'
+                    : (link as { tool?: boolean }).tool
+                    ? 'text-emerald-400 hover:text-emerald-300 font-semibold'
+                    : ''
                 )}
               >
                 {link.label}
