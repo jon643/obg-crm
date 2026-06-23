@@ -229,19 +229,20 @@
   }
 
   .prose-obg ul li {
-    @apply text-obg-gray flex items-start gap-3;
+    @apply text-obg-gray relative;
+    padding-left: 1.25rem;
     font-size: 1.0625rem;
   }
 
   .prose-obg ul li::before {
     content: '';
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0.7em;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: var(--obg-orange);
-    flex-shrink: 0;
-    margin-top: 0.55em;
   }
 
   .prose-obg ol {
