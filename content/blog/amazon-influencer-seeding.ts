@@ -4,8 +4,13 @@ const post: BlogPost = {
   title: 'Why the Smartest Amazon Brands Stopped Paying for Reviews and Started Seeding for Them',
   description: 'A Stack Influence guest post on how micro-influencer seeding engineers Amazon reviews, unit velocity, and authentic UGC at scale — compliantly, the operator way.',
   publishDate: '2026-06-23',
+  author: {
+    name: 'Will Gasner',
+    title: 'Stack Influence',
+    url: 'https://stackinfluence.com/',
+  },
   htmlContent: `
-    <p><em>A guest post by Will Gasner, co-founder and CMO of <a href="https://stackinfluence.com/">Stack Influence</a>.</em></p>
+    <p><em>A guest post from <a href="https://stackinfluence.com/">Stack Influence</a>.</em></p>
 
     <p>Every Amazon operator has felt the same squeeze. Review velocity matters more than ever for both ranking and conversion, the old gray-market shortcuts are gone, and Amazon's Vine program caps out long before it moves the needle for a brand doing real volume. So you're left with the slow, organic trickle — and a competitor in your category who somehow has 400 fresh reviews and a wall of authentic photos you can't explain.</p>
 
