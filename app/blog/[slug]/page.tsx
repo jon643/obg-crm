@@ -21,7 +21,7 @@ function getCategory(slug: string): string {
   return 'Strategy'
 }
 
-// Pre-render all blog pages at build time Ã¢ÂÂ slugs discovered from content/blog/.
+// Pre-render all blog pages at build time — slugs discovered from content/blog/.
 // Adding a new .ts file to that folder (e.g. via the Outrank webhook) auto-generates the route.
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -54,10 +54,12 @@ export async function generateMetadata({
       type: 'article',
       ...(post.publishDate && { publishedTime: post.publishDate }),
     },
-    authors: [
-      { name: 'Jon Klein', url: 'https://www.linkedin.com/in/jon-klein-5489724b/' },
-      { name: 'Dan Balda', url: 'https://www.linkedin.com/in/daniel-balda/' },
-    ],
+    authors: post.author
+      ? [{ name: post.author.name, ...(post.author.url ? { url: post.author.url } : {}) }]
+      : [
+          { name: 'Jon Klein', url: 'https://www.linkedin.com/in/jon-klein-5489724b/' },
+          { name: 'Dan Balda', url: 'https://www.linkedin.com/in/daniel-balda/' },
+        ],
   }
 }
 
@@ -86,6 +88,27 @@ export default async function BlogPostPage({
     (post.htmlContent.match(/<img[^>]+src=["']([^"']+)["']/i) || [])[1] ||
     `${BASE_URL}/og-image.jpg`
 
+  const schemaAuthor = post.author
+    ? [
+        {
+          '@type': 'Person',
+          name: post.author.name,
+          ...(post.author.url ? { url: post.author.url } : {}),
+        },
+      ]
+    : [
+        {
+          '@type': 'Person',
+          name: 'Jon Klein',
+          url: 'https://www.linkedin.com/in/jon-klein-5489724b/',
+        },
+        {
+          '@type': 'Person',
+          name: 'Dan Balda',
+          url: 'https://www.linkedin.com/in/daniel-balda/',
+        },
+      ]
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -95,18 +118,7 @@ export default async function BlogPostPage({
     url: `${BASE_URL}/blog/${slug}/`,
     datePublished: post.publishDate,
     dateModified: post.publishDate,
-    author: [
-      {
-        '@type': 'Person',
-        name: 'Jon Klein',
-        url: 'https://www.linkedin.com/in/jon-klein-5489724b/',
-      },
-      {
-        '@type': 'Person',
-        name: 'Dan Balda',
-        url: 'https://www.linkedin.com/in/daniel-balda/',
-      },
-    ],
+    author: schemaAuthor,
     publisher: {
       '@type': 'Organization',
       name: 'Online Brand Growth',
@@ -175,10 +187,10 @@ export default async function BlogPostPage({
             </h1>
 
             <div className="flex flex-wrap items-center gap-4 text-obg-gray text-sm">
-              <span>By <strong className="text-obg-offwhite">Online Brand Growth</strong></span>
+              <span>By <strong className="text-obg-offwhite">{post.author?.name ?? 'Online Brand Growth'}</strong>{post.author?.title ? `, ${post.author.title}` : ''}</span>
               {post.publishDate && (
                 <>
-                  <span className="text-obg-gray/30">ÃÂ·</span>
+                  <span className="text-obg-gray/30">·</span>
                   <time dateTime={post.publishDate}>
                     {new Date(post.publishDate).toLocaleDateString('en-US', {
                       year: 'numeric', month: 'long', day: 'numeric',
@@ -211,7 +223,7 @@ export default async function BlogPostPage({
                     Ready to Grow on Amazon?
                   </h3>
                   <p className="text-obg-gray text-sm leading-relaxed mb-4">
-                    Book a free strategy call with OBG&apos;s founders. No fluff Ã¢ÂÂ just an honest audit of your Amazon presence and a plan to grow it.
+                    Book a free strategy call with OBG&apos;s founders. No fluff — just an honest audit of your Amazon presence and a plan to grow it.
                   </p>
                   <Link
                     href="/#book-call"
