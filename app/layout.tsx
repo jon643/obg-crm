@@ -21,6 +21,11 @@ const BASE_URL = 'https://www.onlinebrandgrowth.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  icons: {
+    icon: '/logos/obg-logo-square.png',
+    shortcut: '/logos/obg-logo-square.png',
+    apple: '/logos/obg-logo-square.png',
+  },
   title: {
     default: 'Online Brand Growth | Amazon Brand Management Agency',
     template: '%s | Online Brand Growth',
@@ -61,7 +66,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Online Brand Growth — Amazon Brand Management Agency',
+        alt: 'Online Brand Growth â Amazon Brand Management Agency',
       },
     ],
   },
@@ -192,7 +197,7 @@ const professionalServiceSchema = {
       author: { '@type': 'Person', name: 'Doug Gonterman' },
       reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
       reviewBody:
-        "OBG literally 30X'd our Amazon sales in less than 18 months — from $100K to $3M per year. This growth enabled us to scale into retail and ultimately exit the business.",
+        "OBG literally 30X'd our Amazon sales in less than 18 months â from $100K to $3M per year. This growth enabled us to scale into retail and ultimately exit the business.",
     },
     {
       '@type': 'Review',
