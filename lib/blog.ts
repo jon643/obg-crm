@@ -6,6 +6,11 @@ export interface BlogPost {
   description: string   // 140-160 chars for meta description
   publishDate: string   // YYYY-MM-DD
   htmlContent: string   // Semantic HTML, no inline styles, no classes
+  author?: {
+    name: string
+    title?: string
+    url?: string
+  }
 }
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
@@ -13,7 +18,7 @@ const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 /* ---------------------------------------------------------------------------
  * SEO post-processing applied to every post's htmlContent on load.
  * Outrank-generated posts ship with raw HTML; this layer fixes link hygiene
- * and adds contextual internal links to our service pages Ã¢ÂÂ automatically,
+ * and adds contextual internal links to our service pages — automatically,
  * across the whole library, with zero edits to the content files.
  * ------------------------------------------------------------------------- */
 
@@ -22,6 +27,10 @@ const SITE = 'https://www.onlinebrandgrowth.com'
 // Direct-competitor domains whose outbound links get unwrapped to plain text.
 // Extend this list to neutralize more competitors site-wide.
 const COMPETITOR_DOMAINS = ['chameleoncollective.com', 'sellerassistant.app']
+
+// Partner / approved domains that keep a dofollow link (e.g. guest-post swaps).
+// Everything else outbound stays nofollow.
+const DOFOLLOW_DOMAINS = ['stackinfluence.com']
 
 // Contextual internal links: first matching phrase per service, body text only.
 // Ordered most-specific first so broad phrases don't pre-empt precise ones.
@@ -55,7 +64,7 @@ export function processBlogHtml(html: string): string {
   // (A) Normalize internal absolute links to the canonical www host (kills 301 hops).
   out = out.replace(/\bhttps?:\/\/(?:www\.)?onlinebrandgrowth\.com/gi, SITE)
 
-  // (B) Outbound links: strip direct competitors, nofollow the rest.
+  // (B) Outbound links: strip direct competitors, dofollow approved partners, nofollow the rest.
   out = out.replace(
     /<a\b([^>]*?)href=("|')(.*?)\2([^>]*)>([\s\S]*?)<\/a>/gi,
     (match, pre, q, url, post, inner) => {
@@ -63,15 +72,18 @@ export function processBlogHtml(html: string): string {
       if (isInternal) return match
       if (!/^https?:\/\//i.test(url)) return match // mailto:, tel:, etc.
       if (COMPETITOR_DOMAINS.includes(domainOf(url))) return inner // unwrap to plain text
+      const rel = DOFOLLOW_DOMAINS.includes(domainOf(url))
+        ? 'noopener noreferrer'
+        : 'nofollow noopener noreferrer'
       const attrs = (pre + ' ' + post)
         .replace(/\s*rel=("|').*?\1/gi, '')
         .replace(/\s*target=("|').*?\1/gi, '')
         .trim()
-      return `<a ${attrs ? attrs + ' ' : ''}href=${q}${url}${q} rel="nofollow noopener noreferrer" target="_blank">${inner}</a>`
+      return `<a ${attrs ? attrs + ' ' : ''}href=${q}${url}${q} rel="${rel}" target="_blank">${inner}</a>`
     }
   )
 
-  // (C) Auto-link service keywords Ã¢ÂÂ first occurrence per service, text nodes only,
+  // (C) Auto-link service keywords — first occurrence per service, text nodes only,
   //     never inside existing anchors or headings, capped for a natural footprint.
   const usedServices = new Set<string>()
   let added = 0
@@ -115,7 +127,7 @@ export function processBlogHtml(html: string): string {
 
 /**
  * List every blog post slug by reading content/blog/.
- * This is what makes Outrank webhook Ã¢ÂÂ new file Ã¢ÂÂ article live on autopilot.
+ * This is what makes Outrank webhook — new file — article live on autopilot.
  */
 export function getAllSlugs(): string[] {
   try {
@@ -130,7 +142,7 @@ export function getAllSlugs(): string[] {
 
 /**
  * Load a blog post from the static content directory.
- * Uses dynamic import so each post is a separate chunk Ã¢ÂÂ only loaded
+ * Uses dynamic import so each post is a separate chunk — only loaded
  * when that specific page is requested or pre-rendered.
  * Returns null if the content file doesn't exist.
  */
