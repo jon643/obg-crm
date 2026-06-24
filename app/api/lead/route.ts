@@ -3,23 +3,25 @@ import { NextRequest, NextResponse } from 'next/server'
 /**
  * POST /api/lead
  *
- * Lead capture endpoint for the Unauthorized Seller Playbook landing page
- * (and any future lead-magnet pages on the site).
+ * Lead capture endpoint for every lead-magnet page on the site
+ * (Unauthorized Seller Playbook, Fee Changes Digest, Profit Calculator, ...).
  *
- * Validates input, syncs the contact into ActiveCampaign, subscribes them
- * to the master list, and applies the "Lead Magnet: Playbook" tag — which
- * triggers the 8-email nurture automation.
+ * Validates input, syncs the contact into ActiveCampaign, subscribes them to
+ * the master list, and applies the lead-magnet tag that matches the
+ * submission's `source` (see TAG_BY_SOURCE) -- which triggers that magnet's
+ * nurture automation. Unknown sources fall back to AC_TAG_ID.
  *
- * Required env vars (set in Vercel → Project → Settings → Environment Variables):
- *   AC_API_URL   default: https://onlinebrandgrowth.api-us1.com
- *   AC_API_KEY   (required) Your ActiveCampaign API key
- *                Generate at: AC → Settings → Developer
- *   AC_LIST_ID   default: 3       (Master Contact List)
- *   AC_TAG_ID    default: 2       (Lead Magnet: Playbook)
+ * `firstName` is optional: some forms (e.g. the fee changes digest) collect
+ * email only.
  *
- * The endpoint NEVER fails the submission solely because AC is unreachable —
- * we still log the lead to Vercel function logs and return 200 so the user
- * gets redirected to the thank-you page. AC errors are logged for debugging.
+ * Required env vars (Vercel -> Project -> Settings -> Environment Variables):
+ *   AC_API_URL  default: https://onlinebrandgrowth.api-us1.com
+ *   AC_API_KEY  (required) ActiveCampaign API key (AC -> Settings -> Developer)
+ *   AC_LIST_ID  default: 3 (Master Contact List)
+ *   AC_TAG_ID   default: 2 (Lead Magnet: Playbook) -- fallback tag
+ *
+ * The endpoint NEVER fails the submission solely because AC is unreachable --
+ * we still log the lead to Vercel function logs and return 200.
  */
 
 interface LeadPayload {
@@ -36,9 +38,20 @@ const AC_API_KEY = process.env.AC_API_KEY || ''
 const AC_LIST_ID = process.env.AC_LIST_ID || '3'
 const AC_TAG_ID = process.env.AC_TAG_ID || '2'
 
+// Map a submission's `source` to the ActiveCampaign tag that triggers its
+// nurture automation. Add a line here when you launch a new lead magnet.
+const TAG_BY_SOURCE: Record<string, number> = {
+  'unauthorized-seller-playbook': 2, // Lead Magnet: Playbook
+  playbook: 2, // Lead Magnet: Playbook
+  fees: 3, // Lead Magnet: Fees Digest
+  'fees-hub': 3, // Lead Magnet: Fees Digest
+  calculator: 1, // Lead Magnet: Calculator
+}
+
 async function syncToActiveCampaign(
   firstName: string,
   email: string,
+  tagId: number,
 ): Promise<{ ok: boolean; contactId?: string; error?: string }> {
   if (!AC_API_KEY) {
     return { ok: false, error: 'AC_API_KEY not configured' }
@@ -70,7 +83,7 @@ async function syncToActiveCampaign(
     }
 
     // 2) Subscribe them to the list (status: 1 = active subscriber).
-    //    AC returns 422 on duplicate subscriptions — that's fine.
+    // AC returns 422 on duplicate subscriptions -- that's fine.
     const listRes = await fetch(`${AC_API_URL}/api/3/contactLists`, {
       method: 'POST',
       headers,
@@ -83,12 +96,12 @@ async function syncToActiveCampaign(
       console.warn('[lead] contactLists', listRes.status, errText.slice(0, 200))
     }
 
-    // 3) Apply the trigger tag — this is what fires the automation.
+    // 3) Apply the trigger tag -- this is what fires the automation.
     const tagRes = await fetch(`${AC_API_URL}/api/3/contactTags`, {
       method: 'POST',
       headers,
       body: JSON.stringify({
-        contactTag: { contact: Number(contactId), tag: Number(AC_TAG_ID) },
+        contactTag: { contact: Number(contactId), tag: tagId },
       }),
     })
     if (!tagRes.ok && tagRes.status !== 422) {
@@ -118,10 +131,6 @@ export async function POST(req: NextRequest) {
   const source = (body.source ?? 'unknown').trim()
   const location = (body.location ?? 'unknown').trim()
 
-  if (!firstName) {
-    return NextResponse.json({ error: 'First name is required.' }, { status: 400 })
-  }
-
   if (!email || !EMAIL_RE.test(email)) {
     return NextResponse.json(
       { error: 'Please enter a valid email address.' },
@@ -129,13 +138,15 @@ export async function POST(req: NextRequest) {
     )
   }
 
+  const tagId = TAG_BY_SOURCE[source] ?? Number(AC_TAG_ID)
+
   // Always log so leads aren't lost even if AC integration breaks.
   console.log(
     '[lead]',
-    JSON.stringify({ firstName, email, source, location, ts: new Date().toISOString() }),
+    JSON.stringify({ firstName, email, source, tagId, location, ts: new Date().toISOString() }),
   )
 
-  const result = await syncToActiveCampaign(firstName, email)
+  const result = await syncToActiveCampaign(firstName, email, tagId)
   if (!result.ok) {
     // Soft-fail: don't block the user's thank-you redirect. Log loudly for ops.
     console.error('[lead] AC sync failed:', result.error)
@@ -148,7 +159,7 @@ export async function POST(req: NextRequest) {
 
 export async function GET() {
   return NextResponse.json(
-    { error: 'Method not allowed. POST application/json with { firstName, email }.' },
+    { error: 'Method not allowed. POST application/json with { email, source }.' },
     { status: 405 },
   )
 }
