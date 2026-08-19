@@ -50,7 +50,7 @@ export interface ServicePage {
 }
 
 export const servicePages: ServicePage[] = [
-  // ── Tier 1 ───────────────────────────────────────────────
+  // ââ Tier 1 âââââââââââââââââââââââââââââââââââââââââââââââ
   {
     slug: 'amazon-ppc-management',
     tier: 1,
@@ -74,7 +74,7 @@ export const servicePages: ServicePage[] = [
     ],
     approachTitle: 'How We Structure Your Campaigns',
     approach:
-      "We start with a full account audit to map wasted spend, harvest converting search terms, and rebuild your campaign architecture around your real profit drivers. Bids are managed ASIN-by-ASIN against contribution margin targets — not vanity ACoS numbers — and we coordinate ad strategy with your organic ranking so paid and organic reinforce each other instead of cannibalizing. You get transparent weekly reporting tied to the KPIs that actually move the business.",
+      "We start with a full account audit to map wasted spend, harvest converting search terms, and rebuild your campaign architecture around your real profit drivers. Bids are managed ASIN-by-ASIN against contribution margin targets â not vanity ACoS numbers â and we coordinate ad strategy with your organic ranking so paid and organic reinforce each other instead of cannibalizing. You get transparent weekly reporting tied to the KPIs that actually move the business.",
     faqs: [
       {
         q: 'How much ad spend do I need before PPC management makes sense?',
@@ -91,9 +91,9 @@ export const servicePages: ServicePage[] = [
     ],
     ctaLabel: 'Talk to an Amazon Ads Expert',
     hubSummary:
-      'Profit-focused management of Sponsored Products, Brands, Display, and DSP — with ASIN-by-ASIN bid control.',
+      'Profit-focused management of Sponsored Products, Brands, Display, and DSP â with ASIN-by-ASIN bid control.',
     relatedCaseStudy: {
-      label: 'See how we 3.4x’d a brand’s contribution profit',
+      label: 'See how we 3.4xâd a brandâs contribution profit',
       href: '/case-studies#self-defense-brand',
     },
     relatedServices: ['amazon-seo-listing-optimization', 'amazon-strategic-consulting'],
@@ -121,11 +121,11 @@ export const servicePages: ServicePage[] = [
     ],
     approachTitle: 'How We Approach Listing Optimization',
     approach:
-      "We reverse-engineer the keywords your best-converting competitors rank for, then rebuild your title, bullets, images, and backend terms around the highest-intent, highest-volume opportunities. Every change is measured: we watch indexing, organic rank, and conversion rate, then iterate. Because we also run PPC, we feed real conversion data from advertising directly into your organic strategy — so your listings are optimized on evidence, not guesswork.",
+      "We reverse-engineer the keywords your best-converting competitors rank for, then rebuild your title, bullets, images, and backend terms around the highest-intent, highest-volume opportunities. Every change is measured: we watch indexing, organic rank, and conversion rate, then iterate. Because we also run PPC, we feed real conversion data from advertising directly into your organic strategy â so your listings are optimized on evidence, not guesswork.",
     faqs: [
       {
         q: 'How do you decide which keywords to target?',
-        a: 'We blend Amazon search-volume data, competitor rank analysis, and your own advertising conversion data to prioritize terms by intent and revenue potential — not just search volume.',
+        a: 'We blend Amazon search-volume data, competitor rank analysis, and your own advertising conversion data to prioritize terms by intent and revenue potential â not just search volume.',
       },
       {
         q: 'What is the difference between standard A+ Content and Brand Story?',
@@ -157,7 +157,7 @@ export const servicePages: ServicePage[] = [
     h1: 'Amazon FBA Logistics & Operations',
     headline: 'Operational Excellence Is the Unfair Advantage Most Brands Overlook.',
     intro:
-      "Profitability on Amazon isn't just about selling more — it's about running tighter operations. Our team manages your FBA inventory, coordinates with your supply chain, and proactively prevents stockouts, overstock penalties, and costly account health issues.",
+      "Profitability on Amazon isn't just about selling more â it's about running tighter operations. Our team manages your FBA inventory, coordinates with your supply chain, and proactively prevents stockouts, overstock penalties, and costly account health issues.",
     features: [
       'FBA inventory planning and replenishment strategy',
       'Shipment creation, labeling, and inbound management',
@@ -168,7 +168,7 @@ export const servicePages: ServicePage[] = [
     ],
     approachTitle: 'The Inventory Planning Cycle We Run',
     approach:
-      'Stockouts kill ranking and momentum; overstock racks up long-term storage fees. We manage the full replenishment cycle — demand forecasting, reorder timing, inbound shipment creation, and removal of stranded or aged inventory — to keep you in stock on your hero ASINs without over-committing cash to storage. Alongside that, we monitor account health daily and handle Seller Support cases so small issues never become suspensions.',
+      'Stockouts kill ranking and momentum; overstock racks up long-term storage fees. We manage the full replenishment cycle â demand forecasting, reorder timing, inbound shipment creation, and removal of stranded or aged inventory â to keep you in stock on your hero ASINs without over-committing cash to storage. Alongside that, we monitor account health daily and handle Seller Support cases so small issues never become suspensions.',
     faqs: [
       {
         q: 'Can you recover money Amazon owes us for lost or damaged inventory?',
@@ -193,14 +193,14 @@ export const servicePages: ServicePage[] = [
     tier: 1,
     icon: 'consulting',
     navLabel: 'Strategic Growth Consulting',
-    metaTitle: 'Amazon Strategic Growth Consulting | Online Brand Growth',
+    metaTitle: 'Amazon Seller Consultant | Strategic Growth Consulting | OBG',
     metaDescription:
-      'Amazon channel audits, contribution-margin analysis, launch strategy, 1P/3P hybrid guidance, and international expansion — direct from founders with 25+ years of experience.',
+      'Amazon channel audits, contribution-margin analysis, launch strategy, 1P/3P hybrid guidance, and international expansion â direct from founders with 25+ years of experience.',
     eyebrow: 'Strategic Consulting',
-    h1: 'Amazon Strategic Growth Consulting',
+    h1: 'Amazon Seller Consulting Services',
     headline: 'A Clear Strategy Is the Difference Between Scaling and Stalling.',
     intro:
-      "Whether you're launching a new product, expanding internationally, or trying to understand why your Amazon business isn't growing the way it should, our founders work directly with your leadership team to diagnose the real problems and build a roadmap for sustainable, profitable growth.",
+      "Whether you're launching a new product, expanding internationally, or trying to understand why your Amazon business isn't growing the way it should, our founder-level Amazon seller consultants work directly with your leadership team to diagnose the real problems and build a roadmap for sustainable, profitable growth.",
     features: [
       'Amazon channel audit and performance assessment',
       'Contribution-margin analysis and profitability optimization',
@@ -211,7 +211,7 @@ export const servicePages: ServicePage[] = [
     ],
     approachTitle: 'What You Get in a Brand Audit',
     approach:
-      'Every engagement starts with a deep channel audit: a P&L-level view of contribution margin by ASIN, an advertising and organic-rank diagnosis, an operations and account-health review, and a prioritized roadmap of the highest-leverage moves. You leave with a clear picture of where profit is leaking and exactly what to do first — whether you work with us or not.',
+      'Every engagement starts with a deep channel audit: a P&L-level view of contribution margin by ASIN, an advertising and organic-rank diagnosis, an operations and account-health review, and a prioritized roadmap of the highest-leverage moves. You leave with a clear picture of where profit is leaking and exactly what to do first â whether you work with us or not.',
     faqs: [
       {
         q: 'How long until we see results?',
@@ -241,9 +241,9 @@ export const servicePages: ServicePage[] = [
       'Stop unauthorized Amazon resellers and MAP violations. Brand Registry enrollment, reseller monitoring, cease & desist, test buys, and Transparency enrollment.',
     eyebrow: 'Brand Protection',
     h1: 'Amazon Brand Registry & Enforcement',
-    headline: "Protect the Brand You've Built — Before Someone Else Profits From It.",
+    headline: "Protect the Brand You've Built â Before Someone Else Profits From It.",
     intro:
-      "Unauthorized resellers don't just steal revenue — they damage customer trust, violate MAP pricing, and undermine your retail relationships. Our brand protection team enforces your rights on Amazon using a proprietary escalation process built to remove violators fast.",
+      "Unauthorized resellers don't just steal revenue â they damage customer trust, violate MAP pricing, and undermine your retail relationships. Our brand protection team enforces your rights on Amazon using a proprietary escalation process built to remove violators fast.",
     features: [
       'Amazon Brand Registry enrollment and management',
       'Unauthorized reseller identification and monitoring',
@@ -254,15 +254,15 @@ export const servicePages: ServicePage[] = [
     ],
     approachTitle: 'Our Enforcement Process',
     approach:
-      'We enroll and lock down your Brand Registry, then continuously monitor your listings for unauthorized sellers and MAP violations. When a violator appears, we run a documented escalation: cease & desist, authenticity test buys to build a counterfeit case, and Transparency or other Amazon-program leverage to remove them. This is the tactical, service-level execution that powers our branded 360 Brand Protection™ methodology.',
+      'We enroll and lock down your Brand Registry, then continuously monitor your listings for unauthorized sellers and MAP violations. When a violator appears, we run a documented escalation: cease & desist, authenticity test buys to build a counterfeit case, and Transparency or other Amazon-program leverage to remove them. This is the tactical, service-level execution that powers our branded 360 Brand Protectionâ¢ methodology.',
     faqs: [
       {
-        q: 'How is this different from your 360 Brand Protection™ page?',
-        a: 'This page covers the tactical enforcement services; 360 Brand Protection™ is our overarching methodology and program. Most brands engage the services here as part of that broader framework.',
+        q: 'How is this different from your 360 Brand Protectionâ¢ page?',
+        a: 'This page covers the tactical enforcement services; 360 Brand Protectionâ¢ is our overarching methodology and program. Most brands engage the services here as part of that broader framework.',
       },
       {
         q: 'Can you actually get unauthorized sellers removed?',
-        a: 'In many cases, yes — through a documented process of cease & desist, test buys, and Amazon program enforcement. Outcomes depend on your brand registration, IP, and the specifics of each violator, which we assess up front.',
+        a: 'In many cases, yes â through a documented process of cease & desist, test buys, and Amazon program enforcement. Outcomes depend on your brand registration, IP, and the specifics of each violator, which we assess up front.',
       },
       {
         q: 'Do we need a registered trademark?',
@@ -278,7 +278,7 @@ export const servicePages: ServicePage[] = [
       eyebrow: 'Free Resource',
       heading: 'Free Playbook: Remove Unauthorized Amazon Sellers',
       blurb:
-        'Get our step-by-step Unauthorized Seller Playbook — the exact moves we use to identify, document, and remove unauthorized resellers and MAP violators. Enter your email and we will send it over.',
+        'Get our step-by-step Unauthorized Seller Playbook â the exact moves we use to identify, document, and remove unauthorized resellers and MAP violators. Enter your email and we will send it over.',
     },
   },
   {
@@ -286,29 +286,29 @@ export const servicePages: ServicePage[] = [
     tier: 1,
     icon: 'account',
     navLabel: 'Full Account Management',
-    metaTitle: 'Full-Service Amazon Account Management Agency | OBG',
+    metaTitle: 'Amazon Channel Management Services | Full Account Management | OBG',
     metaDescription:
       'Full-service Amazon account management: a dedicated strategist running advertising, SEO, operations, and brand protection, with compensation aligned to your profit.',
     eyebrow: 'Full Account Management',
-    h1: 'Full Amazon Account Management',
-    headline: 'Everything Your Amazon Channel Needs — Handled by Experts.',
+    h1: 'Amazon Channel Management & Full Account Management',
+    headline: 'Everything Your Amazon Channel Needs â Handled by Experts.',
     intro:
-      'Our full account management service is the most comprehensive offering we provide. We become your Amazon team — managing advertising, SEO, operations, brand protection, and executive reporting — for brands that want serious, sustained growth.',
+      'Our Amazon channel management services are the most comprehensive offering we provide. We become your Amazon team â managing advertising, SEO, operations, brand protection, and executive reporting â for brands that want serious, sustained growth.',
     features: [
       'Dedicated account strategist and weekly check-ins',
       'All advertising, SEO, and operations services included',
       'Brand protection and account-health management',
       'Monthly executive reporting with a contribution-margin focus',
       'Direct access to both co-founders throughout the engagement',
-      'Compensation aligned to channel profitability — not just revenue',
+      'Compensation aligned to channel profitability â not just revenue',
     ],
-    approachTitle: 'Full Management vs. À La Carte',
+    approachTitle: 'Full Management vs. Ã La Carte',
     approach:
-      'À la carte services are ideal when you have a strong in-house team and need a specific gap filled. Full management is for brands that want a single accountable partner owning the entire channel: strategy, advertising, SEO, operations, and protection under one roof, with a compensation model tied to your contribution margin so our incentives match yours. It pairs naturally with our 3P, Distribution Partnership, and Equity Partnership engagement models.',
+      'Ã la carte services are ideal when you have a strong in-house team and need a specific gap filled. Full management is for brands that want a single accountable partner owning the entire channel: strategy, advertising, SEO, operations, and protection under one roof, with a compensation model tied to your contribution margin so our incentives match yours. It pairs naturally with our 3P, Distribution Partnership, and Equity Partnership engagement models.',
     faqs: [
       {
         q: 'How is full management priced?',
-        a: 'We partner based on a percentage of your channel contribution margin, so we win when you become more profitable — not just when you spend more on ads. Exact terms depend on your size and scope.',
+        a: 'We partner based on a percentage of your channel contribution margin, so we win when you become more profitable â not just when you spend more on ads. Exact terms depend on your size and scope.',
       },
       {
         q: 'Do we keep control of our Amazon account?',
@@ -316,16 +316,16 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: 'Can we start with a few services and expand?',
-        a: 'Many brands do exactly that — beginning with PPC or a strategic audit, then moving to full management once they see results.',
+        a: 'Many brands do exactly that â beginning with PPC or a strategic audit, then moving to full management once they see results.',
       },
     ],
     ctaLabel: 'Apply for Full Management',
     hubSummary:
-      'We become your Amazon team — advertising, SEO, ops, and protection, with profit-aligned pricing.',
+      'We become your Amazon team â advertising, SEO, ops, and protection, with profit-aligned pricing.',
     relatedServices: ['amazon-strategic-consulting', 'amazon-ppc-management'],
   },
 
-  // ── Tier 2 ───────────────────────────────────────────────
+  // ââ Tier 2 âââââââââââââââââââââââââââââââââââââââââââââââ
   {
     slug: 'amazon-storefront-design',
     tier: 2,
@@ -336,7 +336,7 @@ export const servicePages: ServicePage[] = [
       'Custom Amazon Storefront design that turns browsers into buyers: multi-page brand stores, mobile-first layouts, and shoppable design built to convert and retain.',
     eyebrow: 'Storefront Design',
     h1: 'Amazon Storefront Design',
-    headline: 'Give Your Brand a Home on Amazon — Not Just a Product Page.',
+    headline: 'Give Your Brand a Home on Amazon â Not Just a Product Page.',
     intro:
       'Your Amazon Storefront is the one place on Amazon where your brand controls the experience. We design multi-page, mobile-first storefronts that showcase your full catalog, tell your brand story, and turn ad clicks and brand searches into repeat customers.',
     features: [
@@ -357,7 +357,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: 'Can you show examples of storefronts you have built?',
-        a: 'Yes — we can walk through relevant examples on a call. Some are under NDA, in which case we will share anonymized mockups that demonstrate the approach.',
+        a: 'Yes â we can walk through relevant examples on a call. Some are under NDA, in which case we will share anonymized mockups that demonstrate the approach.',
       },
     ],
     ctaLabel: 'Design My Storefront',
@@ -385,7 +385,7 @@ export const servicePages: ServicePage[] = [
       'Mobile-optimized module layouts',
       'Copy and design aligned to your SEO keywords',
     ],
-    approachTitle: 'Standard vs. Premium A+ — and When to Use Each',
+    approachTitle: 'Standard vs. Premium A+ â and When to Use Each',
     approach:
       'Standard A+ Content enriches the description area of a product page with image-and-text modules and comparison charts. Premium A+ (Brand Story) unlocks larger, more interactive modules and richer storytelling for eligible brands. We design both to do real work: answer objections, showcase use cases, cross-sell your catalog, and set accurate expectations so customers buy with confidence and return less.',
     faqs: [
@@ -412,7 +412,7 @@ export const servicePages: ServicePage[] = [
       'Launch new products on Amazon the right way: launch playbook, review acquisition, honeymoon-period PPC, and ranking strategy. One brand went $0 to $500K in year one.',
     eyebrow: 'Product Launch',
     h1: 'Amazon New Product Launch Services',
-    headline: 'Launch With Momentum — Not Crickets.',
+    headline: 'Launch With Momentum â Not Crickets.',
     intro:
       "A product launch on Amazon is won or lost in the first weeks. We run a structured launch playbook that builds early velocity, reviews, and ranking so your new product gains traction during Amazon's critical honeymoon window instead of stalling on page five.",
     features: [
@@ -456,7 +456,7 @@ export const servicePages: ServicePage[] = [
     h1: 'International Amazon Marketplace Expansion',
     headline: 'Your Next Growth Curve Might Be in Another Marketplace.',
     intro:
-      'Expanding to Amazon Canada, the UK, and the EU can unlock a whole new revenue base — but it comes with logistics, compliance, currency, and marketplace-specific SEO challenges. We help you sequence expansion so each marketplace launches profitably instead of becoming a costly distraction.',
+      'Expanding to Amazon Canada, the UK, and the EU can unlock a whole new revenue base â but it comes with logistics, compliance, currency, and marketplace-specific SEO challenges. We help you sequence expansion so each marketplace launches profitably instead of becoming a costly distraction.',
     features: [
       'Marketplace-by-marketplace opportunity assessment',
       'Phased expansion roadmap (CA, UK, EU)',
@@ -492,9 +492,9 @@ export const servicePages: ServicePage[] = [
       'Recover money Amazon owes you. We audit your FBA account for lost and damaged inventory and overcharged fees, then file the reimbursement claims on your behalf.',
     eyebrow: 'FBA Reimbursement',
     h1: 'Amazon FBA Reimbursement Services',
-    headline: 'Amazon Probably Owes You Money. Let’s Get It Back.',
+    headline: 'Amazon Probably Owes You Money. Letâs Get It Back.',
     intro:
-      'Across lost and damaged inventory, incorrect fees, and customer-return discrepancies, Amazon owes many FBA sellers more than they realize. We audit your account, identify what you are owed, and file the reimbursement claims — turning operational leakage back into recovered cash.',
+      'Across lost and damaged inventory, incorrect fees, and customer-return discrepancies, Amazon owes many FBA sellers more than they realize. We audit your account, identify what you are owed, and file the reimbursement claims â turning operational leakage back into recovered cash.',
     features: [
       'Full FBA account reimbursement audit',
       'Lost and damaged inventory claim recovery',
@@ -513,7 +513,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: 'Is this compliant with Amazon policy?',
-        a: 'Yes. We only file legitimate, well-documented claims through Amazon’s standard processes — never automated mass-filing that can put your account at risk.',
+        a: 'Yes. We only file legitimate, well-documented claims through Amazonâs standard processes â never automated mass-filing that can put your account at risk.',
       },
     ],
     ctaLabel: 'Audit My Reimbursements',
@@ -527,12 +527,12 @@ export const servicePages: ServicePage[] = [
     navLabel: 'Vendor vs. Seller Central',
     metaTitle: 'Amazon Vendor Central vs. Seller Central Consulting | OBG',
     metaDescription:
-      'Vendor Central (1P) or Seller Central (3P)? We help brands choose the right model — or run a hybrid — to maximize control, margin, and growth on Amazon.',
+      'Vendor Central (1P) or Seller Central (3P)? We help brands choose the right model â or run a hybrid â to maximize control, margin, and growth on Amazon.',
     eyebrow: 'Vendor vs. Seller',
     h1: 'Amazon Vendor Central vs. Seller Central Consulting',
     headline: 'Choose the Model That Maximizes Control and Margin.',
     intro:
-      'Vendor Central (1P) and Seller Central (3P) lead to very different businesses — in pricing control, margin, advertising, and operations. We help brands understand the trade-offs, choose the right model, or run a deliberate hybrid that captures the best of both.',
+      'Vendor Central (1P) and Seller Central (3P) lead to very different businesses â in pricing control, margin, advertising, and operations. We help brands understand the trade-offs, choose the right model, or run a deliberate hybrid that captures the best of both.',
     features: [
       'Clear 1P vs. 3P trade-off analysis for your brand',
       'Margin and pricing-control comparison',
@@ -543,11 +543,11 @@ export const servicePages: ServicePage[] = [
     ],
     approachTitle: 'Which Model Is Right for Your Brand?',
     approach:
-      'Seller Central (3P) gives you control over pricing, inventory, and customer relationship at the cost of running operations yourself. Vendor Central (1P) hands wholesale to Amazon for reach and simplicity but surrenders pricing control and margin. We map your priorities — control, margin, ad strategy, operational capacity — to the right model, and for many brands design a hybrid that uses each where it wins.',
+      'Seller Central (3P) gives you control over pricing, inventory, and customer relationship at the cost of running operations yourself. Vendor Central (1P) hands wholesale to Amazon for reach and simplicity but surrenders pricing control and margin. We map your priorities â control, margin, ad strategy, operational capacity â to the right model, and for many brands design a hybrid that uses each where it wins.',
     faqs: [
       {
         q: 'Is Vendor Central better than Seller Central?',
-        a: 'Neither is universally better. 3P offers control and margin; 1P offers reach and simplicity. The right answer depends on your category, capacity, and goals — which is exactly what this consulting engagement clarifies.',
+        a: 'Neither is universally better. 3P offers control and margin; 1P offers reach and simplicity. The right answer depends on your category, capacity, and goals â which is exactly what this consulting engagement clarifies.',
       },
       {
         q: 'Can we run both 1P and 3P at the same time?',
