@@ -18,7 +18,7 @@ const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 /* ---------------------------------------------------------------------------
  * SEO post-processing applied to every post's htmlContent on load.
  * Outrank-generated posts ship with raw HTML; this layer fixes link hygiene
- * and adds contextual internal links to our service pages — automatically,
+ * and adds contextual internal links to our service pages â automatically,
  * across the whole library, with zero edits to the content files.
  * ------------------------------------------------------------------------- */
 
@@ -36,6 +36,7 @@ const DOFOLLOW_DOMAINS = ['stackinfluence.com']
 // Ordered most-specific first so broad phrases don't pre-empt precise ones.
 const SERVICE_KEYWORDS: Array<[string, RegExp[]]> = [
   ['/calculator', [/\bcontribution margin\b/i, /\bprofit margin\b/i, /\bnet margin\b/i, /\breferral fees?\b/i, /\bFBA fees?\b/i, /\bAmazon fees\b/i, /\bprofit calculator\b/i, /\bFBA calculator\b/i, /\bfee calculator\b/i]],
+  ['/amazon-sales-rank-checker', [/\btrack(?:ing)? amazon (?:sales )?rank(?:ing)?\b/i, /\bbest sellers? rank\b/i, /\bsales rank\b/i, /\bBSR\b/]],
   ['/services/amazon-seo-listing-optimization', [/\blisting optimization\b/i, /\bAmazon SEO\b/i]],
   ['/services/amazon-ppc-management', [/\bPPC management\b/i, /\bAmazon PPC\b/i, /\bSponsored Products\b/i]],
   ['/services/brand-registry-enforcement', [/\bBrand Registry\b/i, /\bunauthorized sellers?\b/i, /\bMAP enforcement\b/i]],
@@ -83,7 +84,7 @@ export function processBlogHtml(html: string): string {
     }
   )
 
-  // (C) Auto-link service keywords — first occurrence per service, text nodes only,
+  // (C) Auto-link service keywords â first occurrence per service, text nodes only,
   //     never inside existing anchors or headings, capped for a natural footprint.
   const usedServices = new Set<string>()
   let added = 0
@@ -127,7 +128,7 @@ export function processBlogHtml(html: string): string {
 
 /**
  * List every blog post slug by reading content/blog/.
- * This is what makes Outrank webhook — new file — article live on autopilot.
+ * This is what makes Outrank webhook â new file â article live on autopilot.
  */
 export function getAllSlugs(): string[] {
   try {
@@ -142,7 +143,7 @@ export function getAllSlugs(): string[] {
 
 /**
  * Load a blog post from the static content directory.
- * Uses dynamic import so each post is a separate chunk — only loaded
+ * Uses dynamic import so each post is a separate chunk â only loaded
  * when that specific page is requested or pre-rendered.
  * Returns null if the content file doesn't exist.
  */
