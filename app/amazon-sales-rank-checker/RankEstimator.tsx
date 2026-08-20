@@ -29,7 +29,7 @@ export default function RankEstimator() {
   const [bsrInput, setBsrInput] = useState('')
   const [category, setCategory] = useState(CATEGORIES[0].name)
 
-  const rank = parseInt(bsrInput.replace(/[^0-9]/g, ''), 10)
+  const rank = /^[0-9][0-9,. ]*$/.test(bsrInput.trim()) ? parseInt(bsrInput.replace(/[^0-9]/g, ''), 10) : NaN
   const cat = CATEGORIES.find((c) => c.name === category)
 
   let estimate: number | null = null
