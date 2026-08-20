@@ -79,7 +79,7 @@ export default function RankEstimator() {
         <div className="rounded-xl bg-obg-blue-darker border border-obg-orange/30 p-6 text-center">
           <p className="text-obg-gray text-sm uppercase tracking-widest mb-2">Estimated monthly sales</p>
           <p className="text-white text-3xl font-bold">
-            {low.toLocaleString()} – {high.toLocaleString()} units/month
+            {low.toLocaleString()} - {high.toLocaleString()} units/month
           </p>
           <p className="text-obg-gray text-sm mt-3">
             Midpoint of roughly {Math.round(estimate).toLocaleString()} units. Estimates are modeled from public BSR-to-sales curves and vary with seasonality, price, and competition.
