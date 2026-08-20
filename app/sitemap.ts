@@ -4,7 +4,7 @@ import { servicePages } from '@/lib/services-data'
 
 const BASE_URL = 'https://www.onlinebrandgrowth.com'
 
-// Curated canonical slugs â duplicates removed and 301-redirected in next.config.js.
+// Curated canonical slugs Ã¢ÂÂ duplicates removed and 301-redirected in next.config.js.
 // New posts (e.g. from Outrank webhook) are appended automatically from content/blog/ below.
 const curatedCanonicalSlugs = [
   'what-is-fulfillment-by-amazon',
@@ -12,7 +12,7 @@ const curatedCanonicalSlugs = [
   'sponsored-ad-amazon',
   'amazon-backend-keywords',
   'can-you-use-coupons-on-amazon',
-  'what-is-frustration-free-packaging',          // canonical (duplicates â here)
+  'what-is-frustration-free-packaging',          // canonical (duplicates Ã¢ÂÂ here)
   'seller-fulfilled-prime-fulfillment',
   'amazon-brand-guide',
   'amazon-channel-management',
@@ -29,35 +29,35 @@ const curatedCanonicalSlugs = [
   'how-to-calculate-contribution-margin',
   'amazon-fba-fees',
   'brand-registry-amazon',
-  'what-does-acos-stand-for',                    // canonical (acos-in-amazon, acos-on-amazon â here)
+  'what-does-acos-stand-for',                    // canonical (acos-in-amazon, acos-on-amazon Ã¢ÂÂ here)
   'create-an-amazon-storefront',
   'prep-center-fba',
   'minimum-advertised-price-monitoring',
   'how-to-make-an-amazon-storefront',
-  'amazon-product-photography',                  // canonical (photography-for-amazon, product-photography-* â here)
+  'amazon-product-photography',                  // canonical (photography-for-amazon, product-photography-* Ã¢ÂÂ here)
   'what-does-map-mean-in-pricing',
   'digital-shelf-analytics',
   'ecommerce-growth-strategies',
-  'amazon-fba-freight-forwarders',               // canonical (fba-freight-forwarder, freight-forwarder-* â here)
+  'amazon-fba-freight-forwarders',               // canonical (fba-freight-forwarder, freight-forwarder-* Ã¢ÂÂ here)
   'amazon-seller-central-vs-vendor-central',
-  'amazon-advertising-strategy',                 // canonical (amazon-advertising-strategies â here)
+  'amazon-advertising-strategy',                 // canonical (amazon-advertising-strategies Ã¢ÂÂ here)
   'brand-protection-amazon',
   'amazon-fba-vs-fbm',
   'find-amazon-keywords',
   'amazon-pricing-strategy',
   'sell-on-amazon-worldwide',
-  'map-vs-msrp',                                 // canonical (msrp-vs-map, map-vs-msrp-price, map-pricing-vs-msrp â here)
-  'amazon-brand-store',                          // canonical (amazon-brand-stores â here)
+  'map-vs-msrp',                                 // canonical (msrp-vs-map, map-vs-msrp-price, map-pricing-vs-msrp Ã¢ÂÂ here)
+  'amazon-brand-store',                          // canonical (amazon-brand-stores Ã¢ÂÂ here)
   'inventory-management-best-practices',
   'amazon-images-requirements',
   'best-amazon-storefronts',
   'track-amazon-ranking',
   'amazon-brand-guidelines',
   'amazon-ppc-management-services',
-  'amazon-listing-optimization',                 // canonical (amazon-listing-optimisation, listing-optimization-* â here)
+  'amazon-listing-optimization',                 // canonical (amazon-listing-optimisation, listing-optimization-* Ã¢ÂÂ here)
   'amazon-fba-is-it-worth-it-2',
   'amazon-ad-management',
-  'how-to-increase-amazon-sales',                // canonical (improve-amazon-sales, increase-amazon-sales, how-to-improve-* â here)
+  'how-to-increase-amazon-sales',                // canonical (improve-amazon-sales, increase-amazon-sales, how-to-improve-* Ã¢ÂÂ here)
   'product-launch-strategies',
   'global-selling-with-amazon',
   'target-market-for-amazon',
@@ -66,7 +66,7 @@ const curatedCanonicalSlugs = [
   'amazon-brand-registry-benefits',
   'what-is-amazon-brand-registry',
   'best-amazon-inventory-management-software',
-  'amazon-account-suspension',                   // canonical (suspended-from-amazon, amazon-account-suspended, etc. â here)
+  'amazon-account-suspension',                   // canonical (suspended-from-amazon, amazon-account-suspended, etc. Ã¢ÂÂ here)
   'unauthorized-sellers-on-amazon',
   'how-to-win-amazon-buy-box',
   'amazon-fba-profit-margin-calculator',
@@ -80,7 +80,7 @@ const curatedCanonicalSlugs = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Dates â differentiated per content type rather than all using build time
+  // Dates Ã¢ÂÂ differentiated per content type rather than all using build time
   const now = new Date()                        // homepage: always today
   const serviceDate  = new Date('2026-03-04')   // core service pages last updated
   const blogDate     = new Date('2026-03-04')   // blog index reflects recent posts
@@ -104,6 +104,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/fees`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/amazon-sales-rank-checker`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,
