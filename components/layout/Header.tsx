@@ -19,6 +19,7 @@ const navLinks = [
 
 const toolLinks = [
   { label: 'Amazon Profit Calculator', href: '/calculator' },
+  { label: 'Sales Rank Checker', href: '/amazon-sales-rank-checker' },
   { label: '2026 Amazon Fee Guide', href: '/fees' },
   { label: 'FBA vs FBM Comparison', href: '/vs/fba-vs-fbm' },
   { label: 'Storage Fee Calculator', href: '/tools/storage-fee-calculator' },
