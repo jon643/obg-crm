@@ -29,7 +29,7 @@ export default function RankEstimator() {
   const [bsrInput, setBsrInput] = useState('')
   const [category, setCategory] = useState(CATEGORIES[0].name)
 
-  const rank = /^[0-9][0-9,. ]*$/.test(bsrInput.trim()) ? parseInt(bsrInput.replace(/[^0-9]/g, ''), 10) : NaN
+  const rank = /^[0-9][0-9, ]*$/.test(bsrInput.trim()) ? parseInt(bsrInput.replace(/[^0-9]/g, ''), 10) : NaN
   const cat = CATEGORIES.find((c) => c.name === category)
 
   let estimate: number | null = null
@@ -37,7 +37,7 @@ export default function RankEstimator() {
     estimate = cat.a * Math.pow(rank, -EXPONENT)
   }
   const low = estimate !== null ? Math.max(1, Math.round(estimate * 0.7)) : null
-  const high = estimate !== null ? Math.round(estimate * 1.3) : null
+  const high = estimate !== null ? Math.max(1, Math.round(estimate * 1.3)) : null
 
   return (
     <div className="rounded-2xl bg-obg-blue border border-obg-blue-light/20 p-6 md:p-8">
