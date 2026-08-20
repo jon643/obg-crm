@@ -20,6 +20,7 @@ const footerLinks = {
   ],
   'Free Tools': [
     { label: 'Amazon Profit Calculator', href: '/calculator' },
+    { label: 'Sales Rank Checker', href: '/amazon-sales-rank-checker' },
     { label: '2026 Fee Guide', href: '/fees' },
     { label: 'FBA vs FBM Comparison', href: '/vs/fba-vs-fbm' },
     { label: 'Breakeven Calculator', href: '/tools/breakeven-calculator' },
