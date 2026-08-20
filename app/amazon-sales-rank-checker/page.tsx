@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Amazon Sales Rank Checker | BSR to Sales Estimator',
     description:
-      'Convert any Amazon BSR into estimated monthly sales by category â free, no signup.',
+      'Convert any Amazon BSR into estimated monthly sales by category - free, no signup.',
     url: PAGE_URL,
   },
 }
@@ -28,11 +28,11 @@ const faqs = [
   },
   {
     q: 'How do I track my Amazon ranking over time?',
-    a: 'Check the Best Sellers Rank shown on your product detail page, or use this checker to convert it into estimated monthly sales. For keyword ranking â where your product appears in search results â track your position for target search terms weekly. Watching both BSR and keyword rank tells you whether sales and visibility are moving together.',
+    a: 'Check the Best Sellers Rank shown on your product detail page, or use this checker to convert it into estimated monthly sales. For keyword ranking - where your product appears in search results - track your position for target search terms weekly. Watching both BSR and keyword rank tells you whether sales and visibility are moving together.',
   },
   {
     q: 'How accurate are BSR sales estimates?',
-    a: 'They are directional, not exact. This model is built from public BSR-to-sales curves and is most reliable between roughly BSR 100 and 200,000. Seasonality, deals, price changes, and category size all shift the real numbers â treat the estimate as a research range, not accounting.',
+    a: 'They are directional, not exact. This model is built from public BSR-to-sales curves and is most reliable between roughly BSR 100 and 200,000. Seasonality, deals, price changes, and category size all shift the real numbers - treat the estimate as a research range, not accounting.',
   },
   {
     q: 'What is a good sales rank on Amazon?',
@@ -89,7 +89,7 @@ export default function SalesRankCheckerPage() {
             </span>
             <h1 className="text-white mb-4">Amazon Sales Rank Checker</h1>
             <p className="text-obg-gray text-lg max-w-2xl mx-auto">
-              Convert any Best Sellers Rank (BSR) into estimated monthly sales â and learn how to track your Amazon ranking the right way. Updated for 2026. No signup required.
+              Convert any Best Sellers Rank (BSR) into estimated monthly sales - and learn how to track your Amazon ranking the right way. Updated for 2026. No signup required.
             </p>
           </div>
         </section>
@@ -111,14 +111,14 @@ export default function SalesRankCheckerPage() {
           <div className="container-obg px-6 md:px-8 lg:px-12 max-w-3xl mx-auto">
             <h2 className="text-white mb-4">What Is Amazon Sales Rank?</h2>
             <p className="text-obg-gray mb-4">
-              Amazon sales rank â Best Sellers Rank, or BSR â is Amazon&apos;s running scoreboard of how well a product is selling inside its category. It updates roughly every hour and weights recent sales most heavily, which makes it the fastest public signal of a product&apos;s sales velocity. A product ranked #500 in Home & Kitchen is selling many times more units than one ranked #50,000.
+              Amazon sales rank - Best Sellers Rank, or BSR - is Amazon&apos;s running scoreboard of how well a product is selling inside its category. It updates roughly every hour and weights recent sales most heavily, which makes it the fastest public signal of a product&apos;s sales velocity. A product ranked #500 in Home & Kitchen is selling many times more units than one ranked #50,000.
             </p>
             <p className="text-obg-gray mb-8">
-              Tracking Amazon sales rank over time tells you whether your listing changes, advertising, and pricing are actually converting into sales â and watching competitors&apos; BSR tells you how much volume you&apos;re fighting for. Pair it with keyword rank tracking (where you appear in search results for your target terms) to see the full picture of visibility and velocity.
+              Tracking Amazon sales rank over time tells you whether your listing changes, advertising, and pricing are actually converting into sales - and watching competitors&apos; BSR tells you how much volume you&apos;re fighting for. Pair it with keyword rank tracking (where you appear in search results for your target terms) to see the full picture of visibility and velocity.
             </p>
             <h2 className="text-white mb-4">From Sales Rank to Real Profit</h2>
             <p className="text-obg-gray">
-              Sales volume is only half the story â fees decide what you keep. Once you&apos;ve estimated units per month here, run them through our{' '}
+              Sales volume is only half the story - fees decide what you keep. Once you&apos;ve estimated units per month here, run them through our{' '}
               <Link href="/calculator" className="text-obg-orange hover:underline">
                 Amazon profit calculator
               </Link>{' '}
@@ -130,7 +130,7 @@ export default function SalesRankCheckerPage() {
               <Link href="/services/amazon-ppc-management" className="text-obg-orange hover:underline">
                 PPC management
               </Link>{' '}
-              problem â both fixable.
+              problem - both fixable.
             </p>
           </div>
         </section>
@@ -168,3 +168,4 @@ export default function SalesRankCheckerPage() {
     </>
   )
 }
+undefined
