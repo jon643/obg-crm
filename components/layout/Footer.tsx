@@ -7,6 +7,7 @@ const footerLinks = {
     { label: 'Case Studies', href: '/case-studies' },
     { label: 'Services', href: '/services' },
     { label: 'Blog', href: '/blog' },
+    { label: 'Docs', href: 'https://docs.onlinebrandgrowth.com' },
     { label: 'Media', href: '/media' },
     { label: 'Careers', href: '/careers' },
   ],
