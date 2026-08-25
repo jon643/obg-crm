@@ -32,6 +32,11 @@ import {
 const BASE_URL = 'https://www.onlinebrandgrowth.com'
 const BOOKING_URL = 'https://app.usemotion.com/meet/dan-balda/obg-intro-45'
 
+const DOCS_LINKS: Record<string, string> = {
+  'full-account-management': 'https://docs.onlinebrandgrowth.com/services/full-account-management',
+  'amazon-ppc-management': 'https://docs.onlinebrandgrowth.com/services/amazon-ppc-management',
+}
+
 const iconMap: Record<ServiceIcon, typeof BarChart2> = {
   ppc: BarChart2,
   seo: Search,
@@ -356,6 +361,17 @@ export default function ServiceDetailPage({
                   View All Services
                 </Link>
               </div>
+              {DOCS_LINKS[service.slug] && (
+                <p className="text-obg-gray text-sm mt-6">
+                  Prefer to read first?{' '}
+                  <a
+                    href={DOCS_LINKS[service.slug]}
+                    className="text-obg-orange hover:underline"
+                  >
+                    See the {service.navLabel} documentation
+                  </a>
+                </p>
+              )}
             </AnimatedSection>
           </div>
         </section>
