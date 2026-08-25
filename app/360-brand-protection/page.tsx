@@ -265,6 +265,15 @@ export default function BrandProtectionPage() {
                   View All Services
                 </Link>
               </div>
+              <p className="text-obg-gray text-sm mt-6">
+                Want the full technical breakdown?{' '}
+                <a
+                  href="https://docs.onlinebrandgrowth.com/services/360-brand-protection"
+                  className="text-obg-orange hover:underline"
+                >
+                  Read the 360 Brand Protection&trade; documentation
+                </a>
+              </p>
             </AnimatedSection>
           </div>
         </section>
