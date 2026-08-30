@@ -46,6 +46,8 @@ const TAG_BY_SOURCE: Record<string, number> = {
   fees: 3, // Lead Magnet: Fees Digest
   'fees-hub': 3, // Lead Magnet: Fees Digest
   calculator: 1, // Lead Magnet: Calculator
+  'amazon-audit-playbook': 5, // Lead Magnet: DIY Audit
+  'diy-audit': 5, // Lead Magnet: DIY Audit
 }
 
 async function syncToActiveCampaign(
