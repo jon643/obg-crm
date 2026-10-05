@@ -15,6 +15,10 @@ export interface BlogPost {
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 
+// Slugs consolidated into service pages or canonical posts (Oct 2026). They 301 via next.config.js;
+// excluding them here keeps them out of the blog index, sitemap and related-post lists.
+const RETIRED_SLUGS = new Set(`amazon-ppc-management-services amazon-ppc-services amazon-sponsored-ads-management amazon-ad-management amazon-ads-management amazon-advertising-services amazon-advertising-agency amazon-advertising-consultant amazon-channel-management amazon-account-management-services amazon-seller-account-management amazon-marketplace-management amazon-management-agency amazon-brand-management-agency ecommerce-account-management amazon-seller-consulting amazon-seller-consulting-services amazon-consulting-agency amazon-fba-consulting amazon-seo-agency amazon-seo-consulting amazon-listing-services amazon-optimization-services amazon-brand-protection-services amazon-map-policy-enforcement-service amazon-hijacker-removal-service unauthorized-reseller-removal amazon-brand-registry-services amazon-storefront-design amazon-a-plus-content-management amazon-vendor-vs-seller amazon-seller-central-vs-vendor-central amazon-product-listing-optimization amazon-catalog-management-agency amazon-catalogue-management outsource-amazon-catalog-management how-much-does-amazon-charge-to-sell amazon-seller-fees-explained fulfillment-by-amazon-cost amazon-fulfillment-pricing amazon-fba-storage-fees amazon-pricing-strategy amazon-fba-is-it-worth-it-2 selling-on-amazon-is-it-worth-it improving-inventory-turnover kitting-in-warehouse packaging-e-commerce amazon-brand-guidelines global-selling-with-amazon image-guidelines-amazon image-requirements-for-amazon brand-registry-amazon how-to-make-an-amazon-storefront unauthorized-sellers-on-amazon what-is-bsr amazon-brand-registry-takedown outrank-webhook-smoke-test sample-article-title-for-testing`.split(' '))
+
 /* ---------------------------------------------------------------------------
  * SEO post-processing applied to every post's htmlContent on load.
  * Outrank-generated posts ship with raw HTML; this layer fixes link hygiene
@@ -134,7 +138,7 @@ export function getAllSlugs(): string[] {
   try {
     return fs
       .readdirSync(BLOG_DIR)
-      .filter((f) => f.endsWith('.ts') && f !== 'index.ts')
+      .filter((f) => f.endsWith('.ts') && f !== 'index.ts' && !RETIRED_SLUGS.has(f.replace(/\.ts$/, '')))
       .map((f) => f.replace(/\.ts$/, ''))
   } catch {
     return []
