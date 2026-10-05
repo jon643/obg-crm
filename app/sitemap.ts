@@ -191,7 +191,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const filesystemSlugs = getAllSlugs()
   const knownCuratedSet = new Set(curatedCanonicalSlugs)
   const newSlugs = filesystemSlugs.filter((slug) => !knownCuratedSet.has(slug))
-  const blogSlugs = [...curatedCanonicalSlugs, ...newSlugs]
+  const blogSlugs = [...curatedCanonicalSlugs, ...newSlugs].filter((slug) => filesystemSlugs.includes(slug))
 
   const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}/`,
