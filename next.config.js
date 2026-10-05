@@ -113,6 +113,93 @@ const nextConfig = {
 
       // Amazon Advertising Strategy → /blog/amazon-advertising-strategy
       { source: '/blog/amazon-advertising-strategies',      destination: '/blog/amazon-advertising-strategy', permanent: true },
+
+      // ---- Oct 2026 consolidation (GSC-driven): commercial blog posts → service pages ----
+      // Rationale: these posts targeted the same buyer-intent queries as the service pages
+      // and were out-ranking them (e.g. /blog/amazon-channel-management at pos 12.5 vs the
+      // service page at 34.9). One page per intent; signals consolidate into the page that converts.
+
+      // PPC / advertising → /services/amazon-ppc-management
+      { source: '/blog/amazon-ppc-management-services', destination: '/services/amazon-ppc-management', permanent: true },
+      { source: '/blog/amazon-ppc-services', destination: '/services/amazon-ppc-management', permanent: true },
+      { source: '/blog/amazon-sponsored-ads-management', destination: '/services/amazon-ppc-management', permanent: true },
+      { source: '/blog/amazon-ad-management', destination: '/services/amazon-ppc-management', permanent: true },
+      { source: '/blog/amazon-ads-management', destination: '/services/amazon-ppc-management', permanent: true },
+      { source: '/blog/amazon-advertising-services', destination: '/services/amazon-ppc-management', permanent: true },
+      { source: '/blog/amazon-advertising-agency', destination: '/services/amazon-ppc-management', permanent: true },
+      { source: '/blog/amazon-advertising-consultant', destination: '/services/amazon-ppc-management', permanent: true },
+
+      // Channel / account management → /services/full-account-management
+      { source: '/blog/amazon-channel-management', destination: '/services/full-account-management', permanent: true },
+      { source: '/blog/amazon-account-management-services', destination: '/services/full-account-management', permanent: true },
+      { source: '/blog/amazon-seller-account-management', destination: '/services/full-account-management', permanent: true },
+      { source: '/blog/amazon-marketplace-management', destination: '/services/full-account-management', permanent: true },
+      { source: '/blog/amazon-management-agency', destination: '/services/full-account-management', permanent: true },
+      { source: '/blog/amazon-brand-management-agency', destination: '/services/full-account-management', permanent: true },
+      { source: '/blog/ecommerce-account-management', destination: '/services/full-account-management', permanent: true },
+
+      // Consulting → /services/amazon-strategic-consulting
+      { source: '/blog/amazon-seller-consulting', destination: '/services/amazon-strategic-consulting', permanent: true },
+      { source: '/blog/amazon-seller-consulting-services', destination: '/services/amazon-strategic-consulting', permanent: true },
+      { source: '/blog/amazon-consulting-agency', destination: '/services/amazon-strategic-consulting', permanent: true },
+      { source: '/blog/amazon-fba-consulting', destination: '/services/amazon-strategic-consulting', permanent: true },
+
+      // SEO / listing → /services/amazon-seo-listing-optimization
+      { source: '/blog/amazon-seo-agency', destination: '/services/amazon-seo-listing-optimization', permanent: true },
+      { source: '/blog/amazon-seo-consulting', destination: '/services/amazon-seo-listing-optimization', permanent: true },
+      { source: '/blog/amazon-listing-services', destination: '/services/amazon-seo-listing-optimization', permanent: true },
+      { source: '/blog/amazon-optimization-services', destination: '/services/amazon-seo-listing-optimization', permanent: true },
+
+      // Brand protection → /360-brand-protection and /services/brand-registry-enforcement
+      { source: '/blog/amazon-brand-protection-services', destination: '/360-brand-protection', permanent: true },
+      { source: '/blog/amazon-map-policy-enforcement-service', destination: '/360-brand-protection', permanent: true },
+      { source: '/blog/amazon-hijacker-removal-service', destination: '/360-brand-protection', permanent: true },
+      { source: '/blog/unauthorized-reseller-removal', destination: '/360-brand-protection', permanent: true },
+      { source: '/blog/amazon-brand-registry-services', destination: '/services/brand-registry-enforcement', permanent: true },
+
+      // Storefront / A+ / Vendor-vs-Seller → service pages
+      { source: '/blog/amazon-storefront-design', destination: '/services/amazon-storefront-design', permanent: true },
+      { source: '/blog/amazon-a-plus-content-management', destination: '/services/aplus-content-design', permanent: true },
+      { source: '/blog/amazon-vendor-vs-seller', destination: '/services/vendor-vs-seller-central', permanent: true },
+      { source: '/blog/amazon-seller-central-vs-vendor-central', destination: '/services/vendor-vs-seller-central', permanent: true },
+
+      // ---- Oct 2026 consolidation: duplicate informational posts → the stronger post ----
+      { source: '/blog/amazon-product-listing-optimization', destination: '/blog/amazon-listing-optimization', permanent: true },
+      { source: '/blog/amazon-catalog-management-agency', destination: '/blog/amazon-catalog-management-service', permanent: true },
+      { source: '/blog/amazon-catalogue-management', destination: '/blog/amazon-catalog-management-service', permanent: true },
+      { source: '/blog/outsource-amazon-catalog-management', destination: '/blog/amazon-catalog-management-service', permanent: true },
+      { source: '/blog/how-much-does-amazon-charge-to-sell', destination: '/blog/cost-of-selling-on-amazon', permanent: true },
+      { source: '/blog/amazon-seller-fees-explained', destination: '/blog/cost-of-selling-on-amazon', permanent: true },
+      { source: '/blog/fulfillment-by-amazon-cost', destination: '/blog/amazon-fba-fees', permanent: true },
+      { source: '/blog/amazon-fulfillment-pricing', destination: '/blog/amazon-fba-fees', permanent: true },
+      { source: '/blog/amazon-fba-storage-fees', destination: '/fees/monthly-storage-fee', permanent: true },
+      { source: '/blog/amazon-pricing-strategy', destination: '/blog/amazon-pricing-strategies', permanent: true },
+      { source: '/blog/amazon-fba-is-it-worth-it-2', destination: '/blog/is-it-worth-selling-on-amazon', permanent: true },
+      { source: '/blog/selling-on-amazon-is-it-worth-it', destination: '/blog/is-it-worth-selling-on-amazon', permanent: true },
+      { source: '/blog/improving-inventory-turnover', destination: '/blog/how-to-improve-inventory-turnover', permanent: true },
+      { source: '/blog/kitting-in-warehouse', destination: '/blog/what-is-kitting', permanent: true },
+      { source: '/blog/packaging-e-commerce', destination: '/blog/packaging-for-e-commerce', permanent: true },
+      { source: '/blog/amazon-brand-guidelines', destination: '/blog/amazon-brand-guide', permanent: true },
+      { source: '/blog/global-selling-with-amazon', destination: '/blog/sell-on-amazon-worldwide', permanent: true },
+      { source: '/blog/image-guidelines-amazon', destination: '/blog/amazon-images-requirements', permanent: true },
+      { source: '/blog/image-requirements-for-amazon', destination: '/blog/amazon-images-requirements', permanent: true },
+      { source: '/blog/brand-registry-amazon', destination: '/blog/what-is-amazon-brand-registry', permanent: true },
+      { source: '/blog/how-to-make-an-amazon-storefront', destination: '/blog/create-an-amazon-storefront', permanent: true },
+      { source: '/blog/unauthorized-sellers-on-amazon', destination: '/blog/how-to-remove-unauthorized-amazon-sellers', permanent: true },
+      { source: '/blog/what-is-bsr', destination: '/blog/bsr-on-amazon', permanent: true },
+      { source: '/blog/amazon-brand-registry-takedown', destination: '/blog/amazon-brand-abuse-takedown', permanent: true },
+
+      // ---- Oct 2026: test posts removed ----
+      { source: '/blog/outrank-webhook-smoke-test', destination: '/blog', permanent: true },
+      { source: '/blog/sample-article-title-for-testing', destination: '/blog', permanent: true },
+
+      // ---- Oct 2026: reclaim backlinks pointing at dead WordPress-era URLs ----
+      // Outrank's exchange placed DR 52-72 links at these paths (they 404 today).
+      { source: '/wordpress/plugins/seo', destination: '/blog/amazon-product-seo', permanent: true },
+      { source: '/wordpress/plugins/:path*', destination: '/blog', permanent: true },
+      { source: '/product/yoast-seo-wordpress', destination: '/blog/amazon-product-seo', permanent: true },
+      { source: '/product/:path*', destination: '/services', permanent: true },
+      { source: '/wp-content/:path*', destination: '/', permanent: true },
     ]
   },
 }
