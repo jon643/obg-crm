@@ -89,7 +89,7 @@ export async function GET(request: NextRequest) {
         messages: [
           {
             role: 'user',
-            content: `You are writing for Online Brand Growth (OBG), an Amazon growth agency founded by Jon Klein and Dan Balda that manages $30M+ in annual Amazon revenue for 7- and 8-figure brands. Your writing is direct, data-driven, and authoritative — no filler, no generic advice.
+            content: `You are writing for Online Brand Growth (OBG), a fractional Amazon operator (never call OBG an agency) founded by Jon Klein and Dan Balda that manages $30M+ in annual Amazon revenue for 7- and 8-figure brands. Your writing is direct, data-driven, and authoritative — no filler, no generic advice.
 
 ${topic.prompt}
 

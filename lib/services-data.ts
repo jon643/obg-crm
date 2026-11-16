@@ -56,7 +56,7 @@ export const servicePages: ServicePage[] = [
     tier: 1,
     icon: 'ppc',
     navLabel: 'Amazon PPC Management',
-    metaTitle: 'Amazon PPC Management Agency | Online Brand Growth',
+    metaTitle: 'Amazon PPC Management | Online Brand Growth',
     metaDescription:
       'Profit-focused Amazon PPC management. We run Sponsored Products, Brands, Display, and DSP campaigns with ASIN-by-ASIN bid management to grow revenue and ROAS.',
     eyebrow: 'PPC Advertising',
@@ -103,7 +103,7 @@ export const servicePages: ServicePage[] = [
     tier: 1,
     icon: 'seo',
     navLabel: 'SEO & Listing Optimization',
-    metaTitle: 'Amazon SEO & Listing Optimization Agency | OBG',
+    metaTitle: 'Amazon SEO & Listing Optimization | OBG',
     metaDescription:
       'Amazon SEO and listing optimization that ranks and converts: keyword research, copywriting, A+ Content, Brand Story, and storefront design from a founder-led team.',
     eyebrow: 'SEO & Listings',

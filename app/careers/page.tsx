@@ -150,7 +150,7 @@ export default function CareersPage() {
                 <span className="text-gradient-orange">Actually Matters</span>
               </h1>
               <p className="text-obg-gray text-xl leading-relaxed mb-8">
-                Online Brand Growth is a founder-led Amazon agency that manages $30M+ in annual
+                Online Brand Growth is a founder-led fractional Amazon operator that manages $30M+ in annual
                 revenue for some of the most ambitious brands on the platform. We&apos;re looking
                 for operators who take ownership, move fast, and care deeply about results.
               </p>
@@ -195,7 +195,7 @@ export default function CareersPage() {
                   <h3 className="text-white font-bold text-lg mb-4">Performance-Driven Compensation</h3>
                   <p className="text-obg-gray leading-relaxed">
                     We believe people should be paid for results, not time served. Our compensation
-                    structure rewards accountability and excellence. As the agency grows and as
+                    structure rewards accountability and excellence. As the company grows and as
                     you grow, your earnings grow with it. We have no interest in hiring people
                     who want to coast.
                   </p>

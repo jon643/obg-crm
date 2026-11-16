@@ -4,9 +4,9 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { Ban, Target, Trophy, TrendingUp } from 'lucide-react'
 
 const differentiators = [
-  { icon: Ban, text: 'Not Another Black Box Agency' },
+  { icon: Ban, text: 'No Black Box. You See Everything' },
   { icon: Target, text: 'Real ASIN-by-ASIN Strategy + Execution' },
-  { icon: Trophy, text: 'A+ Players Without the Agency Cost' },
+  { icon: Trophy, text: 'A+ Operators Without the Full-Time Payroll' },
   { icon: TrendingUp, text: 'Focus on the Metrics That Matter' },
 ]
 
@@ -19,11 +19,11 @@ export default function WeHateAgencies() {
           {/* Left — text */}
           <AnimatedSection direction="left">
             <SectionLabel>Our Philosophy</SectionLabel>
-            <h2 className="text-white mb-6">We Hate Agencies.<br />That&apos;s Why We Built This One.</h2>
+            <h2 className="text-white mb-6">We&apos;re Not an Agency.<br />We&apos;re Your Fractional Amazon Operator.</h2>
             <p className="text-obg-gray leading-relaxed mb-8">
-              We&apos;re not just another Amazon marketing agency — we&apos;re your trusted growth partner
-              who will always do what&apos;s right for your business. As brand owners ourselves,
-              we leverage our experience and network to serve our partner brands at the highest level.
+              Agencies sell hours and reports. Operators own the result. We run your Amazon channel
+              the way we run our own brands, and through Stoic Brands we put our own money into
+              inventory. Either way we only do well when your channel does.
             </p>
             <Link href="/#book-call" className="btn-primary">
               Partner With Us

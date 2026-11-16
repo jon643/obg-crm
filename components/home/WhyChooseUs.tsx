@@ -5,7 +5,7 @@ import { Star, AlignCenter, Grid2x2, BarChart } from 'lucide-react'
 const reasons = [
   {
     icon: Star,
-    title: 'Founder-Led Agency',
+    title: 'Founder-Led Operators',
     description:
       'Co-founders Jon Klein and Dan Balda bring 25+ years of combined Amazon operations experience and have managed 500+ brands. In addition to serving our partner brands, we own and operate our own brands on Amazon. We\'ll both be directly involved in your account\'s strategy and execution. We do not outsource any services to 3rd parties.',
   },

@@ -8,6 +8,11 @@ import { cn } from '@/lib/utils'
 
 const faqs = [
   {
+    question: 'What is the difference between Online Brand Growth and Stoic Brands?',
+    answer:
+      'They are sister companies run by the same team. With Online Brand Growth, you keep your own Seller Central account and we run it as your fractional Amazon operator for a fee. With Stoic Brands, we buy your product wholesale, sell it on Amazon as your exclusive distributor, and provide the same services at no fee. Both start with a complimentary Amazon audit.',
+  },
+  {
     question: 'How can your Amazon services fit within my brand strategy?',
     answer:
       'We understand how to operate within the confines of your overarching brand strategy, and will always honor that. If that means pricing higher on Amazon than your DTC, we can do that. If that means limiting one-time sales and promotions, we can do that.',
@@ -40,7 +45,7 @@ const faqs = [
   {
     question: 'What is your cancellation policy?',
     answer:
-      'If you are ever unsatisfied with our partnership, you can terminate immediately without any advanced notice or waiting period. We believe that service providers who force their clients into unnecessary contracts do so because they are not confident in their ability to deliver results.',
+      'We start with a 90-day initial engagement, which gives the plan from your audit time to work. After that we go month to month. We believe service providers who lock clients into long contracts do so because they are not confident in their ability to deliver results.',
   },
 ]
 

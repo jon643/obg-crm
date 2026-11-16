@@ -8,7 +8,7 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
-  { label: 'Home', href: '/' },
+  { label: 'Stoic Brands', href: '/stoic-brands' },
   { label: 'Services', href: '/services' },
   { label: '360 Brand Protection™', href: '/360-brand-protection', highlight: true },
   { label: 'Case Studies', href: '/case-studies' },

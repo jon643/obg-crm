@@ -28,20 +28,20 @@ export const metadata: Metadata = {
     apple: '/logos/obg-logo-square.png',
   },
   title: {
-    default: 'Online Brand Growth | Amazon Brand Management Agency',
+    default: 'Online Brand Growth | Your Fractional Amazon Operator',
     template: '%s | Online Brand Growth',
   },
   description:
-    'Founder-led Amazon brand management agency. We maximize your brand\'s revenue and profitability on Amazon through expert PPC, SEO, logistics, and operations. Schedule a free strategy call.',
+    'Online Brand Growth is a founder-led fractional Amazon operator for brands and manufacturers. We run your Amazon channel for a fee, or buy your product and sell it through our sister company, Stoic Brands. Start with a free Amazon audit.',
   keywords: [
-    'Amazon brand management agency',
-    'Amazon advertising agency',
+    'fractional Amazon operator',
+    'Amazon brand management',
     'Amazon PPC management',
     'Amazon SEO optimization',
     'FBA consulting',
     'Amazon seller consulting',
-    'ecommerce growth agency',
-    'Amazon agency for brands',
+    'Amazon exclusive distributor',
+    'Stoic Brands Amazon distribution',
     'Amazon listing optimization',
     'Amazon account management',
   ],
@@ -59,23 +59,23 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: BASE_URL,
     siteName: 'Online Brand Growth',
-    title: 'Online Brand Growth | Amazon Brand Management Agency',
+    title: 'Online Brand Growth | Your Fractional Amazon Operator',
     description:
-      'Founder-led Amazon brand management agency. Maximize your revenue and profitability with expert PPC, SEO, logistics, and operations management.',
+      'Founder-led fractional Amazon operator. We run your Amazon channel, or buy your product and sell it through Stoic Brands. Start with a free Amazon audit.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Online Brand Growth â Amazon Brand Management Agency',
+        alt: 'Online Brand Growth â Your Fractional Amazon Operator',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Brand Growth | Amazon Brand Management Agency',
+    title: 'Online Brand Growth | Your Fractional Amazon Operator',
     description:
-      'Founder-led Amazon brand management agency. Maximize your revenue and profitability on Amazon.',
+      'Founder-led fractional Amazon operator. Maximize your revenue and profitability on Amazon.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -103,7 +103,7 @@ const organizationSchema = {
   url: BASE_URL,
   logo: `${BASE_URL}/logos/obg-logo-white.png`,
   description:
-    'Founder-led Amazon brand management agency specializing in PPC advertising, SEO, logistics, and operations for brands and manufacturers.',
+    'Founder-led fractional Amazon operator handling PPC advertising, SEO, logistics, and operations for brands and manufacturers, with exclusive Amazon distribution through sister company Stoic Brands.',
   foundingDate: '2018',
   founders: [
     {
@@ -175,7 +175,7 @@ const professionalServiceSchema = {
   name: 'Online Brand Growth',
   url: BASE_URL,
   description:
-    'Founder-led Amazon brand management agency helping brands maximize revenue and profitability on Amazon.',
+    'Founder-led fractional Amazon operator helping brands maximize revenue and profitability on Amazon.',
   telephone: '+1-516-860-8488',
   address: {
     '@type': 'PostalAddress',

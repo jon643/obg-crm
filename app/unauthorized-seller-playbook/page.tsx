@@ -283,7 +283,7 @@ export default function UnauthorizedSellerPlaybookPage() {
                   Founder-led Amazon brand management.
                 </h2>
                 <p className="text-obg-gray leading-relaxed mb-4">
-                  Online Brand Growth is a founder-led agency for serious Amazon operators.
+                  Online Brand Growth is a founder-led fractional Amazon operator for serious brands.
                   Across our team&apos;s careers we&apos;ve built and scaled hundreds of brands on Amazon.
                 </p>
                 <p className="text-obg-gray leading-relaxed">

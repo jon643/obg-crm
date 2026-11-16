@@ -115,6 +115,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/amazon-audit`,
+      lastModified: serviceDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/stoic-brands`,
+      lastModified: serviceDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/services`,
       lastModified: serviceDate,
       changeFrequency: 'monthly',
