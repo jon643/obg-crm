@@ -33,7 +33,7 @@ const models = [
     rows: [
       ['Who sells on Amazon', 'Stoic Brands, exclusively'],
       ['How we get paid', 'Margin on the product. No fees'],
-      ['Commitment', 'Exclusive distributor agreement'],
+      ['Commitment', 'Month to month'],
       ['Best for', 'Brands that want Amazon handled and off their plate'],
     ],
     cta: 'Apply to Work With Us',

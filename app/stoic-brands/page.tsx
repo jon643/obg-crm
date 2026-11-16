@@ -132,7 +132,7 @@ const faqs = [
   },
   {
     q: 'How long is the commitment?',
-    a: 'The agreement runs for an initial six months and renews automatically. Either side can end it with 30 days written notice. If we part ways, your brand, trademark and listings stay with you.',
+    a: 'It is month to month. There is no minimum term. If either side decides to end it, we stop reordering and sell through the inventory we already own. Your brand, trademark and listings stay with you.',
   },
   {
     q: 'What is the relationship between Stoic Brands and Online Brand Growth?',
