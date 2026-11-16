@@ -41,6 +41,19 @@ export function Redacted({ w = 'w-24' }: { w?: string }) {
   )
 }
 
+/**
+ * A blurred stand-in for a confidential figure. The real value is never sent to
+ * the browser: `children` is placeholder text, blurred so the shape of the data
+ * shows without the detail.
+ */
+export function Blurred({ children = '$0.00' }: { children?: string }) {
+  return (
+    <span className="inline-block blur-[5px] select-none text-slate-900" aria-label="hidden in this sample" role="img">
+      <span aria-hidden>{children}</span>
+    </span>
+  )
+}
+
 export function MiniTable({ head, rows, highlight }: { head: string[]; rows: (string | React.ReactNode)[][]; highlight?: number }) {
   return (
     <div className="overflow-x-auto -mx-1">

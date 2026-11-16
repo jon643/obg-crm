@@ -7,7 +7,7 @@ import {
 import LandingHeader, { StoicLockup } from '@/components/landing/LandingHeader'
 import LeadBookingForm from '@/components/landing/LeadBookingForm'
 import MetaPixel from '@/components/landing/MetaPixel'
-import { Paper, MiniTable, StepList, StatBar, LandingFAQ } from '@/components/landing/Blocks'
+import { Paper, MiniTable, Blurred, StepList, StatBar, LandingFAQ } from '@/components/landing/Blocks'
 import SectionLabel from '@/components/ui/SectionLabel'
 import CaseStudies from '@/components/home/CaseStudies'
 import Testimonials from '@/components/home/Testimonials'
@@ -255,27 +255,27 @@ export default function StoicBrandsLanding() {
               <p className="text-obg-gray">
                 Before anyone commits, you get a workbook showing what your products can sell for on
                 Amazon, how many units to expect, and what that means for your wholesale price. It is yours
-                to keep whether or not we end up working together. These excerpts are from a real analysis
-                for a specialty food brand, with names redacted.
+                to keep whether or not we end up working together. This is the layout of a real analysis
+                for a specialty food brand, with the brand&apos;s names and figures hidden.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <Paper kicker="Pricing scenarios" title="What we can pay you at each Amazon selling price" footer="16 oz jar. 2026 Amazon fees, inbound freight, storage and returns included.">
+              <Paper kicker="Pricing scenarios" title="What we can pay you at each Amazon selling price" footer="2026 Amazon fees, inbound freight, storage and returns included.">
                 <MiniTable
                   head={['Amazon price', 'Amazon + logistics', 'We can pay you', 'Est. units / mo per flavor']}
                   highlight={2}
                   rows={[
-                    ['$12.99', '$6.77', '$2.97', '60 to 150'],
-                    ['$13.99', '$6.91', '$3.58', '80 to 200'],
-                    ['$14.99', '$7.05', '$4.19', '100 to 250'],
-                    ['$15.99', '$8.31', '$3.68', '100 to 250'],
-                    ['$16.99', '$8.52', '$4.22', '100 to 300'],
+                    ['$12.99', <Blurred key="f0">$8.88</Blurred>, <Blurred key="w0">$8.88</Blurred>, <Blurred key="u0">888 to 888</Blurred>],
+                    ['$13.99', <Blurred key="f1">$8.88</Blurred>, <Blurred key="w1">$8.88</Blurred>, <Blurred key="u1">888 to 888</Blurred>],
+                    ['$14.99', <Blurred key="f2">$8.88</Blurred>, <Blurred key="w2">$8.88</Blurred>, <Blurred key="u2">888 to 888</Blurred>],
+                    ['$15.99', <Blurred key="f3">$8.88</Blurred>, <Blurred key="w3">$8.88</Blurred>, <Blurred key="u3">888 to 888</Blurred>],
+                    ['$16.99', <Blurred key="f4">$8.88</Blurred>, <Blurred key="w4">$8.88</Blurred>, <Blurred key="u4">888 to 888</Blurred>],
                   ]}
                 />
                 <p className="mt-3 !text-slate-500">
                   Amazon&apos;s referral fee steps from 8% to 15% above $14.99, which is why a higher price
-                  can pay you less.
+                  can pay you less. Figures are blurred in this sample.
                 </p>
               </Paper>
 
@@ -283,11 +283,11 @@ export default function StoicBrandsLanding() {
                 <MiniTable
                   head={['Listing', 'Price', '$ per oz', 'Reviews', 'Sold last month']}
                   rows={[
-                    ['Competitor A, 24 oz', '$24.99', '$1.04', '7,063', '800+'],
-                    ['Competitor B, 18 oz', '$25.99', '$1.44', '1,641', '700+'],
-                    ['Competitor C, 23 oz', '$16.89', '$0.73', '367', '600+'],
-                    ['Competitor D, 16 oz', '$25.99', '$1.62', '222', '300+'],
-                    ['Competitor E, 10.2 oz', '$14.99', '$1.47', '269', '100+'],
+                    ['Competitor A', <Blurred key="p0">$88.88</Blurred>, <Blurred key="o0">$8.88</Blurred>, <Blurred key="r0">8,888</Blurred>, '800+'],
+                    ['Competitor B', <Blurred key="p1">$88.88</Blurred>, <Blurred key="o1">$8.88</Blurred>, <Blurred key="r1">8,888</Blurred>, '700+'],
+                    ['Competitor C', <Blurred key="p2">$88.88</Blurred>, <Blurred key="o2">$8.88</Blurred>, <Blurred key="r2">8,888</Blurred>, '600+'],
+                    ['Competitor D', <Blurred key="p3">$88.88</Blurred>, <Blurred key="o3">$8.88</Blurred>, <Blurred key="r3">8,888</Blurred>, '300+'],
+                    ['Competitor E', <Blurred key="p4">$88.88</Blurred>, <Blurred key="o4">$8.88</Blurred>, <Blurred key="r4">8,888</Blurred>, '100+'],
                   ]}
                 />
                 <p className="mt-3 !text-slate-500">One flavor shown. The full workbook covers every flavor, by size.</p>
@@ -298,25 +298,25 @@ export default function StoicBrandsLanding() {
                   head={['Format', 'Verdict']}
                   highlight={0}
                   rows={[
-                    ['16 oz jar at $14.99', 'Best. Largest size still under the $15 fee threshold'],
-                    ['Retail shaker', 'Loses money at any price shoppers would pay'],
-                    ['3-pack of shakers', 'Needs bundling labor, pays about 30% less per ounce'],
-                    ['Chef size, $22.99 to $24.99', 'Pays less per ounce'],
+                    ['Standard size, single', 'Best. Largest size still under the $15 fee threshold'],
+                    ['Small retail size', 'Loses money at any price shoppers would pay'],
+                    ['3-pack of the small size', 'Needs bundling labor, pays less per ounce'],
+                    ['Large size', 'Pays less per ounce'],
                   ]}
                 />
               </Paper>
 
               <Paper kicker="Directional forecast" title="What the first 12 months could look like" footer="A directional estimate from competitor sales. Not a guarantee.">
                 <p className="mb-3">
-                  At <b>$14.99</b> across three flavors, the opening order sells through in month one and a
-                  larger reorder lands in month two.
+                  At the recommended price across three flavors, the opening order sells through in month
+                  one and a larger reorder lands in month two.
                 </p>
                 <MiniTable
                   head={['Flavor', 'Run rate by month 6']}
                   rows={[
-                    ['Flavor A', '440 units / mo'],
-                    ['Flavor B', '320 units / mo'],
-                    ['Flavor C', '240 units / mo'],
+                    ['Flavor A', <Blurred key="a">888 units / mo</Blurred>],
+                    ['Flavor B', <Blurred key="b">888 units / mo</Blurred>],
+                    ['Flavor C', <Blurred key="c">888 units / mo</Blurred>],
                   ]}
                 />
                 <p className="mt-3 !text-slate-500">
