@@ -13,7 +13,7 @@ import Testimonials from '@/components/home/Testimonials'
 export const metadata: Metadata = {
   title: 'Free OBG360 Amazon Audit | Your Fractional Amazon Operator',
   description:
-    'Online Brand Growth is a fractional Amazon operator for established brands. Start with a free OBG360 audit of your Seller Central account: where the profit goes, what can rank, and what to fix first.',
+    'Online Brand Growth is a fractional Amazon operator for established brands. Start with a free OBG360 audit of your Seller Central account and get a prioritized list of recommendations to grow sales and profit.',
   // Paid-traffic landing page: keep it out of search engines.
   robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
 }
@@ -124,13 +124,14 @@ export default function AmazonAuditLanding() {
                 Your Fractional Amazon Operator
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-                See Exactly Where Your Amazon Profit Goes.{' '}
-                <span className="text-gradient-orange">Free.</span>
+                Get a <span className="text-gradient-orange">Free Action Plan</span> to Grow
+                Your Amazon Sales and Profit
               </h1>
               <p className="text-obg-gray text-lg leading-relaxed mb-8">
-                Online Brand Growth runs Amazon for established brands the way an in-house operator would.
-                Before you commit to anything, we audit your Seller Central account end to end and hand you
-                the findings: what you really keep, which products can rank, and what to fix first.
+                We audit your Seller Central account and hand you a prioritized list of recommendations
+                built from your own data. Each one is specific enough to implement yourself, at no cost,
+                to lift your top line and your bottom line. Or have us run it for you as your fractional
+                Amazon operator.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
                 <a href="#get-audit" className="btn-primary text-lg px-9 py-4">
@@ -391,8 +392,8 @@ export default function AmazonAuditLanding() {
                 <ul className="space-y-3 text-sm text-obg-gray">
                   {[
                     'Full audit of your Seller Central account',
+                    'A prioritized list of recommendations you can implement yourself',
                     'Strategy call to walk through the findings',
-                    '90-day roadmap, yours to keep either way',
                     'No fee, no obligation',
                   ].map((t) => (
                     <li key={t} className="flex gap-2">
