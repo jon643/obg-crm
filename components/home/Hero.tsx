@@ -32,7 +32,7 @@ const paths = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero pt-24 pb-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero pt-36 pb-16">
 
       {/* Background glow blobs */}
       <div

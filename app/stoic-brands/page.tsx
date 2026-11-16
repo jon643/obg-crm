@@ -269,7 +269,7 @@ export default function StoicBrandsLanding() {
                     [<span key="d">Competitor D, 3-pack</span>, '$19.99', '55', 'Under 50'],
                   ]}
                 />
-                <p className="mt-3 text-slate-500">Only very similar products at the same size and format are compared.</p>
+                <p className="mt-3 !text-slate-500">Only very similar products at the same size and format are compared.</p>
               </Paper>
 
               <Paper kicker="Amazon fee math" title="What a $24.99 4-pack leaves for the product" footer="2026 Amazon fee schedule, per unit sold">
@@ -297,7 +297,7 @@ export default function StoicBrandsLanding() {
                     ['12-pack', '$103.78', '$51.48 to $79.99'],
                   ]}
                 />
-                <p className="mt-3 text-slate-500">
+                <p className="mt-3 !text-slate-500">
                   When the numbers do not work we say so, and show the wholesale price or pack size that
                   would make them work.
                 </p>
@@ -313,7 +313,7 @@ export default function StoicBrandsLanding() {
                     [<Redacted key="4" w="w-20" />, <Redacted key="4b" w="w-8" />, <Redacted key="4c" w="w-10" />, 'Yes'],
                   ]}
                 />
-                <p className="mt-3 text-slate-500">
+                <p className="mt-3 !text-slate-500">
                   Plus how your listings look today and how much branded search your name already gets.
                 </p>
               </Paper>

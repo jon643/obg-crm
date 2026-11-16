@@ -22,7 +22,7 @@ export function Paper({
         <div className="text-[11px] font-bold tracking-widest uppercase text-obg-orange">{kicker}</div>
         <div className="font-display font-bold text-slate-900 text-lg leading-snug mt-1">{title}</div>
       </div>
-      <div className="px-5 py-4 text-sm leading-relaxed flex-1">{children}</div>
+      <div className="px-5 py-4 text-sm leading-relaxed flex-1 text-slate-700 [&_p]:text-slate-700 [&_b]:text-slate-900">{children}</div>
       {footer && (
         <div className="px-5 py-2.5 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-500">{footer}</div>
       )}
@@ -48,7 +48,7 @@ export function MiniTable({ head, rows, highlight }: { head: string[]; rows: (st
         <thead>
           <tr>
             {head.map((h, i) => (
-              <th key={i} className={cn('px-2 py-1.5 font-semibold text-slate-500 border-b border-slate-200 whitespace-nowrap', i === 0 ? 'text-left' : 'text-right')}>
+              <th key={i} className={cn('px-2 py-1.5 font-semibold text-slate-500 border-b border-slate-200', i === 0 ? 'text-left' : 'text-right')}>
                 {h}
               </th>
             ))}
@@ -58,7 +58,7 @@ export function MiniTable({ head, rows, highlight }: { head: string[]; rows: (st
           {rows.map((r, ri) => (
             <tr key={ri} className={cn(ri === highlight && 'bg-orange-50 font-semibold')}>
               {r.map((c, ci) => (
-                <td key={ci} className={cn('px-2 py-1.5 border-b border-slate-100', ci === 0 ? 'text-left' : 'text-right whitespace-nowrap')}>
+                <td key={ci} className={cn('px-2 py-1.5 border-b border-slate-100', ci === 0 ? 'text-left' : 'text-right')}>
                   {c}
                 </td>
               ))}

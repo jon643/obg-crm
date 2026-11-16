@@ -215,7 +215,7 @@ export default function AmazonAuditLanding() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <Paper kicker="Section 7 · Profitability" title="Where every dollar of sales goes" footer="13 months, product cost loaded">
                 <MiniTable
                   head={['', '13 months', '% of sales']}
@@ -240,7 +240,7 @@ export default function AmazonAuditLanding() {
                 <p className="mb-3">
                   At the hero product&apos;s 22.8% breakeven, a click is worth at most <b>$1.03</b>.
                 </p>
-                <p className="text-slate-500">
+                <p>
                   The loss was more than half of the account&apos;s monthly profit, spent on a term the
                   brand cannot rank for.
                 </p>
@@ -256,7 +256,7 @@ export default function AmazonAuditLanding() {
                     ['SKU D, 450 ct', '35.6%', '$6', '$1,027'],
                   ]}
                 />
-                <p className="mt-3 text-slate-500">
+                <p className="mt-3 !text-slate-500">
                   Three 100-count packs were 61% of sales and took 90% of ad spend.
                 </p>
               </Paper>
@@ -271,7 +271,7 @@ export default function AmazonAuditLanding() {
                     [<span key="d"><Redacted w="w-20" /></span>, '~40', 'Winnable, lowest wall'],
                   ]}
                 />
-                <p className="mt-3 text-slate-500">The hero listing has 987 reviews. That decides where to spend.</p>
+                <p className="mt-3 !text-slate-500">The hero listing has 987 reviews. That decides where to spend.</p>
               </Paper>
 
               <Paper kicker="Section 6 · Logistics" title="Inventory is at a third of the level that protects rank" footer="FBA inventory, October 8">
@@ -283,7 +283,7 @@ export default function AmazonAuditLanding() {
                     ['SKU C, 100 ct', '42', '920 to 1,230', 'Order now'],
                   ]}
                 />
-                <p className="mt-3 text-slate-500">At October&apos;s pace the hero was three weeks from empty, before Black Friday.</p>
+                <p className="mt-3 !text-slate-500">At October&apos;s pace the hero was three weeks from empty, before Black Friday.</p>
               </Paper>
 
               <Paper kicker="Section 10 · 90-Day Roadmap" title="What the fixes are worth, lever by lever" footer="Applied to September actuals, assumptions stated">
