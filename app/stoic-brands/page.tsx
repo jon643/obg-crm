@@ -7,7 +7,7 @@ import {
 import LandingHeader, { StoicLockup } from '@/components/landing/LandingHeader'
 import LeadBookingForm from '@/components/landing/LeadBookingForm'
 import MetaPixel from '@/components/landing/MetaPixel'
-import { Paper, Redacted, MiniTable, StepList, StatBar, LandingFAQ } from '@/components/landing/Blocks'
+import { Paper, MiniTable, StepList, StatBar, LandingFAQ } from '@/components/landing/Blocks'
 import SectionLabel from '@/components/ui/SectionLabel'
 import CaseStudies from '@/components/home/CaseStudies'
 import Testimonials from '@/components/home/Testimonials'
@@ -15,7 +15,7 @@ import Testimonials from '@/components/home/Testimonials'
 export const metadata: Metadata = {
   title: 'Stoic Brands | Exclusive Amazon Distribution for Brands and Manufacturers',
   description:
-    'Stoic Brands buys your product wholesale and sells it on Amazon as your one authorized seller. The Online Brand Growth team runs the whole channel at no fee. Apply to work with us and get a complimentary Amazon audit.',
+    'Stoic Brands buys your product wholesale and sells it on Amazon as your one authorized seller. The Online Brand Growth team runs the whole channel at no fee. Apply to work with us and get a complimentary Amazon Opportunity Analysis.',
   // Paid-traffic landing page: keep it out of search engines.
   robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
 }
@@ -63,13 +63,13 @@ const steps = [
     body: 'Tell us about your brand in the form below and pick a time for an intro call. It takes about two minutes.',
   },
   {
-    title: 'We run your Amazon audit',
-    body: 'We map the Amazon landscape around your brand: who is selling your products today and at what price, how much demand your category has, what comparable products sell for and how many units they move, and what the Amazon fee math leaves for everyone.',
+    title: 'We build your Amazon Opportunity Analysis',
+    body: 'We work out what your products can sell for on Amazon and what that is worth to you: who, if anyone, is selling your brand today, what very similar products sell for and how many units they move, the Amazon fee math at each price point, which size or pack pays best, and a directional 12-month forecast.',
     tag: 'Complimentary',
   },
   {
     title: 'Strategy call: we walk you through the findings',
-    body: 'You see the audit with the co-founders. We tell you plainly whether the numbers work and at what price points. Then both sides decide whether to move forward.',
+    body: 'We go through the analysis with you. We tell you plainly whether the numbers work and at what price points. Then both sides decide whether to move forward.',
     tag: 'Complimentary',
   },
   {
@@ -111,8 +111,8 @@ const faqs = [
     a: 'We make our margin on the products we buy from you and sell on Amazon. That is the whole model. If your products do not sell at a healthy price, we lose money before you do.',
   },
   {
-    q: 'What does the Amazon audit cost?',
-    a: 'Nothing. Every brand that applies and looks like a fit gets the audit and a strategy call at no charge, whether or not we end up working together.',
+    q: 'What does the Amazon Opportunity Analysis cost?',
+    a: 'Nothing. Every brand that applies and looks like a fit gets the analysis and a strategy call at no charge. It is yours to keep whether or not we end up working together.',
   },
   {
     q: 'Who is a good fit?',
@@ -184,7 +184,7 @@ export default function StoicBrandsLanding() {
                   ['Amazon becomes a wholesale account', 'We send purchase orders. You ship product.'],
                   ['One accountable seller', 'Pricing holds because the people running your ads paid for the inventory.'],
                   ['No fees, ever', 'No retainer, no commission, no service invoice.'],
-                  ['A complimentary Amazon audit', 'Every applicant that fits gets one before any decision.'],
+                  ['A complimentary Amazon Opportunity Analysis', 'Yours to keep, whether or not we partner.'],
                 ].map(([t, d]) => (
                   <li key={t} className="flex gap-3">
                     <Check size={20} className="text-obg-orange flex-shrink-0 mt-0.5" />
@@ -251,71 +251,76 @@ export default function StoicBrandsLanding() {
           <div className="container-obg px-6 md:px-8 lg:px-12">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <SectionLabel>What You Get First</SectionLabel>
-              <h2 className="text-white mb-4">A Complimentary Audit of Your Brand&apos;s Amazon Landscape</h2>
+              <h2 className="text-white mb-4">A Complimentary Amazon Opportunity Analysis for Your Brand</h2>
               <p className="text-obg-gray">
-                Before anyone commits, we show you what Amazon looks like for your brand today and what it
-                could be worth. The first three excerpts are from a real audit for a specialty food brand,
-                with names redacted.
+                Before anyone commits, you get a workbook showing what your products can sell for on
+                Amazon, how many units to expect, and what that means for your wholesale price. It is yours
+                to keep whether or not we end up working together. These excerpts are from a real analysis
+                for a specialty food brand, with names redacted.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <Paper kicker="Category demand" title="Where your format actually sells, and how many units" footer="Live Amazon listings. Sold last month is Amazon's own badge.">
+              <Paper kicker="Pricing scenarios" title="What we can pay you at each Amazon selling price" footer="16 oz jar. 2026 Amazon fees, inbound freight, storage and returns included.">
                 <MiniTable
-                  head={['Comparable listing', 'Price', 'Reviews', 'Sold last month']}
+                  head={['Amazon price', 'Amazon + logistics', 'We can pay you', 'Est. units / mo per flavor']}
+                  highlight={2}
                   rows={[
-                    [<span key="a">Competitor A, single</span>, '$5.99', '114', '800+'],
-                    [<span key="b">Competitor B, single</span>, '$7.72', '1,000', '2,000+'],
-                    [<span key="c">Competitor C, single</span>, '$6.59', '195', '7,000+'],
-                    [<span key="d">Competitor D, 3-pack</span>, '$19.99', '55', 'Under 50'],
-                  ]}
-                />
-                <p className="mt-3 !text-slate-500">Only very similar products at the same size and format are compared.</p>
-              </Paper>
-
-              <Paper kicker="Amazon fee math" title="What a $24.99 4-pack leaves for the product" footer="2026 Amazon fee schedule, per unit sold">
-                <MiniTable
-                  head={['', 'Per 4-pack']}
-                  highlight={6}
-                  rows={[
-                    ['Amazon price', '$24.99'],
-                    ['Referral fee', '-$3.75'],
-                    ['FBA fulfillment fee', '-$5.61'],
-                    ['Storage', '-$0.26'],
-                    ['Returns', '-$0.50'],
-                    ['Our margin (20%)', '-$5.00'],
-                    ['Left for product', '$9.87 ($2.47 each)'],
-                  ]}
-                />
-              </Paper>
-
-              <Paper kicker="Pricing reality check" title="The Amazon price your wholesale needs vs. where the market is" footer="Shown for every product and pack size">
-                <MiniTable
-                  head={['Format', 'Price needed', 'Where it sells today']}
-                  rows={[
-                    ['Single', '$12.71', '$5.99 to $7.72'],
-                    ['4-pack', '$39.48', '$26.95 to $29.99'],
-                    ['12-pack', '$103.78', '$51.48 to $79.99'],
+                    ['$12.99', '$6.77', '$2.97', '60 to 150'],
+                    ['$13.99', '$6.91', '$3.58', '80 to 200'],
+                    ['$14.99', '$7.05', '$4.19', '100 to 250'],
+                    ['$15.99', '$8.31', '$3.68', '100 to 250'],
+                    ['$16.99', '$8.52', '$4.22', '100 to 300'],
                   ]}
                 />
                 <p className="mt-3 !text-slate-500">
-                  When the numbers do not work we say so, and show the wholesale price or pack size that
-                  would make them work.
+                  Amazon&apos;s referral fee steps from 8% to 15% above $14.99, which is why a higher price
+                  can pay you less.
                 </p>
               </Paper>
 
-              <Paper kicker="Seller landscape · sample layout" title="Who is selling your brand on Amazon right now" footer="Sample layout. Your audit lists every seller found on your listings.">
+              <Paper kicker="Comparable listings" title="What very similar products sell for, and how many units they move" footer="Live Amazon listings. Sold last month is Amazon's own badge.">
                 <MiniTable
-                  head={['Seller', 'Buy Box share', 'Price vs MAP', 'Authorized']}
+                  head={['Listing', 'Price', '$ per oz', 'Reviews', 'Sold last month']}
                   rows={[
-                    [<Redacted key="1" w="w-20" />, <Redacted key="1b" w="w-8" />, <Redacted key="1c" w="w-10" />, 'No'],
-                    [<Redacted key="2" w="w-24" />, <Redacted key="2b" w="w-8" />, <Redacted key="2c" w="w-10" />, 'No'],
-                    [<Redacted key="3" w="w-16" />, <Redacted key="3b" w="w-8" />, <Redacted key="3c" w="w-10" />, 'No'],
-                    [<Redacted key="4" w="w-20" />, <Redacted key="4b" w="w-8" />, <Redacted key="4c" w="w-10" />, 'Yes'],
+                    ['Competitor A, 24 oz', '$24.99', '$1.04', '7,063', '800+'],
+                    ['Competitor B, 18 oz', '$25.99', '$1.44', '1,641', '700+'],
+                    ['Competitor C, 23 oz', '$16.89', '$0.73', '367', '600+'],
+                    ['Competitor D, 16 oz', '$25.99', '$1.62', '222', '300+'],
+                    ['Competitor E, 10.2 oz', '$14.99', '$1.47', '269', '100+'],
+                  ]}
+                />
+                <p className="mt-3 !text-slate-500">One flavor shown. The full workbook covers every flavor, by size.</p>
+              </Paper>
+
+              <Paper kicker="Format check" title="Which size and pack pays you the most per ounce" footer="Every format compared at the same margin target">
+                <MiniTable
+                  head={['Format', 'Verdict']}
+                  highlight={0}
+                  rows={[
+                    ['16 oz jar at $14.99', 'Best. Largest size still under the $15 fee threshold'],
+                    ['Retail shaker', 'Loses money at any price shoppers would pay'],
+                    ['3-pack of shakers', 'Needs bundling labor, pays about 30% less per ounce'],
+                    ['Chef size, $22.99 to $24.99', 'Pays less per ounce'],
+                  ]}
+                />
+              </Paper>
+
+              <Paper kicker="Directional forecast" title="What the first 12 months could look like" footer="A directional estimate from competitor sales. Not a guarantee.">
+                <p className="mb-3">
+                  At <b>$14.99</b> across three flavors, the opening order sells through in month one and a
+                  larger reorder lands in month two.
+                </p>
+                <MiniTable
+                  head={['Flavor', 'Run rate by month 6']}
+                  rows={[
+                    ['Flavor A', '440 units / mo'],
+                    ['Flavor B', '320 units / mo'],
+                    ['Flavor C', '240 units / mo'],
                   ]}
                 />
                 <p className="mt-3 !text-slate-500">
-                  Plus how your listings look today and how much branded search your name already gets.
+                  Then about 2% growth a month, following the seasonal pattern on competitor listings.
                 </p>
               </Paper>
             </div>
@@ -396,7 +401,7 @@ export default function StoicBrandsLanding() {
                 </p>
                 <ul className="space-y-3 text-sm text-obg-gray">
                   {[
-                    'Complimentary audit of your Amazon landscape',
+                    'Complimentary Amazon Opportunity Analysis, yours to keep',
                     'Strategy call to walk through the findings',
                     'A straight answer on whether the numbers work',
                     'No fee, no obligation',
@@ -412,7 +417,7 @@ export default function StoicBrandsLanding() {
                   source="stoic-apply-lp"
                   submitLabel="Submit Application and Pick a Time"
                   bookingHeading="Application received. Now pick a time."
-                  bookingBlurb="Choose a slot for your intro call. We start on your Amazon audit as soon as we have talked."
+                  bookingBlurb="Choose a slot for your intro call. We start on your Amazon Opportunity Analysis as soon as we have talked."
                 />
               </div>
             </div>

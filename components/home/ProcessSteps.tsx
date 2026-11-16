@@ -16,7 +16,7 @@ const steps = [
     icon: Search,
     title: 'Complimentary Amazon Audit & Strategy Call',
     description:
-      'For Seller Central accounts, a full OBG360 account audit. For Stoic Brands applicants, an audit of the Amazon landscape around your brand. We walk you through the findings either way.',
+      'For Seller Central accounts, a full OBG360 account audit. For Stoic Brands applicants, an Amazon Opportunity Analysis showing what your products can sell for and what that is worth to you. We walk you through the findings either way.',
   },
   {
     step: '03',
