@@ -7,6 +7,7 @@ const team = [
   { name: 'Dan', role: 'Co-Founder & Ops Manager', photo: '/team/Dan.png' },
   { name: 'Marlon', role: 'Advertising Specialist', photo: '/team/Marlon.png' },
   { name: 'Theresa', role: 'Catalog Specialist', photo: '/team/Theresa.png' },
+  { name: 'Kimberly', role: 'Catalog Specialist', photo: '/team/Kimberly.png' },
   { name: 'Czharina', role: 'Logistics Specialist', photo: '/team/Cha.png' },
   { name: 'Paulene', role: 'Brand Experience Specialist', photo: '/team/Paulene.png' },
 ]
@@ -27,7 +28,7 @@ export default function Team() {
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-5">
           {team.map((member, i) => (
             <AnimatedSection key={member.name} delay={i * 80}>
               <div className="card-dark text-center p-5 group">
