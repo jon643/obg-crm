@@ -124,15 +124,14 @@ export default function AmazonAuditLanding() {
               <span className="inline-block text-obg-orange font-semibold text-xs tracking-widest uppercase mb-6 border border-obg-orange/30 rounded-full px-4 py-1.5">
                 Your Fractional Amazon Operator
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-                Get a <span className="text-gradient-orange">Free Action Plan</span> to Grow
-                Your Amazon Sales and Profit
+              <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+                We&apos;ll Show You <span className="text-gradient-orange">Exactly How</span> to Grow Your
+                Amazon Profit. Then You Decide Who Does It.
               </h1>
               <p className="text-obg-gray text-lg leading-relaxed mb-8">
-                We audit your Seller Central account and hand you a prioritized list of recommendations
-                built from your own data. Each one is specific enough to implement yourself, at no cost,
-                to lift your top line and your bottom line. Or have us run it for you as your fractional
-                Amazon operator.
+                A free OBG360 audit of your Seller Central account, built by the founders of your future
+                fractional Amazon operator. You get a prioritized list of recommendations from your own
+                data, specific enough for your team to implement without us.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
                 <a href="#get-audit" className="btn-primary text-lg px-9 py-4">
