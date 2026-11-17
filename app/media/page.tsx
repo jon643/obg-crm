@@ -57,7 +57,7 @@ const podcastAppearances = [
     show: 'Corey Ganim Podcast',
     episode: 'How to Grow and Manage Brands on Amazon with Jon Klein',
     description:
-      'Jon Klein joins Corey Ganim to discuss building and managing Amazon brands — from choosing the right agency to the systems OBG uses to drive and protect client revenue.',
+      'Jon Klein joins Corey Ganim to discuss building and managing Amazon brands — from choosing the right Amazon partner to the systems OBG uses to drive and protect client revenue.',
     link: 'https://open.spotify.com/episode/0INjFMOZuQ38tom1EEHEIB',
     platform: 'Corey Ganim · Spotify',
   },
@@ -80,7 +80,7 @@ const speakingEvents = [
     event: 'Corey Ganim Podcast',
     location: 'Podcast',
     description:
-      'Featured guest sharing insights on the evolution of the Amazon agency model, brand growth strategy, and how OBG delivers founder-level attention and results to every client account.',
+      'Featured guest sharing insights on the evolution of Amazon channel management, brand growth strategy, and how OBG delivers founder-level attention and results to every client account.',
   },
 ]
 
@@ -202,7 +202,7 @@ export default function MediaPage() {
                     Online Brand Growth — Who We Are
                   </h3>
                   <p className="text-obg-gray text-sm leading-relaxed flex-1">
-                    A quick look at who Online Brand Growth is, what we do, and why founder-led Amazon management delivers results that typical agencies can&apos;t match.
+                    A quick look at who Online Brand Growth is, what we do, and why founder-led Amazon management delivers results that typical service providers can&apos;t match.
                   </p>
                 </div>
               </AnimatedSection>
