@@ -69,7 +69,7 @@ export default function Services() {
             <p className="text-obg-gray">
               What sets us apart is our understanding that a successful Amazon business requires
               collaboration and execution across multiple areas: Logistics, Operations, SEO/CRO,
-              and Advertising — all under one roof.
+              and Advertising - all under one roof.
             </p>
           </div>
         </AnimatedSection>

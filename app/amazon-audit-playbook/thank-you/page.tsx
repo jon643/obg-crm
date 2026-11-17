@@ -21,11 +21,11 @@ const PAGE_URL =
 const PDF_URL = '/downloads/obg360-amazon-audit-diy-playbook.pdf'
 
 export const metadata: Metadata = {
-  title: 'Your Audit Playbook is Ready — Download Inside | OBG',
+  title: 'Your Audit Playbook is Ready - Download Inside | OBG',
   description:
     'Download the OBG360 Amazon Audit DIY Playbook and get the four best practices for running your first audit this week.',
   alternates: { canonical: PAGE_URL },
-  // Post-conversion page — keep out of organic search.
+  // Post-conversion page - keep out of organic search.
   robots: { index: false, follow: true },
   openGraph: {
     title: 'Your OBG360 Audit Playbook is Ready',
@@ -40,19 +40,19 @@ const bestPractices = [
     icon: CalendarClock,
     title: 'Block the time like it’s a client meeting.',
     body:
-      'A proper pass takes 6–7 hours. Don’t squeeze it between Slack pings — book one deep-work day (or two half-days), work the steps in order, and note your 30- and 90-day data windows before you start so every number is comparable.',
+      'A proper pass takes 6–7 hours. Don’t squeeze it between Slack pings - book one deep-work day (or two half-days), work the steps in order, and note your 30- and 90-day data windows before you start so every number is comparable.',
   },
   {
     icon: Crosshair,
-    title: 'Pick your 3 focus ASINs first — and resist auditing everything.',
+    title: 'Pick your 3 focus ASINs first - and resist auditing everything.',
     body:
       'The system works because it goes deep on three representative products: a top performer, a middle one, and a weak-but-strategic one. Auditing every SKU is how audits die at step 4. Three deep beats thirty shallow.',
   },
   {
     icon: ClipboardList,
-    title: 'Record as you go — the checklist is the deliverable.',
+    title: 'Record as you go - the checklist is the deliverable.',
     body:
-      'Each step ends with one thing to walk away with. Write it down before moving on. By step 11 you’ll have a full diagnosis on paper — not a vague feeling that "ads could be better."',
+      'Each step ends with one thing to walk away with. Write it down before moving on. By step 11 you’ll have a full diagnosis on paper - not a vague feeling that "ads could be better."',
   },
   {
     icon: ListChecks,
@@ -69,7 +69,7 @@ export default function AuditThankYouPage() {
         items={[
           { name: 'Home', url: 'https://www.onlinebrandgrowth.com' },
           {
-            name: 'The OBG360 Amazon Audit — DIY Playbook',
+            name: 'The OBG360 Amazon Audit - DIY Playbook',
             url: 'https://www.onlinebrandgrowth.com/amazon-audit-playbook',
           },
           { name: 'Thank You', url: PAGE_URL },
@@ -181,17 +181,17 @@ export default function AuditThankYouPage() {
               <div className="card-dark border-obg-orange/30 bg-gradient-to-br from-obg-orange/10 to-transparent p-8 md:p-12 text-center">
                 <SectionLabel>Prefer we just do it for you?</SectionLabel>
                 <h2 className="text-white mb-5">
-                  We&apos;ll run the whole audit — and hand you the plan.
+                  We&apos;ll run the whole audit - and hand you the plan.
                 </h2>
                 <p className="text-obg-gray leading-relaxed mb-3 max-w-2xl mx-auto">
-                  A proper pass is a real day of work — and it&apos;s exactly what
+                  A proper pass is a real day of work - and it&apos;s exactly what
                   we do, 500+ times over. The OBG360 Amazon Audit is the
                   done-for-you version of this playbook: run by the founders,
                   delivered as a clear, sequenced plan tailored to your brand, with
                   the numbers pulled and interpreted for you.
                 </p>
                 <p className="text-obg-gray text-sm leading-relaxed mb-8 max-w-2xl mx-auto">
-                  Founder-led, 100% in-house, paid on your contribution profit —
+                  Founder-led, 100% in-house, paid on your contribution profit -
                   not your ad spend. Start with a free strategy call.
                 </p>
 

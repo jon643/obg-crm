@@ -27,13 +27,13 @@ const values = [
     icon: Target,
     title: 'Mission Over Ego',
     description:
-      'We leave our egos at the door. Every decision, every strategy, every action is in service of the mission — helping our clients build extraordinary businesses on Amazon.',
+      'We leave our egos at the door. Every decision, every strategy, every action is in service of the mission - helping our clients build extraordinary businesses on Amazon.',
   },
   {
     icon: Shield,
     title: 'Impeccable Character',
     description:
-      'We do what we say we\'re going to do. We\'re honest with our clients, honest with each other, and honest with ourselves. Integrity isn\'t a value we talk about — it\'s how we operate.',
+      'We do what we say we\'re going to do. We\'re honest with our clients, honest with each other, and honest with ourselves. Integrity isn\'t a value we talk about - it\'s how we operate.',
   },
   {
     icon: Flame,
@@ -150,7 +150,7 @@ export default function CareersPage() {
                 <span className="text-gradient-orange">Actually Matters</span>
               </h1>
               <p className="text-obg-gray text-xl leading-relaxed mb-8">
-                Online Brand Growth is a founder-led Amazon agency that manages $30M+ in annual
+                Online Brand Growth is a founder-led fractional Amazon operator that manages $30M+ in annual
                 revenue for some of the most ambitious brands on the platform. We&apos;re looking
                 for operators who take ownership, move fast, and care deeply about results.
               </p>
@@ -182,7 +182,7 @@ export default function CareersPage() {
                 <div className="card-dark h-full">
                   <h3 className="text-white font-bold text-lg mb-4">Founder-Led, Not Corporate</h3>
                   <p className="text-obg-gray leading-relaxed">
-                    Co-founders Jon Klein and Dan Balda are in the business every day — not managing
+                    Co-founders Jon Klein and Dan Balda are in the business every day - not managing
                     from a corner office. When you join OBG, you&apos;re working directly alongside
                     people who have built, managed, and scaled brands on Amazon for 25+ years. You
                     won&apos;t get lost in layers of middle management.
@@ -195,7 +195,7 @@ export default function CareersPage() {
                   <h3 className="text-white font-bold text-lg mb-4">Performance-Driven Compensation</h3>
                   <p className="text-obg-gray leading-relaxed">
                     We believe people should be paid for results, not time served. Our compensation
-                    structure rewards accountability and excellence. As the agency grows and as
+                    structure rewards accountability and excellence. As the company grows and as
                     you grow, your earnings grow with it. We have no interest in hiring people
                     who want to coast.
                   </p>
@@ -206,7 +206,7 @@ export default function CareersPage() {
                 <div className="card-dark h-full">
                   <h3 className="text-white font-bold text-lg mb-4">Remote-First, Async-Friendly</h3>
                   <p className="text-obg-gray leading-relaxed">
-                    Our team works across time zones — the US, Latin America, and the Philippines.
+                    Our team works across time zones - the US, Latin America, and the Philippines.
                     We communicate asynchronously, document well, and trust our people to manage
                     their own time. If you thrive with autonomy, you&apos;ll love working here.
                   </p>
@@ -219,7 +219,7 @@ export default function CareersPage() {
                   <p className="text-obg-gray leading-relaxed">
                     We work with real brands doing real revenue on Amazon. Our clients trust us with
                     their most important sales channel. The work you do here will have a measurable
-                    impact — on their businesses, and on your career.
+                    impact - on their businesses, and on your career.
                   </p>
                 </div>
               </AnimatedSection>
@@ -370,7 +370,7 @@ export default function CareersPage() {
               </h2>
               <p className="text-obg-gray text-lg mb-10">
                 We&apos;re always looking for exceptional Amazon operators. If you&apos;re passionate
-                about Amazon and think you&apos;d be a great fit for the OBG team, send us a note —
+                about Amazon and think you&apos;d be a great fit for the OBG team, send us a note -
                 we&apos;d love to hear from you.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

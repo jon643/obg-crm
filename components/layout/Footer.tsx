@@ -4,6 +4,8 @@ import Image from 'next/image'
 const footerLinks = {
   Company: [
     { label: 'About', href: '/#why-choose-us' },
+    { label: 'Exclusive Distribution', href: '/exclusive-distribution' },
+    { label: 'Fractional Amazon Operator', href: '/fractional-amazon-operator' },
     { label: 'Case Studies', href: '/case-studies' },
     { label: 'Services', href: '/services' },
     { label: 'Blog', href: '/blog' },
@@ -99,7 +101,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-obg-gray text-sm leading-relaxed max-w-xs">
-              Founder-led Amazon growth agency helping brands maximize revenue
+              Founder-led fractional Amazon operator helping brands maximize revenue
               and profitability. 100% in-house. Fully aligned.
             </p>
 

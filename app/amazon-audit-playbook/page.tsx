@@ -23,10 +23,10 @@ const PAGE_URL = 'https://www.onlinebrandgrowth.com/amazon-audit-playbook'
 export const metadata: Metadata = {
   title: 'Free DIY Playbook: The OBG360 Amazon Audit | OBG',
   description:
-    'Run a full audit on your own Amazon account with the exact seven-part system behind 500+ OBG audits: SEO, conversion, PPC, logistics, SKU profitability, fee recovery, and account health — step by step, free.',
+    'Run a full audit on your own Amazon account with the exact seven-part system behind 500+ OBG audits: SEO, conversion, PPC, logistics, SKU profitability, fee recovery, and account health - step by step, free.',
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'The OBG360 Amazon Audit — DIY Playbook (Free)',
+    title: 'The OBG360 Amazon Audit - DIY Playbook (Free)',
     description:
       'The exact seven-part audit system behind 500+ Amazon account audits, laid out so you can run it yourself. No fluff.',
     url: PAGE_URL,
@@ -40,7 +40,7 @@ const insideThePlaybook = [
     icon: BarChart3,
     title: 'Market & customer intelligence',
     description:
-      'How big your category really is, who’s winning it, and your actual share of demand — pulled from SQP.',
+      'How big your category really is, who’s winning it, and your actual share of demand - pulled from SQP.',
   },
   {
     icon: Eye,
@@ -58,13 +58,13 @@ const insideThePlaybook = [
     icon: Megaphone,
     title: 'Advertising structure & waste',
     description:
-      'Real TACOS per product and the wasted spend to cut — where ad money works and where it leaks.',
+      'Real TACOS per product and the wasted spend to cut - where ad money works and where it leaks.',
   },
   {
     icon: Boxes,
     title: 'Logistics & SKU profitability',
     description:
-      'Inventory age, stock-out risk, and true contribution profit per SKU — is every product actually profitable?',
+      'Inventory age, stock-out risk, and true contribution profit per SKU - is every product actually profitable?',
   },
   {
     icon: DollarSign,
@@ -76,26 +76,26 @@ const insideThePlaybook = [
 
 const stats = [
   { value: '500+', label: 'Audits run with this exact system in the last 12 months' },
-  { value: '30×', label: 'One client’s growth: $100K → $3M in 18 months — and an exit' },
+  { value: '30×', label: 'One client’s growth: $100K → $3M in 18 months - and an exit' },
   { value: '$0→$500K', label: 'Another brand’s first-year revenue using this diagnostic' },
 ]
 
 const testimonials = [
   {
     quote:
-      'OBG literally 30X’d our Amazon sales in less than 18 months, from $100K to $3M per year — which enabled us to scale into retail and ultimately exit.',
+      'OBG literally 30X’d our Amazon sales in less than 18 months, from $100K to $3M per year - which enabled us to scale into retail and ultimately exit.',
     name: 'Doug Gonterman',
     company: 'NumNum Baby',
   },
   {
     quote:
-      'Our sales and profit are up over 50% year over year. They take on all the headaches of Amazon — a game changer.',
+      'Our sales and profit are up over 50% year over year. They take on all the headaches of Amazon - a game changer.',
     name: 'Lori Cortright',
     company: 'CFO, Streetwise Security',
   },
   {
     quote:
-      'We’ve worked with many agencies — OBG’s expertise and dedication are unmatched.',
+      'We’ve worked with many agencies - OBG’s expertise and dedication are unmatched.',
     name: 'Lynn Cartwright',
     company: 'Minerva Research Labs NA',
   },
@@ -107,7 +107,7 @@ export default function AmazonAuditPlaybookPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://www.onlinebrandgrowth.com' },
-          { name: 'The OBG360 Amazon Audit — DIY Playbook', url: PAGE_URL },
+          { name: 'The OBG360 Amazon Audit - DIY Playbook', url: PAGE_URL },
         ]}
       />
       <Header />
@@ -126,7 +126,7 @@ export default function AmazonAuditPlaybookPage() {
           <div className="container-obg px-6 md:px-8 lg:px-12 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
 
-              {/* Left — Copy + form */}
+              {/* Left - Copy + form */}
               <div className="lg:col-span-7">
                 <AnimatedSection direction="up">
                   <SectionLabel>Free DIY Playbook · Issue 02</SectionLabel>
@@ -134,7 +134,7 @@ export default function AmazonAuditPlaybookPage() {
                     The OBG360 Amazon Audit
                   </h1>
                   <p className="text-obg-offwhite text-xl leading-relaxed mb-4 text-balance">
-                    How to run a full audit on your own account — the exact
+                    How to run a full audit on your own account - the exact
                     seven-part system, step by step.
                   </p>
                   <p className="text-obg-gray text-base leading-relaxed mb-8 max-w-xl">
@@ -150,7 +150,7 @@ export default function AmazonAuditPlaybookPage() {
                 </AnimatedSection>
               </div>
 
-              {/* Right — Playbook visual */}
+              {/* Right - Playbook visual */}
               <div className="lg:col-span-5">
                 <AnimatedSection direction="right" delay={200}>
                   <div className="relative max-w-md mx-auto lg:max-w-none">
@@ -173,7 +173,7 @@ export default function AmazonAuditPlaybookPage() {
                         The OBG360 Amazon Audit
                       </div>
                       <div className="text-obg-offwhite text-sm md:text-base leading-snug mb-auto">
-                        How to run a full audit on your own account —<br />
+                        How to run a full audit on your own account - <br />
                         the exact seven-part system, step by step.
                       </div>
 
@@ -247,7 +247,7 @@ export default function AmazonAuditPlaybookPage() {
                 </p>
                 <p className="text-obg-gray text-sm max-w-xl mx-auto">
                   Every step condensed to the one thing to walk away with. Pin it
-                  above your desk and re-run it monthly — weekly when you&apos;re
+                  above your desk and re-run it monthly - weekly when you&apos;re
                   under pressure.
                 </p>
               </div>
@@ -265,7 +265,7 @@ export default function AmazonAuditPlaybookPage() {
                   Most brands never actually audit their account.
                 </h2>
                 <p className="text-obg-gray text-lg">
-                  They toggle tactics — new images one week, a bid tweak the next —
+                  They toggle tactics - new images one week, a bid tweak the next -
                   and hope. A real audit swaps the guessing for a diagnosis: what&apos;s
                   actually holding growth back, and what to fix first.
                 </p>
@@ -329,7 +329,7 @@ export default function AmazonAuditPlaybookPage() {
                 </h2>
                 <p className="text-obg-gray text-lg">
                   Drop your name and email below. We&apos;ll send the DIY Audit
-                  Playbook straight to your inbox — free, no upsell, no obligation.
+                  Playbook straight to your inbox - free, no upsell, no obligation.
                 </p>
               </div>
             </AnimatedSection>

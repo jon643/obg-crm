@@ -44,14 +44,14 @@ const iconMap: Record<ServiceIcon, typeof BarChart2> = {
 }
 
 export const metadata: Metadata = {
-  title: 'Amazon Agency Services',
+  title: 'Fractional Amazon Operator Services',
   description:
-    'Full-service Amazon agency: PPC management, SEO & listing optimization, FBA logistics, strategic consulting, brand registry enforcement, and full account management for 7- and 8-figure brands.',
+    'Your fractional Amazon operator: PPC management, SEO & listing optimization, FBA logistics, strategic consulting, brand registry enforcement, and full account management for 7- and 8-figure brands.',
   alternates: {
     canonical: 'https://www.onlinebrandgrowth.com/services',
   },
   openGraph: {
-    title: 'Amazon Agency Services',
+    title: 'Fractional Amazon Operator Services',
     description:
       'Full-service Amazon brand management: PPC, SEO, logistics, and brand protection for 7- and 8-figure brands.',
     url: 'https://www.onlinebrandgrowth.com/services',
@@ -117,7 +117,7 @@ export default function ServicesPage() {
                 <span className="text-gradient-orange">Serious Brands</span>
               </h1>
               <p className="text-obg-gray text-xl leading-relaxed mb-8">
-                Every service is delivered in-house by our team of Amazon specialists — no outsourcing,
+                Every service is delivered in-house by our team of Amazon specialists - no outsourcing,
                 no junior account managers, no black boxes. Just expert execution aligned with your
                 profitability. Explore each service below.
               </p>
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                 rel="noopener noreferrer"
                 className="btn-primary text-lg px-9 py-4"
               >
-                Get Your FREE OBG360 Audit
+                Get Your OBG360 Audit
               </Link>
             </AnimatedSection>
           </div>
@@ -166,7 +166,7 @@ export default function ServicesPage() {
               <SectionLabel>Specialized Services</SectionLabel>
               <h2 className="text-white mb-4">Targeted Solutions for Specific Goals</h2>
               <p className="text-obg-gray text-lg leading-relaxed mb-12 max-w-3xl">
-                Focused engagements for a specific need — a launch, a storefront, recovering money Amazon
+                Focused engagements for a specific need - a launch, a storefront, recovering money Amazon
                 owes you, or choosing the right selling model.
               </p>
             </AnimatedSection>
@@ -193,7 +193,7 @@ export default function ServicesPage() {
               <h2 className="text-white mb-6">Not Sure Which Service Is Right for You?</h2>
               <p className="text-obg-gray text-lg mb-10">
                 Book a free 45-minute strategy call with our team. We&apos;ll audit your Amazon presence,
-                identify your biggest growth opportunities, and recommend the right approach — no pitch,
+                identify your biggest growth opportunities, and recommend the right approach - no pitch,
                 no pressure.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -203,7 +203,7 @@ export default function ServicesPage() {
                   rel="noopener noreferrer"
                   className="btn-primary text-lg px-9 py-4"
                 >
-                  Get Your FREE OBG360 Audit
+                  Get Your OBG360 Audit
                 </Link>
                 <Link href="/case-studies" className="btn-secondary text-lg px-9 py-4">
                   See Our Results

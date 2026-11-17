@@ -21,11 +21,11 @@ const PAGE_URL =
 const PDF_URL = '/downloads/obg-unauthorized-seller-playbook.pdf'
 
 export const metadata: Metadata = {
-  title: 'Your Playbook is Ready — Download Inside | OBG',
+  title: 'Your Playbook is Ready - Download Inside | OBG',
   description:
     "Download the Unauthorized Seller Playbook and get the four best practices for putting it to work on your Amazon channel this week.",
   alternates: { canonical: PAGE_URL },
-  // Keep this page out of organic search — it's the post-conversion thank-you page.
+  // Keep this page out of organic search - it's the post-conversion thank-you page.
   robots: { index: false, follow: true },
   openGraph: {
     title: 'Your OBG Playbook is Ready',
@@ -40,19 +40,19 @@ const bestPractices = [
     icon: ListChecks,
     title: 'Read it once. Run the audit.',
     body:
-      "Don't skim — read sections 1–3 end to end. Then sit down with Seller Central and run the 5-step audit on your top 5 ASINs. You're looking for the gap between what you think is on your listings and what's actually there.",
+      "Don't skim - read sections 1–3 end to end. Then sit down with Seller Central and run the 5-step audit on your top 5 ASINs. You're looking for the gap between what you think is on your listings and what's actually there.",
   },
   {
     icon: Compass,
     title: 'Stand up the foundation before chasing sellers.',
     body:
-      "Sections 4–6 are the unsexy part most brands skip — Brand Registry, MAP policy, reseller agreements. If you go straight to removal without the foundation, the same sellers re-list under a new account next week. Do the boring work first.",
+      "Sections 4–6 are the unsexy part most brands skip - Brand Registry, MAP policy, reseller agreements. If you go straight to removal without the foundation, the same sellers re-list under a new account next week. Do the boring work first.",
   },
   {
     icon: Target,
     title: 'Work the 7-step sequence in order.',
     body:
-      "It's an escalation ladder. Don't jump to test buys before you've sent the tiered C&D letters — most non-counterfeit sellers fold at the first or second letter. Save Amazon Transparency enrollment for the genuinely persistent ones.",
+      "It's an escalation ladder. Don't jump to test buys before you've sent the tiered C&D letters - most non-counterfeit sellers fold at the first or second letter. Save Amazon Transparency enrollment for the genuinely persistent ones.",
   },
   {
     icon: AlertOctagon,
@@ -186,8 +186,8 @@ export default function ThankYouPage() {
                 </h2>
                 <p className="text-obg-gray leading-relaxed mb-3 max-w-2xl mx-auto">
                   The playbook is the system. If you&apos;d rather have our team
-                  run it on your Amazon channel — or you want to walk through
-                  what we&apos;d do for your specific situation — grab a
+                  run it on your Amazon channel - or you want to walk through
+                  what we&apos;d do for your specific situation - grab a
                   45-minute strategy call.
                 </p>
                 <p className="text-obg-gray text-sm leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -201,7 +201,7 @@ export default function ThankYouPage() {
                     className="btn-primary text-base px-8 py-4"
                   >
                     <Calendar size={18} />
-                    Get Your FREE OBG360 Audit
+                    Get Your OBG360 Audit
                   </Link>
                   <span className="text-obg-gray text-xs">
                     45 min · Google Meet · You pick the time

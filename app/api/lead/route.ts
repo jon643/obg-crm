@@ -29,6 +29,12 @@ interface LeadPayload {
   email?: string
   source?: string
   location?: string
+  // Landing-page application fields (OBG audit + Stoic Brands apply forms)
+  brand?: string
+  website?: string
+  amazonStatus?: string
+  revenue?: string
+  skus?: string
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -50,10 +56,19 @@ const TAG_BY_SOURCE: Record<string, number> = {
   'diy-audit': 5, // Lead Magnet: DIY Audit
 }
 
+// Paid-traffic landing pages. Their tags are set by env var so they never fall
+// back to the Playbook tag (which would start the wrong nurture sequence).
+// Until the env var is set the contact is still created, listed and annotated.
+const LANDING_TAG_ENV: Record<string, string | undefined> = {
+  'obg-audit-lp': process.env.AC_TAG_OBG_AUDIT_LP,
+  'stoic-apply-lp': process.env.AC_TAG_STOIC_APPLY_LP,
+}
+
 async function syncToActiveCampaign(
   firstName: string,
   email: string,
-  tagId: number,
+  tagId: number | null,
+  note?: string,
 ): Promise<{ ok: boolean; contactId?: string; error?: string }> {
   if (!AC_API_KEY) {
     return { ok: false, error: 'AC_API_KEY not configured' }
@@ -98,7 +113,21 @@ async function syncToActiveCampaign(
       console.warn('[lead] contactLists', listRes.status, errText.slice(0, 200))
     }
 
+    // 2b) Attach the application answers as a note on the contact.
+    if (note) {
+      const noteRes = await fetch(`${AC_API_URL}/api/3/notes`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ note: { note, relid: Number(contactId), reltype: 'Subscriber' } }),
+      })
+      if (!noteRes.ok) {
+        const errText = await noteRes.text().catch(() => '')
+        console.warn('[lead] notes', noteRes.status, errText.slice(0, 200))
+      }
+    }
+
     // 3) Apply the trigger tag -- this is what fires the automation.
+    if (tagId === null) return { ok: true, contactId }
     const tagRes = await fetch(`${AC_API_URL}/api/3/contactTags`, {
       method: 'POST',
       headers,
@@ -140,15 +169,37 @@ export async function POST(req: NextRequest) {
     )
   }
 
-  const tagId = TAG_BY_SOURCE[source] ?? Number(AC_TAG_ID)
+  const clean = (v?: string) => (v ?? '').trim().slice(0, 300)
+  const application = {
+    brand: clean(body.brand),
+    website: clean(body.website),
+    amazonStatus: clean(body.amazonStatus),
+    revenue: clean(body.revenue),
+    skus: clean(body.skus),
+  }
+  const isLanding = source in LANDING_TAG_ENV
+  const landingTag = Number(LANDING_TAG_ENV[source])
+  const tagId: number | null = isLanding
+    ? (Number.isFinite(landingTag) && landingTag > 0 ? landingTag : null)
+    : (TAG_BY_SOURCE[source] ?? Number(AC_TAG_ID))
+  const note = isLanding
+    ? [
+        `Landing page application (${source})`,
+        `Brand: ${application.brand}`,
+        `Website: ${application.website}`,
+        `Amazon status: ${application.amazonStatus}`,
+        `Annual revenue: ${application.revenue}`,
+        `SKUs: ${application.skus}`,
+      ].join('\n')
+    : undefined
 
   // Always log so leads aren't lost even if AC integration breaks.
   console.log(
     '[lead]',
-    JSON.stringify({ firstName, email, source, tagId, location, ts: new Date().toISOString() }),
+    JSON.stringify({ firstName, email, source, tagId, location, ...(isLanding ? application : {}), ts: new Date().toISOString() }),
   )
 
-  const result = await syncToActiveCampaign(firstName, email, tagId)
+  const result = await syncToActiveCampaign(firstName, email, tagId, note)
   if (!result.ok) {
     // Soft-fail: don't block the user's thank-you redirect. Log loudly for ops.
     console.error('[lead] AC sync failed:', result.error)

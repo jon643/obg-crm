@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils'
 const testimonials = [
   {
     quote:
-      "OBG literally 30X'd our Amazon sales in less than 18 months — from $100K to $3M per year. This growth enabled us to scale into retail and ultimately exit the business. The team at Online Brand Growth are absolute wizards at Amazon & ecommerce.",
+      "OBG literally 30X'd our Amazon sales in less than 18 months - from $100K to $3M per year. This growth enabled us to scale into retail and ultimately exit the business. The team at Online Brand Growth are absolute wizards at Amazon & ecommerce.",
     name: 'Doug Gonterman',
     title: 'Founder',
     company: 'NumNum Baby',
@@ -146,7 +146,7 @@ export default function Testimonials() {
           onMouseEnter={() => { pauseRef.current = true }}
           onMouseLeave={() => { pauseRef.current = false }}
         >
-          {/* Scroll track — CSS scroll-snap gives native touch swipe */}
+          {/* Scroll track - CSS scroll-snap gives native touch swipe */}
           <div
             ref={trackRef}
             className="flex overflow-x-auto snap-x snap-mandatory gap-0"

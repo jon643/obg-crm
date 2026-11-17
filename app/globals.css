@@ -380,3 +380,6 @@
 .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
 .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
 .stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Entrance animations slide in from the side; never let them cause sideways scroll. */
+html, body { overflow-x: clip; }

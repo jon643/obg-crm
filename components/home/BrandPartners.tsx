@@ -35,7 +35,7 @@ export default function BrandPartners() {
           style={{ background: 'linear-gradient(to left, #2c334e, transparent)' }}
         />
 
-        {/* Scrolling track — duplicated for seamless loop */}
+        {/* Scrolling track - duplicated for seamless loop */}
         <div className="flex gap-14 animate-marquee whitespace-nowrap items-center">
           {[...brands, ...brands].map((brand, i) => (
             <div

@@ -159,7 +159,7 @@ export default function SalesRankCheckerPage() {
               Our founders will audit your account, benchmark your rank against competitors, and show you exactly where the growth is hiding.
             </p>
             <Link href="/#book-call" className="btn-primary text-lg px-9 py-4 inline-block">
-              Get Your FREE OBG360 Audit
+              Get Your OBG360 Audit
             </Link>
           </div>
         </section>

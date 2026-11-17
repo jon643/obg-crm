@@ -21,12 +21,12 @@ const PAGE_URL = 'https://www.onlinebrandgrowth.com/unauthorized-seller-playbook
 export const metadata: Metadata = {
   title: 'Free Playbook: The Unauthorized Seller Playbook | OBG',
   description:
-    "Get OBG's internal Amazon brand-protection system: how to find unauthorized sellers, remove them, and keep them off your listings. The exact 7-step removal sequence, C&D templates, and Phase A/B/C plan — free.",
+    "Get OBG's internal Amazon brand-protection system: how to find unauthorized sellers, remove them, and keep them off your listings. The exact 7-step removal sequence, C&D templates, and Phase A/B/C plan - free.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'The Unauthorized Seller Playbook — Free from Online Brand Growth',
+    title: 'The Unauthorized Seller Playbook - Free from Online Brand Growth',
     description:
-      'How to find unauthorized Amazon resellers, remove them, and keep them off your listings. The exact system OBG runs internally — laid out step by step.',
+      'How to find unauthorized Amazon resellers, remove them, and keep them off your listings. The exact system OBG runs internally - laid out step by step.',
     url: PAGE_URL,
     type: 'article',
   },
@@ -38,7 +38,7 @@ const insideThePlaybook = [
     icon: Search,
     title: 'Diagnose your seller landscape',
     description:
-      'The 5-step audit every brand owner should run monthly — weekly under attack.',
+      'The 5-step audit every brand owner should run monthly - weekly under attack.',
   },
   {
     icon: ShieldCheck,
@@ -50,7 +50,7 @@ const insideThePlaybook = [
     icon: TrendingUp,
     title: 'The 7-step removal playbook',
     description:
-      'From first detection to delisted — the exact sequence we use internally on every rogue seller.',
+      'From first detection to delisted - the exact sequence we use internally on every rogue seller.',
   },
   {
     icon: FileText,
@@ -62,13 +62,13 @@ const insideThePlaybook = [
     icon: Lock,
     title: 'Test buy SOP',
     description:
-      'Run buys from the Brand Registered Owner account — the order ID Amazon will actually enforce on.',
+      'Run buys from the Brand Registered Owner account - the order ID Amazon will actually enforce on.',
   },
   {
     icon: AlertTriangle,
     title: 'Phase A / B / C plan',
     description:
-      'How OBG sequences the work — Foundation → Build → Scale. A real plan, not a 90-day sprint.',
+      'How OBG sequences the work - Foundation → Build → Scale. A real plan, not a 90-day sprint.',
   },
 ]
 
@@ -82,7 +82,7 @@ const credibility = [
   { value: '$450M+', label: 'Lifetime Amazon revenue managed' },
   { value: '500+', label: 'Brands managed' },
   { value: '25+ yrs', label: 'E-commerce operator experience' },
-  { value: '100%', label: "Amazon — that's all we do" },
+  { value: '100%', label: "Amazon - that's all we do" },
 ]
 
 export default function UnauthorizedSellerPlaybookPage() {
@@ -110,7 +110,7 @@ export default function UnauthorizedSellerPlaybookPage() {
           <div className="container-obg px-6 md:px-8 lg:px-12 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
 
-              {/* Left — Copy + form */}
+              {/* Left - Copy + form */}
               <div className="lg:col-span-7">
                 <AnimatedSection direction="up">
                   <SectionLabel>Free Playbook · Issue 01</SectionLabel>
@@ -123,7 +123,7 @@ export default function UnauthorizedSellerPlaybookPage() {
                   <p className="text-obg-gray text-base leading-relaxed mb-8 max-w-xl">
                     The exact step-by-step system Online Brand Growth runs internally for the
                     Amazon brands we partner with. The audit, the 7-step removal sequence, the
-                    C&amp;D templates, the test-buy SOP — no fluff, no theory.
+                    C&amp;D templates, the test-buy SOP - no fluff, no theory.
                   </p>
                 </AnimatedSection>
 
@@ -132,7 +132,7 @@ export default function UnauthorizedSellerPlaybookPage() {
                 </AnimatedSection>
               </div>
 
-              {/* Right — Playbook visual */}
+              {/* Right - Playbook visual */}
               <div className="lg:col-span-5">
                 <AnimatedSection direction="right" delay={200}>
                   <div className="relative max-w-md mx-auto lg:max-w-none">
@@ -233,7 +233,7 @@ export default function UnauthorizedSellerPlaybookPage() {
                 </h2>
                 <p className="text-obg-gray text-lg">
                   They&apos;re a structural feature of global commerce. The question isn&apos;t whether
-                  your brand will be hit — it&apos;s how prepared you are when it happens.
+                  your brand will be hit - it&apos;s how prepared you are when it happens.
                 </p>
               </div>
             </AnimatedSection>
@@ -265,7 +265,7 @@ export default function UnauthorizedSellerPlaybookPage() {
                   Layer in returns and A&#8209;to&#8209;Z claims absorbed on units they fulfilled,
                   ad spend wasted on a hijacked Buy Box, and authorized retailers who churn once
                   channel pricing collapses. The actual hit to net profit is materially larger.
-                  The playbook shows you how to run the math on your own numbers — and stop the
+                  The playbook shows you how to run the math on your own numbers - and stop the
                   bleed.
                 </p>
               </div>
@@ -283,13 +283,13 @@ export default function UnauthorizedSellerPlaybookPage() {
                   Founder-led Amazon brand management.
                 </h2>
                 <p className="text-obg-gray leading-relaxed mb-4">
-                  Online Brand Growth is a founder-led agency for serious Amazon operators.
+                  Online Brand Growth is a founder-led fractional Amazon operator for serious brands.
                   Across our team&apos;s careers we&apos;ve built and scaled hundreds of brands on Amazon.
                 </p>
                 <p className="text-obg-gray leading-relaxed">
                   This playbook is the same system we run internally for the operators we partner
                   with today. No fluff. Just the exact moves, in the exact order, that get
-                  unauthorized sellers off your listings — and keep them off.
+                  unauthorized sellers off your listings - and keep them off.
                 </p>
               </AnimatedSection>
 
@@ -320,7 +320,7 @@ export default function UnauthorizedSellerPlaybookPage() {
                 <SectionLabel>Send Me the Playbook</SectionLabel>
                 <h2 className="text-white mb-4">Ready to take your channel back?</h2>
                 <p className="text-obg-gray text-lg">
-                  Drop your name and email below. We&apos;ll send the playbook straight to your inbox —
+                  Drop your name and email below. We&apos;ll send the playbook straight to your inbox -
                   free, no upsell, no obligation.
                 </p>
               </div>

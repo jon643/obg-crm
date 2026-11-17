@@ -1,37 +1,46 @@
+import Link from 'next/link'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import SectionLabel from '@/components/ui/SectionLabel'
-import { Store, Truck, Handshake } from 'lucide-react'
+import { Store, Truck, Handshake, Check, ArrowRight } from 'lucide-react'
 
 const models = [
   {
     icon: Store,
-    tag: 'Most Popular',
-    title: 'Seller Central Account Growth (3P)',
+    brand: 'Online Brand Growth',
+    title: 'Fractional Amazon Operator',
+    tagline: 'You keep the account. We run it.',
     description:
-      'Our team of experts collaborate with your in-house team to continually increase sales and profit of your Amazon Seller Central account. We help transform Amazon from a frustration to your most profitable distribution channel.',
-    accentColor: 'from-obg-orange/10 to-transparent',
-    borderColor: 'border-obg-orange/25 hover:border-obg-orange/50',
-    tagColor: 'bg-obg-orange/15 text-obg-orange border-obg-orange/30',
+      'Our team works inside your Seller Central account and owns SEO, advertising, logistics and operations alongside your in-house team, for a monthly fee tied to your contribution profit.',
+    rows: [
+      ['Who sells on Amazon', 'You, in your own account'],
+      ['How we get paid', 'Monthly fee'],
+      ['Commitment', '90 days, then month to month'],
+      ['Best for', 'Brands that want to own the channel and its margin'],
+    ],
+    cta: 'Get Your OBG360 Audit',
+    href: '/fractional-amazon-operator',
+    border: 'border-obg-orange/30 hover:border-obg-orange/60',
+    accent: 'text-obg-orange',
+    btn: 'btn-primary',
   },
   {
     icon: Truck,
-    tag: 'Lower Overhead',
-    title: 'Amazon Distribution Partnership',
+    brand: 'Stoic Brands',
+    title: 'Exclusive Amazon Distribution',
+    tagline: 'We buy from you. We run it.',
     description:
-      'Online Brand Growth purchases inventory from your company and sells through our own Amazon store, leveraging our agency services to increase purchase order quantities. This model provides less operational burden, allowing you to focus on your core business.',
-    accentColor: 'from-blue-500/10 to-transparent',
-    borderColor: 'border-blue-500/20 hover:border-blue-400/40',
-    tagColor: 'bg-blue-500/15 text-blue-400 border-blue-500/30',
-  },
-  {
-    icon: Handshake,
-    tag: 'Long-Term Partnership',
-    title: 'Equity Partnership',
-    description:
-      'We invest in your growing ecommerce business as a minority partner with significant Amazon and ecommerce capabilities. This allows us to provide discounted services, leverage deep industry connections, and forge a long-term partnership with sights set on a successful brand exit.',
-    accentColor: 'from-emerald-500/10 to-transparent',
-    borderColor: 'border-emerald-500/20 hover:border-emerald-400/40',
-    tagColor: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30',
+      'Stoic Brands, our sister company, purchases your product wholesale and sells it on Amazon as your one authorized seller. You get the same team and the same services, with no fees.',
+    rows: [
+      ['Who sells on Amazon', 'Stoic Brands, exclusively'],
+      ['How we get paid', 'Margin on the product. No fees'],
+      ['Commitment', 'Month to month'],
+      ['Best for', 'Brands that want Amazon handled and off their plate'],
+    ],
+    cta: 'Apply to Work With Us',
+    href: '/exclusive-distribution',
+    border: 'border-amber-400/30 hover:border-amber-400/60',
+    accent: 'text-amber-400',
+    btn: 'btn-primary',
   },
 ]
 
@@ -42,47 +51,65 @@ export default function HowWeWork() {
 
         <AnimatedSection>
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <SectionLabel>Partnership Models</SectionLabel>
-            <h2 className="text-white mb-4">How We Work With Brands</h2>
+            <SectionLabel>Two Ways to Work With Us</SectionLabel>
+            <h2 className="text-white mb-4">One Team. Two Models. Pick the One That Fits.</h2>
             <p className="text-obg-gray">
-              Every brand is different. We offer three partnership structures so you can choose
-              the model that fits your goals, resources, and growth stage.
+              Some brands want to own their Amazon channel with an expert operator running it. Others
+              would rather sell to one accountable buyer and never think about Amazon again. We do both,
+              and both start with a complimentary Amazon audit.
             </p>
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {models.map((model, i) => {
             const Icon = model.icon
             return (
               <AnimatedSection key={model.title} delay={i * 120}>
-                <div
-                  className={`card-dark h-full flex flex-col bg-gradient-to-b ${model.accentColor} border ${model.borderColor} transition-all duration-300`}
-                >
-                  {/* Tag */}
-                  <span
-                    className={`self-start text-xs font-semibold border rounded-full px-3 py-1 mb-6 ${model.tagColor}`}
-                  >
-                    {model.tag}
-                  </span>
-
-                  {/* Icon */}
-                  <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-5">
-                    <Icon size={22} className="text-obg-orange" />
+                <div className={`card-dark h-full flex flex-col border ${model.border}`}>
+                  <div className="flex items-center gap-4 mb-5">
+                    <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
+                      <Icon size={22} className={model.accent} />
+                    </div>
+                    <div>
+                      <div className={`text-xs font-semibold tracking-widest uppercase ${model.accent}`}>{model.brand}</div>
+                      <h3 className="text-white font-bold text-xl leading-snug">{model.title}</h3>
+                    </div>
                   </div>
-
-                  {/* Content */}
-                  <h3 className="text-white font-bold text-lg mb-3 leading-snug">
-                    {model.title}
-                  </h3>
-                  <p className="text-obg-gray text-sm leading-relaxed flex-1">
-                    {model.description}
-                  </p>
+                  <p className="text-white font-semibold mb-2">{model.tagline}</p>
+                  <p className="text-obg-gray text-sm leading-relaxed mb-6">{model.description}</p>
+                  <dl className="space-y-3 mb-8 flex-1">
+                    {model.rows.map(([k, v]) => (
+                      <div key={k} className="flex gap-3 text-sm border-t border-obg-blue-light/20 pt-3">
+                        <Check size={16} className={`flex-shrink-0 mt-0.5 ${model.accent}`} />
+                        <div className="flex flex-col sm:flex-row sm:gap-3 min-w-0">
+                          <dt className="text-obg-gray sm:w-36 flex-shrink-0">{k}</dt>
+                          <dd className="text-white min-w-0">{v}</dd>
+                        </div>
+                      </div>
+                    ))}
+                  </dl>
+                  <Link href={model.href} className={`${model.btn} w-full text-center`}>
+                    {model.cta} <ArrowRight size={16} />
+                  </Link>
                 </div>
               </AnimatedSection>
             )
           })}
         </div>
+
+        <AnimatedSection delay={300}>
+          <div className="mt-6 card-glass p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+              <Handshake size={18} className="text-emerald-400" />
+            </div>
+            <p className="text-obg-gray text-sm leading-relaxed">
+              <span className="text-white font-semibold">Equity partnerships.</span>{' '}
+              For select growing brands we also invest as a minority partner, bringing our Amazon and
+              e-commerce capabilities with sights set on a successful exit. Ask us about it on your call.
+            </p>
+          </div>
+        </AnimatedSection>
 
       </div>
     </section>
