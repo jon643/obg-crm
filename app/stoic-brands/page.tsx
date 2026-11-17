@@ -7,10 +7,12 @@ import {
 import LandingHeader, { StoicLockup } from '@/components/landing/LandingHeader'
 import LeadBookingForm from '@/components/landing/LeadBookingForm'
 import MetaPixel from '@/components/landing/MetaPixel'
-import { Paper, MiniTable, Blurred, StepList, StatBar, LandingFAQ } from '@/components/landing/Blocks'
+import { StepList, StatBar, LandingFAQ, Founders } from '@/components/landing/Blocks'
 import SectionLabel from '@/components/ui/SectionLabel'
 import CaseStudies from '@/components/home/CaseStudies'
 import Testimonials from '@/components/home/Testimonials'
+import BrandPartners from '@/components/home/BrandPartners'
+import AnalysisDeepDive from './AnalysisDeepDive'
 
 export const metadata: Metadata = {
   title: 'Stoic Brands | Exclusive Amazon Distribution for Brands and Manufacturers',
@@ -246,86 +248,7 @@ export default function StoicBrandsLanding() {
           </div>
         </section>
 
-        {/* THE AUDIT */}
-        <section className="section bg-obg-blue" id="the-audit">
-          <div className="container-obg px-6 md:px-8 lg:px-12">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <SectionLabel>What You Get First</SectionLabel>
-              <h2 className="text-white mb-4">A Complimentary Amazon Opportunity Analysis for Your Brand</h2>
-              <p className="text-obg-gray">
-                Before anyone commits, you get a workbook showing what your products can sell for on
-                Amazon, how many units to expect, and what that means for your wholesale price. It is yours
-                to keep whether or not we end up working together. This is the layout of a real analysis
-                for a specialty food brand, with the brand&apos;s names and figures hidden.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <Paper kicker="Pricing scenarios" title="What we can pay you at each Amazon selling price" footer="2026 Amazon fees, inbound freight, storage and returns included.">
-                <MiniTable
-                  head={['Amazon price', 'Amazon + logistics', 'We can pay you', 'Est. units / mo per flavor']}
-                  highlight={2}
-                  rows={[
-                    ['$12.99', <Blurred key="f0">$8.88</Blurred>, <Blurred key="w0">$8.88</Blurred>, <Blurred key="u0">888 to 888</Blurred>],
-                    ['$13.99', <Blurred key="f1">$8.88</Blurred>, <Blurred key="w1">$8.88</Blurred>, <Blurred key="u1">888 to 888</Blurred>],
-                    ['$14.99', <Blurred key="f2">$8.88</Blurred>, <Blurred key="w2">$8.88</Blurred>, <Blurred key="u2">888 to 888</Blurred>],
-                    ['$15.99', <Blurred key="f3">$8.88</Blurred>, <Blurred key="w3">$8.88</Blurred>, <Blurred key="u3">888 to 888</Blurred>],
-                    ['$16.99', <Blurred key="f4">$8.88</Blurred>, <Blurred key="w4">$8.88</Blurred>, <Blurred key="u4">888 to 888</Blurred>],
-                  ]}
-                />
-                <p className="mt-3 !text-slate-500">
-                  Amazon&apos;s referral fee steps from 8% to 15% above $14.99, which is why a higher price
-                  can pay you less. Figures are blurred in this sample.
-                </p>
-              </Paper>
-
-              <Paper kicker="Comparable listings" title="What very similar products sell for, and how many units they move" footer="Live Amazon listings. Sold last month is Amazon's own badge.">
-                <MiniTable
-                  head={['Listing', 'Price', '$ per oz', 'Reviews', 'Sold last month']}
-                  rows={[
-                    ['Competitor A', <Blurred key="p0">$88.88</Blurred>, <Blurred key="o0">$8.88</Blurred>, <Blurred key="r0">8,888</Blurred>, '800+'],
-                    ['Competitor B', <Blurred key="p1">$88.88</Blurred>, <Blurred key="o1">$8.88</Blurred>, <Blurred key="r1">8,888</Blurred>, '700+'],
-                    ['Competitor C', <Blurred key="p2">$88.88</Blurred>, <Blurred key="o2">$8.88</Blurred>, <Blurred key="r2">8,888</Blurred>, '600+'],
-                    ['Competitor D', <Blurred key="p3">$88.88</Blurred>, <Blurred key="o3">$8.88</Blurred>, <Blurred key="r3">8,888</Blurred>, '300+'],
-                    ['Competitor E', <Blurred key="p4">$88.88</Blurred>, <Blurred key="o4">$8.88</Blurred>, <Blurred key="r4">8,888</Blurred>, '100+'],
-                  ]}
-                />
-                <p className="mt-3 !text-slate-500">One flavor shown. The full workbook covers every flavor, by size.</p>
-              </Paper>
-
-              <Paper kicker="Format check" title="Which size and pack pays you the most per ounce" footer="Every format compared at the same margin target">
-                <MiniTable
-                  head={['Format', 'Verdict']}
-                  highlight={0}
-                  rows={[
-                    ['Standard size, single', 'Best. Largest size still under the $15 fee threshold'],
-                    ['Small retail size', 'Loses money at any price shoppers would pay'],
-                    ['3-pack of the small size', 'Needs bundling labor, pays less per ounce'],
-                    ['Large size', 'Pays less per ounce'],
-                  ]}
-                />
-              </Paper>
-
-              <Paper kicker="Directional forecast" title="What the first 12 months could look like" footer="A directional estimate from competitor sales. Not a guarantee.">
-                <p className="mb-3">
-                  At the recommended price across three flavors, the opening order sells through in month
-                  one and a larger reorder lands in month two.
-                </p>
-                <MiniTable
-                  head={['Flavor', 'Run rate by month 6']}
-                  rows={[
-                    ['Flavor A', <Blurred key="a">888 units / mo</Blurred>],
-                    ['Flavor B', <Blurred key="b">888 units / mo</Blurred>],
-                    ['Flavor C', <Blurred key="c">888 units / mo</Blurred>],
-                  ]}
-                />
-                <p className="mt-3 !text-slate-500">
-                  Then about 2% growth a month, following the seasonal pattern on competitor listings.
-                </p>
-              </Paper>
-            </div>
-          </div>
-        </section>
+        <AnalysisDeepDive />
 
         {/* HOW IT WORKS */}
         <section className="section bg-obg-blue-dark" id="how-it-works">
@@ -386,6 +309,55 @@ export default function StoicBrandsLanding() {
           </div>
         </section>
 
+        {/* AUTHORITY */}
+        <section className="section bg-obg-blue" id="why-stoic">
+          <div className="container-obg px-6 md:px-8 lg:px-12">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <SectionLabel>Why Brands Trust Us With Their Product</SectionLabel>
+              <h2 className="text-white mb-4">We Put Our Own Money Behind Your Brand</h2>
+              <p className="text-obg-gray text-lg leading-relaxed">
+                A service provider gets paid whether your products sell or not. We buy your inventory, so if
+                it does not sell at a healthy price, we lose money before you do. The team running your
+                channel is the same team brands pay a monthly fee for, and we operate our own brands on
+                Amazon too.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                ['$450M+', 'Lifetime Amazon revenue managed'],
+                ['500+', 'Brands managed'],
+                ['25+ years', 'Combined Amazon operating experience'],
+                ['$0', 'Fees charged to distribution partners'],
+              ].map(([n, l]) => (
+                <div key={l} className="card-dark text-center p-6">
+                  <div className="text-3xl md:text-4xl font-bold text-gradient-orange mb-1 whitespace-nowrap">{n}</div>
+                  <div className="text-obg-gray text-sm leading-snug">{l}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10">
+              <h3 className="text-white font-bold text-xl mb-5 text-center">The two people you will deal with</h3>
+              <Founders />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+              {[
+                ['One accountable seller', 'Pricing holds because the people running your advertising are the people who paid for the inventory. We honor your MAP policy and go after sellers who do not.'],
+                ['You stay in control', 'You keep the Rights Owner and Administrator roles in Brand Registry, and you own every listing, image and piece of content we build. We never ask for shared logins.'],
+                ['Founder-led, 100% in-house', 'You work with Jon and Dan directly. Every action on your listings is taken by an Online Brand Growth employee. Nothing is outsourced.'],
+              ].map(([t, d]) => (
+                <div key={t} className="card-glass">
+                  <h3 className="text-white font-bold text-lg mb-2 leading-snug">{t}</h3>
+                  <p className="text-obg-gray text-sm leading-relaxed">{d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <BrandPartners />
         <CaseStudies />
         <Testimonials />
 

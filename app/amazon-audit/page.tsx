@@ -4,11 +4,12 @@ import { ArrowRight, Check, Eye, ShieldCheck, Users, Target, LineChart, Wrench }
 import LandingHeader from '@/components/landing/LandingHeader'
 import LeadBookingForm from '@/components/landing/LeadBookingForm'
 import MetaPixel from '@/components/landing/MetaPixel'
-import { Paper, Redacted, MiniTable, StepList, StatBar, LandingFAQ } from '@/components/landing/Blocks'
+import { Paper, Redacted, StepList, StatBar, LandingFAQ, Founders, OperatorSystem } from '@/components/landing/Blocks'
 import SectionLabel from '@/components/ui/SectionLabel'
 import BrandPartners from '@/components/home/BrandPartners'
 import CaseStudies from '@/components/home/CaseStudies'
 import Testimonials from '@/components/home/Testimonials'
+import AuditDeepDive from './AuditDeepDive'
 
 export const metadata: Metadata = {
   title: 'Free OBG360 Amazon Audit | Your Fractional Amazon Operator',
@@ -205,129 +206,7 @@ export default function AmazonAuditLanding() {
           </div>
         </section>
 
-        {/* THE AUDIT */}
-        <section className="section bg-obg-blue-darker" id="the-audit">
-          <div className="container-obg px-6 md:px-8 lg:px-12">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <SectionLabel>What You Get</SectionLabel>
-              <h2 className="text-white mb-4">This Is What an OBG360 Audit Looks Like</h2>
-              <p className="text-obg-gray">
-                These are pages from a real audit we delivered in October 2026. The brand, its products
-                and its search terms are redacted. The numbers are unchanged.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <Paper kicker="Section 7 · Profitability" title="Where every dollar of sales goes" footer="13 months, product cost loaded">
-                <MiniTable
-                  head={['', '13 months', '% of sales']}
-                  highlight={6}
-                  rows={[
-                    ['Sales', '$835,086', '100%'],
-                    ['Amazon fees (all)', '-$416,768', '49.9%'],
-                    ['Cost of goods', '-$211,902', '25.4%'],
-                    ['Advertising', '-$103,185', '12.4%'],
-                    ['Refund cost', '-$16,008', '1.9%'],
-                    ['Promotions', '-$11,686', '1.4%'],
-                    ['Net profit', '$75,536', '9.0%'],
-                  ]}
-                />
-              </Paper>
-
-              <Paper kicker="Section 4 · Advertising" title="One campaign is 41% of ad spend and loses about $2,500 a month" footer="Amazon Ads console, 30 days">
-                <p className="mb-3">
-                  An exact-match campaign on the category head term spent <b>$4,031</b> for $6,697 of sales:
-                  <b> $2.71 a click</b>.
-                </p>
-                <p className="mb-3">
-                  At the hero product&apos;s 22.8% breakeven, a click is worth at most <b>$1.03</b>.
-                </p>
-                <p>
-                  The loss was more than half of the account&apos;s monthly profit, spent on a term the
-                  brand cannot rank for.
-                </p>
-              </Paper>
-
-              <Paper kicker="Section 7 · Unit economics" title="The best sellers lose money. The quiet packs make it." footer="September, per unit">
-                <MiniTable
-                  head={['Product', 'Breakeven ACOS', 'Ads', 'Net']}
-                  rows={[
-                    ['Hero SKU, 100 ct', '22.8%', '$5,896', '$122'],
-                    ['SKU B, 100 ct', '12.4%', '$2,237', '-$767'],
-                    ['Hero SKU, 300 ct', '26.4%', '$9', '$1,097'],
-                    ['SKU D, 450 ct', '35.6%', '$6', '$1,027'],
-                  ]}
-                />
-                <p className="mt-3 !text-slate-500">
-                  Three 100-count packs were 61% of sales and took 90% of ad spend.
-                </p>
-              </Paper>
-
-              <Paper kicker="The Opportunity" title="Which searches you can actually win" footer="Live page-1 results and Brand Analytics">
-                <MiniTable
-                  head={['Search (monthly volume)', 'Page-1 reviews', 'Verdict']}
-                  rows={[
-                    [<span key="a">Head term (243K)</span>, '~2,100', 'Walled. Paid only'],
-                    [<span key="b"><Redacted w="w-16" /> (4.9K)</span>, '~320', 'Winnable, top 5 in reach'],
-                    [<span key="c"><Redacted w="w-14" /> (1.6K)</span>, '~96', 'Anchor: hold top 3'],
-                    [<span key="d"><Redacted w="w-20" /></span>, '~40', 'Winnable, lowest wall'],
-                  ]}
-                />
-                <p className="mt-3 !text-slate-500">The hero listing has 987 reviews. That decides where to spend.</p>
-              </Paper>
-
-              <Paper kicker="Section 6 · Logistics" title="Inventory is at a third of the level that protects rank" footer="FBA inventory, October 8">
-                <MiniTable
-                  head={['Listing', 'Days of cover', 'Units needed', 'Status']}
-                  rows={[
-                    ['Hero SKU, 100 ct', '31', '6,700 to 12,400', 'Order now'],
-                    ['SKU B, 100 ct', '33', '2,200 to 2,900', 'Order now'],
-                    ['SKU C, 100 ct', '42', '920 to 1,230', 'Order now'],
-                  ]}
-                />
-                <p className="mt-3 !text-slate-500">At October&apos;s pace the hero was three weeks from empty, before Black Friday.</p>
-              </Paper>
-
-              <Paper kicker="Section 10 · 90-Day Roadmap" title="What the fixes are worth, lever by lever" footer="Applied to September actuals, assumptions stated">
-                <MiniTable
-                  head={['Lever', 'Monthly profit']}
-                  highlight={4}
-                  rows={[
-                    ['Head-term campaign to breakeven bids', '+$1,570'],
-                    ['$1 price step across the catalog', '+$2,300 to +$3,790'],
-                    ['SKU B Sponsored Products to breakeven', '+$340'],
-                    ['Advertise the larger packs', '+$250'],
-                    ['Baseline $4,199 becomes', '$8,700 to $10,100'],
-                  ]}
-                />
-              </Paper>
-            </div>
-
-            {/* Contents */}
-            <div className="mt-14 grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-              <div className="lg:col-span-2">
-                <h3 className="text-white font-bold text-2xl mb-3">Ten sections. Your whole account, not a sample.</h3>
-                <p className="text-obg-gray leading-relaxed mb-4">
-                  It is the same diagnostic we run before we take on any brand. Data comes from Seller
-                  Central, Brand Analytics, Amazon Ads, your profit tool if you use one, Keepa, DataDive and
-                  live Amazon pages.
-                </p>
-                <a href="#get-audit" className="btn-primary">Get My Free Audit <ArrowRight size={18} /></a>
-              </div>
-              <ul className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-                {sections.map(([t, d]) => (
-                  <li key={t} className="flex gap-3">
-                    <Check size={18} className="text-obg-orange flex-shrink-0 mt-0.5" />
-                    <div>
-                      <div className="text-white font-semibold text-sm">{t}</div>
-                      <div className="text-obg-gray text-sm">{d}</div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
+        <AuditDeepDive />
 
         {/* HOW IT WORKS */}
         <section className="section bg-obg-blue" id="how-it-works">
@@ -372,6 +251,55 @@ export default function AmazonAuditLanding() {
                 )
               })}
             </ul>
+          </div>
+        </section>
+
+        {/* AUTHORITY */}
+        <section className="section bg-obg-blue" id="why-obg">
+          <div className="container-obg px-6 md:px-8 lg:px-12">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <SectionLabel>Why Brands Trust Us With Their Account</SectionLabel>
+              <h2 className="text-white mb-4">We Operate Amazon Like an Owner, Not a Vendor</h2>
+              <p className="text-obg-gray text-lg leading-relaxed">
+                Most teams get stuck toggling tactics: ads one week, images the next. We run the whole
+                system at once, because that is how profit grows and not just revenue. We know it works
+                because we own and operate our own brands on Amazon, with our own money on the line.
+              </p>
+            </div>
+
+            <OperatorSystem />
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+              {[
+                ['$450M+', 'Lifetime Amazon revenue managed'],
+                ['500+', 'Brands managed'],
+                ['25+ years', 'Combined Amazon operating experience'],
+                ['100%', 'In-house. Nothing outsourced'],
+              ].map(([n, l]) => (
+                <div key={l} className="card-dark text-center p-6">
+                  <div className="text-3xl md:text-4xl font-bold text-gradient-orange mb-1 whitespace-nowrap">{n}</div>
+                  <div className="text-obg-gray text-sm leading-snug">{l}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10">
+              <h3 className="text-white font-bold text-xl mb-5 text-center">The two people who will run your audit</h3>
+              <Founders />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+              {[
+                ['We build the foundation first, then scale', 'Most Amazon problems are structural: weak product pages, wasted spend, fragile profitability and no process. We fix those first so growth compounds.'],
+                ['We build channels that lean less on ads', 'Our goal is not to spend more. It is a healthier mix where advertising supports discovery and rank, and the channel grows on organic momentum.'],
+                ['You see everything we see', 'A live scorecard updated every Monday and Thursday, daily Slack access and a weekly call. Contribution profit is the primary number we report.'],
+              ].map(([t, d]) => (
+                <div key={t} className="card-glass">
+                  <h3 className="text-white font-bold text-lg mb-2 leading-snug">{t}</h3>
+                  <p className="text-obg-gray text-sm leading-relaxed">{d}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

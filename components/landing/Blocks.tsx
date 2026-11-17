@@ -57,11 +57,11 @@ export function Blurred({ children = '$0.00' }: { children?: string }) {
 export function MiniTable({ head, rows, highlight }: { head: string[]; rows: (string | React.ReactNode)[][]; highlight?: number }) {
   return (
     <div className="overflow-x-auto -mx-1">
-      <table className="w-full text-xs border-collapse">
+      <table className="w-full text-[11px] sm:text-xs border-collapse">
         <thead>
           <tr>
             {head.map((h, i) => (
-              <th key={i} className={cn('px-2 py-1.5 font-semibold text-slate-500 border-b border-slate-200', i === 0 ? 'text-left' : 'text-right')}>
+              <th key={i} className={cn('px-1 sm:px-2 py-1.5 font-semibold text-slate-500 border-b border-slate-200', i === 0 ? 'text-left' : 'text-right')}>
                 {h}
               </th>
             ))}
@@ -71,7 +71,7 @@ export function MiniTable({ head, rows, highlight }: { head: string[]; rows: (st
           {rows.map((r, ri) => (
             <tr key={ri} className={cn(ri === highlight && 'bg-orange-50 font-semibold')}>
               {r.map((c, ci) => (
-                <td key={ci} className={cn('px-2 py-1.5 border-b border-slate-100', ci === 0 ? 'text-left' : 'text-right')}>
+                <td key={ci} className={cn('px-1 sm:px-2 py-1.5 border-b border-slate-100', ci === 0 ? 'text-left' : 'text-right')}>
                   {c}
                 </td>
               ))}
@@ -145,6 +145,100 @@ export function LandingFAQ({ items }: { items: { q: string; a: string }[] }) {
           </summary>
           <p className="px-6 pb-5 text-obg-gray text-sm leading-relaxed">{f.a}</p>
         </details>
+      ))}
+    </div>
+  )
+}
+
+/** One deep-dive row: explanation on one side, a sample report page on the other. */
+export function DeepDiveRow({
+  n,
+  title,
+  question,
+  points,
+  flip,
+  accent = 'text-obg-orange',
+  children,
+}: {
+  n: string
+  title: string
+  question: string
+  points: string[]
+  flip?: boolean
+  accent?: string
+  children: React.ReactNode
+}) {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+      <div className={cn('min-w-0', flip && 'lg:order-2')}>
+        <div className={cn('text-sm font-bold tracking-widest uppercase mb-2', accent)}>{n}</div>
+        <h3 className="text-white font-bold text-2xl md:text-3xl leading-tight mb-3">{title}</h3>
+        <p className="text-obg-offwhite text-lg leading-relaxed mb-5">{question}</p>
+        <ul className="space-y-2.5">
+          {points.map((p) => (
+            <li key={p} className="flex gap-3 text-obg-gray text-sm leading-relaxed">
+              <span className={cn('mt-2 h-1.5 w-1.5 rounded-full flex-shrink-0 bg-current', accent)} />
+              <span>{p}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={cn('min-w-0', flip && 'lg:order-1')}>{children}</div>
+    </div>
+  )
+}
+
+/** Founder credibility block shared by both landing pages. */
+export function Founders() {
+  const people = [
+    {
+      name: 'Jon Klein',
+      role: 'Co-Founder & Lead Amazon Strategist',
+      photo: '/team/Jon.png',
+      line: 'Leads strategy on every account and personally builds every audit.',
+    },
+    {
+      name: 'Dan Balda',
+      role: 'Co-Founder & Operations Manager',
+      photo: '/team/Dan.png',
+      line: 'Runs operations, logistics and reporting, and reviews every plan before it reaches you.',
+    },
+  ]
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {people.map((p) => (
+        <div key={p.name} className="card-dark flex items-center gap-5">
+          <div className="w-24 h-24 rounded-2xl overflow-hidden bg-obg-blue-dark border border-obg-blue-light/20 flex-shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={p.photo} alt={p.name} className="w-full h-full object-contain invert opacity-90" loading="lazy" />
+          </div>
+          <div className="min-w-0">
+            <div className="text-white font-bold text-lg">{p.name}</div>
+            <div className="text-obg-orange text-sm font-semibold mb-2">{p.role}</div>
+            <p className="text-obg-gray text-sm leading-relaxed">{p.line}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+/** "Owner, not vendor": the four things an operator has to run at once. */
+export function OperatorSystem() {
+  const pillars = [
+    ['Traffic quality', 'SEO and advertising aimed at searches you can win'],
+    ['Conversion', 'Product pages, images and A+ Content that sell'],
+    ['Economics', 'Pricing, fees and promotions built around profit'],
+    ['Availability and control', 'Inventory, listing stability and reseller mitigation'],
+  ]
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {pillars.map(([t, d], i) => (
+        <div key={t} className="card-glass p-6">
+          <div className="text-obg-orange font-bold text-sm mb-2">0{i + 1}</div>
+          <div className="text-white font-bold mb-1.5">{t}</div>
+          <p className="text-obg-gray text-sm leading-relaxed">{d}</p>
+        </div>
       ))}
     </div>
   )
