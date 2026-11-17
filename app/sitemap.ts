@@ -121,6 +121,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/fractional-amazon-operator`,
+      lastModified: serviceDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/services`,
       lastModified: serviceDate,
       changeFrequency: 'monthly',

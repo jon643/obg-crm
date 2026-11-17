@@ -5,7 +5,7 @@ const footerLinks = {
   Company: [
     { label: 'About', href: '/#why-choose-us' },
     { label: 'Exclusive Distribution', href: '/exclusive-distribution' },
-    { label: 'Free Amazon Audit', href: '/amazon-audit' },
+    { label: 'Fractional Amazon Operator', href: '/fractional-amazon-operator' },
     { label: 'Case Studies', href: '/case-studies' },
     { label: 'Services', href: '/services' },
     { label: 'Blog', href: '/blog' },

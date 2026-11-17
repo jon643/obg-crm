@@ -413,7 +413,7 @@ export default function StoicContent({ variant }: { variant: 'site' | 'landing' 
             <LandingFAQ items={faqs} />
             <p className="text-center text-obg-gray text-sm mt-8">
               Want to keep your own Seller Central account and have us run it?{' '}
-              <Link href="/amazon-audit" className="text-obg-orange hover:underline">See the OBG fractional Amazon operator model</Link>.
+              <Link href="/fractional-amazon-operator" className="text-obg-orange hover:underline">See the OBG fractional Amazon operator model</Link>.
             </p>
           </div>
         </section>

@@ -18,7 +18,7 @@ const models = [
       ['Best for', 'Brands that want to own the channel and its margin'],
     ],
     cta: 'Get Your OBG360 Audit',
-    href: '/amazon-audit',
+    href: '/fractional-amazon-operator',
     border: 'border-obg-orange/30 hover:border-obg-orange/60',
     accent: 'text-obg-orange',
     btn: 'btn-primary',

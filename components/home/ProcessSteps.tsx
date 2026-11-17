@@ -78,7 +78,7 @@ export default function ProcessSteps() {
 
         <AnimatedSection delay={500}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
-            <Link href="/amazon-audit" className="btn-primary text-base px-8 py-4">
+            <Link href="/fractional-amazon-operator" className="btn-primary text-base px-8 py-4">
               Get Your OBG360 Audit
             </Link>
             <Link href="/exclusive-distribution" className="btn-primary text-base px-8 py-4">

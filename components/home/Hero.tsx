@@ -11,7 +11,7 @@ const paths = [
     blurb: 'Keep your own Seller Central account. Our senior team runs the channel for a monthly fee.',
     points: ['SEO, ads, logistics and operations', 'Founder-led and 100% in-house', '90-day start, then month to month'],
     cta: 'Get Your OBG360 Audit',
-    href: '/amazon-audit',
+    href: '/fractional-amazon-operator',
     accent: 'border-obg-orange/40 hover:border-obg-orange',
     eyebrowCls: 'text-obg-orange',
     btn: 'btn-primary',
