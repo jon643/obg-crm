@@ -149,7 +149,6 @@ export default function AuditContent({ variant }: { variant: 'site' | 'landing' 
                 kicker="OBG360 Amazon Audit · Confidential"
                 title="Where the profit goes, where the demand is, and what to fix first"
                 footer="Real audit, October 2026. Brand and product names redacted. 24 pages."
-                className="rotate-1"
               >
                 <p className="mb-3">
                   Prepared for <Redacted w="w-28" /> by Online Brand Growth · Jon Klein &amp; Dan Balda
