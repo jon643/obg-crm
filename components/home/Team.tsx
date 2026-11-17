@@ -5,7 +5,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 const team = [
   { name: 'Jon', role: 'Co-Founder & Lead Amazon Strategist', photo: '/team/Jon.png' },
   { name: 'Dan', role: 'Co-Founder & Ops Manager', photo: '/team/Dan.png' },
-  { name: 'Juan', role: 'Advertising Specialist', photo: '/team/Juan.png' },
+  { name: 'Marlon', role: 'Advertising Specialist', photo: '/team/Marlon.png' },
   { name: 'Theresa', role: 'Catalog Specialist', photo: '/team/Theresa.png' },
   { name: 'Czharina', role: 'Logistics Specialist', photo: '/team/Cha.png' },
   { name: 'Paulene', role: 'Brand Experience Specialist', photo: '/team/Paulene.png' },

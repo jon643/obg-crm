@@ -17,7 +17,7 @@ const models = [
       ['Commitment', '90 days, then month to month'],
       ['Best for', 'Brands that want to own the channel and its margin'],
     ],
-    cta: 'Get Your Free OBG360 Audit',
+    cta: 'Get Your OBG360 Audit',
     href: '/amazon-audit',
     border: 'border-obg-orange/30 hover:border-obg-orange/60',
     accent: 'text-obg-orange',
@@ -40,7 +40,7 @@ const models = [
     href: '/stoic-brands',
     border: 'border-amber-400/30 hover:border-amber-400/60',
     accent: 'text-amber-400',
-    btn: 'btn-secondary',
+    btn: 'btn-primary',
   },
 ]
 
@@ -82,8 +82,10 @@ export default function HowWeWork() {
                     {model.rows.map(([k, v]) => (
                       <div key={k} className="flex gap-3 text-sm border-t border-obg-blue-light/20 pt-3">
                         <Check size={16} className={`flex-shrink-0 mt-0.5 ${model.accent}`} />
-                        <dt className="text-obg-gray w-36 flex-shrink-0">{k}</dt>
-                        <dd className="text-white">{v}</dd>
+                        <div className="flex flex-col sm:flex-row sm:gap-3 min-w-0">
+                          <dt className="text-obg-gray sm:w-36 flex-shrink-0">{k}</dt>
+                          <dd className="text-white min-w-0">{v}</dd>
+                        </div>
                       </div>
                     ))}
                   </dl>

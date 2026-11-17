@@ -61,7 +61,7 @@ export default function CaseStudies() {
           {cases.map((c, i) => (
             <AnimatedSection key={c.stat} delay={i * 100}>
               <Link href={`/case-studies#${c.id}`} className="block h-full">
-              <div className="card-dark h-full flex flex-col group cursor-pointer hover:border-obg-orange/40">
+              <div className="card-dark h-full flex flex-col group cursor-pointer hover:border-obg-orange/40 min-w-0 overflow-hidden">
                 {/* Category tag */}
                 <span className="text-xs font-semibold text-obg-orange tracking-widest uppercase mb-6">
                   {c.category}
@@ -69,7 +69,7 @@ export default function CaseStudies() {
 
                 {/* Stat */}
                 <div className="mb-2">
-                  <span className="text-5xl md:text-6xl font-bold text-gradient-orange">
+                  <span className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gradient-orange whitespace-nowrap">
                     {c.stat}
                   </span>
                 </div>

@@ -172,7 +172,7 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
             className="btn-primary w-full text-center block"
           >
-            Get Your FREE OBG360 Audit
+            Get Your OBG360 Audit
           </Link>
         </div>
       </div>
@@ -202,7 +202,7 @@ export default function Header() {
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-8 whitespace-nowrap">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -223,9 +223,10 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/#book-call"
-              className="btn-primary text-sm px-5 py-3"
+              className="btn-primary text-sm px-5 py-3 whitespace-nowrap"
             >
-              Get Your Free Audit
+              <span className="xl:hidden">Get Your Audit</span>
+              <span className="hidden xl:inline">Get Your OBG360 Audit</span>
             </Link>
           </div>
 

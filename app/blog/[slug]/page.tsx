@@ -282,7 +282,7 @@ export default async function BlogPostPage({
               href="/#book-call"
               className="btn-primary text-lg px-9 py-4 inline-block"
             >
-              Get Your FREE OBG360 Audit
+              Get Your OBG360 Audit
             </Link>
           </div>
         </section>

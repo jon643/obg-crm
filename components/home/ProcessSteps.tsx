@@ -79,10 +79,10 @@ export default function ProcessSteps() {
         <AnimatedSection delay={500}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
             <Link href="/amazon-audit" className="btn-primary text-base px-8 py-4">
-              Get Your FREE OBG360 Audit
+              Get Your OBG360 Audit
             </Link>
-            <Link href="/stoic-brands" className="btn-secondary text-base px-8 py-4">
-              Apply to Stoic Brands
+            <Link href="/stoic-brands" className="btn-primary text-base px-8 py-4">
+              Apply to Work With Us
             </Link>
           </div>
         </AnimatedSection>
