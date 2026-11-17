@@ -28,14 +28,14 @@ export default function BookCall() {
           <div className="card-dark p-0 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
 
-              {/* Left panel — info */}
+              {/* Left panel - info */}
               <div className="p-10 lg:p-14 bg-gradient-to-br from-obg-orange/10 to-transparent border-r border-obg-blue-light/20">
                 <AnimatedSection direction="left">
                   <SectionLabel>Free Consultation</SectionLabel>
                   <h2 className="text-white mb-4">Get Your OBG360 Audit</h2>
                   <p className="text-obg-gray leading-relaxed mb-8">
                     On this free call via Google Meet, we&apos;ll learn about your brand and, if you&apos;re a fit, set you
-                    up with your complimentary OBG360 Amazon Account Audit — a deep dive into your account with
+                    up with your complimentary OBG360 Amazon Account Audit - a deep dive into your account with
                     specific recommendations to grow sales and profit. No pressure, no pitch deck.
                   </p>
 
@@ -68,7 +68,7 @@ export default function BookCall() {
                 </AnimatedSection>
               </div>
 
-              {/* Right panel — Motion calendar embed (lazy: loads when scrolled into view) */}
+              {/* Right panel - Motion calendar embed (lazy: loads when scrolled into view) */}
               <div className="p-6 lg:p-8 flex flex-col" ref={iframeContainerRef}>
                 <AnimatedSection direction="right" className="flex-1">
                   {iframeVisible ? (

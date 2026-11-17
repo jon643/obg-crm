@@ -8,7 +8,7 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
-  { label: 'Stoic Brands', href: '/stoic-brands' },
+  { label: 'Exclusive Distribution', href: '/exclusive-distribution' },
   { label: 'Services', href: '/services' },
   { label: '360 Brand Protection™', href: '/360-brand-protection', highlight: true },
   { label: 'Case Studies', href: '/case-studies' },
@@ -202,7 +202,7 @@ export default function Header() {
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-4 xl:gap-8 whitespace-nowrap">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8 whitespace-nowrap mx-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

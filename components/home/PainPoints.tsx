@@ -41,7 +41,7 @@ export default function PainPoints() {
               What&apos;s Your Biggest Amazon Pain Point?
             </h2>
             <p className="text-obg-gray">
-              Most brands face one or more of these challenges. We&apos;ve seen it all — and solved it.
+              Most brands face one or more of these challenges. We&apos;ve seen it all - and solved it.
             </p>
           </div>
         </AnimatedSection>

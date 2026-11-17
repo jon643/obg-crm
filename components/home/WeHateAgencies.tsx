@@ -16,7 +16,7 @@ export default function WeHateAgencies() {
       <div className="container-obg px-6 md:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          {/* Left — text */}
+          {/* Left - text */}
           <AnimatedSection direction="left">
             <SectionLabel>Our Philosophy</SectionLabel>
             <h2 className="text-white mb-6">We&apos;re Not an Agency.<br />We&apos;re Your Fractional Amazon Operator.</h2>
@@ -30,7 +30,7 @@ export default function WeHateAgencies() {
             </Link>
           </AnimatedSection>
 
-          {/* Right — differentiator grid */}
+          {/* Right - differentiator grid */}
           <AnimatedSection direction="right">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {differentiators.map((d, i) => {

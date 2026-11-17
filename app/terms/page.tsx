@@ -74,8 +74,8 @@ export default function TermsPage() {
             <section>
               <h2 className="text-white text-2xl font-bold mb-4">3. Intellectual Property</h2>
               <p>
-                All content on this website — including but not limited to text, graphics, logos, images, and software
-                — is the property of {COMPANY} or its content suppliers and is protected by applicable intellectual
+                All content on this website - including but not limited to text, graphics, logos, images, and software
+                - is the property of {COMPANY} or its content suppliers and is protected by applicable intellectual
                 property laws. The {DBA} name, logo, and the &quot;360 Brand Protection™&quot; mark are proprietary to
                 {COMPANY}. You may not reproduce, distribute, modify, or create derivative works of any content on
                 this site without our prior written consent.
@@ -110,8 +110,8 @@ export default function TermsPage() {
               <h2 className="text-white text-2xl font-bold mb-4">6. Limitation of Liability</h2>
               <p>
                 To the fullest extent permitted by law, {COMPANY} and its officers, directors, employees, and agents
-                shall not be liable for any indirect, incidental, special, consequential, or punitive damages —
-                including loss of profits, revenue, data, or business opportunities — arising from your use of the
+                shall not be liable for any indirect, incidental, special, consequential, or punitive damages -
+                including loss of profits, revenue, data, or business opportunities - arising from your use of the
                 website or our Services, even if we have been advised of the possibility of such damages. Our total
                 liability for any claim arising out of or related to these Terms or the Services shall not exceed the
                 amount paid by you to us in the three (3) months preceding the claim.

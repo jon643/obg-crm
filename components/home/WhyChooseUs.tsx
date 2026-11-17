@@ -13,7 +13,7 @@ const reasons = [
     icon: AlignCenter,
     title: 'Full Alignment',
     description:
-      'We partner with brands based on a percentage of your channel Contribution Margin. You can trust that our recommendations are aligned with your goal of maximizing profitability — not just revenue or ad spend.',
+      'We partner with brands based on a percentage of your channel Contribution Margin. You can trust that our recommendations are aligned with your goal of maximizing profitability - not just revenue or ad spend.',
   },
   {
     icon: Grid2x2,

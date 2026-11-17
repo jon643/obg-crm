@@ -2,7 +2,7 @@ import Link from 'next/link'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 const tools = [
-  { label: 'Full P&L Calculator', href: '/calculator', desc: 'Revenue, all fees, COGS, ads — true Amazon profit' },
+  { label: 'Full P&L Calculator', href: '/calculator', desc: 'Revenue, all fees, COGS, ads - true Amazon profit' },
   { label: 'FBA vs FBM', href: '/vs/fba-vs-fbm', desc: 'Compare fulfillment methods side by side' },
   { label: 'Breakeven Calculator', href: '/tools/breakeven-calculator', desc: 'Min price & break-even ACoS for any SKU' },
   { label: 'Storage Fee Calculator', href: '/tools/storage-fee-calculator', desc: 'Monthly FBA storage cost by dimensions' },
@@ -26,8 +26,8 @@ export default function CalculatorCTA() {
                 </h2>
                 <p className="text-obg-gray text-lg leading-relaxed mb-6">
                   Amazon&apos;s 2026 fee structure has 20+ line items that erode margin invisibly.
-                  Our free profit calculator models every fee — referral, FBA fulfillment,
-                  storage, inbound placement, ads, COGS — so you see real net profit, not
+                  Our free profit calculator models every fee - referral, FBA fulfillment,
+                  storage, inbound placement, ads, COGS - so you see real net profit, not
                   just revenue.
                 </p>
                 <div className="flex flex-wrap gap-3">

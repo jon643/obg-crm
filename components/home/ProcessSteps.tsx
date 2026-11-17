@@ -81,7 +81,7 @@ export default function ProcessSteps() {
             <Link href="/amazon-audit" className="btn-primary text-base px-8 py-4">
               Get Your OBG360 Audit
             </Link>
-            <Link href="/stoic-brands" className="btn-primary text-base px-8 py-4">
+            <Link href="/exclusive-distribution" className="btn-primary text-base px-8 py-4">
               Apply to Work With Us
             </Link>
           </div>

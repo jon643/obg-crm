@@ -117,7 +117,7 @@ export default function ServicesPage() {
                 <span className="text-gradient-orange">Serious Brands</span>
               </h1>
               <p className="text-obg-gray text-xl leading-relaxed mb-8">
-                Every service is delivered in-house by our team of Amazon specialists — no outsourcing,
+                Every service is delivered in-house by our team of Amazon specialists - no outsourcing,
                 no junior account managers, no black boxes. Just expert execution aligned with your
                 profitability. Explore each service below.
               </p>
@@ -166,7 +166,7 @@ export default function ServicesPage() {
               <SectionLabel>Specialized Services</SectionLabel>
               <h2 className="text-white mb-4">Targeted Solutions for Specific Goals</h2>
               <p className="text-obg-gray text-lg leading-relaxed mb-12 max-w-3xl">
-                Focused engagements for a specific need — a launch, a storefront, recovering money Amazon
+                Focused engagements for a specific need - a launch, a storefront, recovering money Amazon
                 owes you, or choosing the right selling model.
               </p>
             </AnimatedSection>
@@ -193,7 +193,7 @@ export default function ServicesPage() {
               <h2 className="text-white mb-6">Not Sure Which Service Is Right for You?</h2>
               <p className="text-obg-gray text-lg mb-10">
                 Book a free 45-minute strategy call with our team. We&apos;ll audit your Amazon presence,
-                identify your biggest growth opportunities, and recommend the right approach — no pitch,
+                identify your biggest growth opportunities, and recommend the right approach - no pitch,
                 no pressure.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

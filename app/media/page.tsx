@@ -24,14 +24,14 @@ const featuredVideos = [
     id: '5Mm-HOvxQgg',
     title: '5 Key Roles Every Amazon Growth Team Needs (Scale Faster on Amazon)',
     description:
-      'Jon Klein breaks down the exact roles every Amazon brand needs to build a high-performing team — and the hiring order that drives the fastest, most profitable growth.',
+      'Jon Klein breaks down the exact roles every Amazon brand needs to build a high-performing team - and the hiring order that drives the fastest, most profitable growth.',
     tag: 'Team Building',
   },
   {
     id: 'Wj26fSa1wyM',
     title: 'Secret Tactics for Your Amazon Selling Journey',
     description:
-      'Jon Klein joins Sebastian Joseph to share the tactical playbook OBG uses to grow and protect brands on Amazon — from PPC frameworks to brand protection to contribution margin.',
+      'Jon Klein joins Sebastian Joseph to share the tactical playbook OBG uses to grow and protect brands on Amazon - from PPC frameworks to brand protection to contribution margin.',
     tag: 'Podcast Feature',
   },
 ]
@@ -41,7 +41,7 @@ const podcastAppearances = [
     show: 'SellerMate Podcast',
     episode: 'How to Grow Sales on Amazon: Proven Systems from Jon Klein',
     description:
-      'Jon shares the proven systems OBG uses to drive profitable growth for Amazon brands — covering PPC frameworks, brand protection, and the metrics that actually matter.',
+      'Jon shares the proven systems OBG uses to drive profitable growth for Amazon brands - covering PPC frameworks, brand protection, and the metrics that actually matter.',
     link: 'https://www.youtube.com/watch?v=ZyoxkzZVUOw',
     platform: 'SellerMate AI · YouTube',
   },
@@ -49,7 +49,7 @@ const podcastAppearances = [
     show: 'Retail-Outsource Podcast',
     episode: 'How to Succeed on Amazon in 2025: Unit Economics, PPC, AI & Brand Growth Insights',
     description:
-      'Jon Klein joins the Retail-Outsource podcast to discuss Amazon growth in 2025 — unit economics, AI tools, PPC strategy, and what it really takes to build a sustainable brand.',
+      'Jon Klein joins the Retail-Outsource podcast to discuss Amazon growth in 2025 - unit economics, AI tools, PPC strategy, and what it really takes to build a sustainable brand.',
     link: 'https://www.youtube.com/watch?v=Z9N6uGjp5tM',
     platform: 'Retail Outsource · YouTube',
   },
@@ -57,7 +57,7 @@ const podcastAppearances = [
     show: 'Corey Ganim Podcast',
     episode: 'How to Grow and Manage Brands on Amazon with Jon Klein',
     description:
-      'Jon Klein joins Corey Ganim to discuss building and managing Amazon brands — from choosing the right Amazon partner to the systems OBG uses to drive and protect client revenue.',
+      'Jon Klein joins Corey Ganim to discuss building and managing Amazon brands - from choosing the right Amazon partner to the systems OBG uses to drive and protect client revenue.',
     link: 'https://open.spotify.com/episode/0INjFMOZuQ38tom1EEHEIB',
     platform: 'Corey Ganim · Spotify',
   },
@@ -68,7 +68,7 @@ const speakingEvents = [
     event: 'Million Dollar Sellers (MDS) Inspire',
     location: 'Miami, FL',
     description:
-      'Jon Klein was invited to speak at MDS Inspire 2025 — one of the most exclusive Amazon seller mastermind communities in the world — sharing strategies for brand protection, profitability, and sustainable Amazon growth.',
+      'Jon Klein was invited to speak at MDS Inspire 2025 - one of the most exclusive Amazon seller mastermind communities in the world - sharing strategies for brand protection, profitability, and sustainable Amazon growth.',
   },
   {
     event: 'Wholesale Network Group',
@@ -145,7 +145,7 @@ export default function MediaPage() {
                 <h2 className="text-white mb-4">Watch &amp; Learn</h2>
                 <p className="text-obg-gray">
                   In-depth content on Amazon strategy, team building, advertising, and brand
-                  protection — straight from the OBG founders.
+                  protection - straight from the OBG founders.
                 </p>
               </div>
             </AnimatedSection>
@@ -183,7 +183,7 @@ export default function MediaPage() {
                 </AnimatedSection>
               ))}
 
-              {/* OBG Brand Ad — hosted video */}
+              {/* OBG Brand Ad - hosted video */}
               <AnimatedSection delay={200}>
                 <div className="card-dark h-full flex flex-col">
                   <div className="relative aspect-video rounded-lg overflow-hidden mb-5 bg-black">
@@ -199,7 +199,7 @@ export default function MediaPage() {
                     Brand Spotlight
                   </span>
                   <h3 className="text-white font-bold text-base leading-snug mb-3">
-                    Online Brand Growth — Who We Are
+                    Online Brand Growth - Who We Are
                   </h3>
                   <p className="text-obg-gray text-sm leading-relaxed flex-1">
                     A quick look at who Online Brand Growth is, what we do, and why founder-led Amazon management delivers results that typical service providers can&apos;t match.

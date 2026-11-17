@@ -4,7 +4,7 @@ import Image from 'next/image'
 const footerLinks = {
   Company: [
     { label: 'About', href: '/#why-choose-us' },
-    { label: 'Stoic Brands', href: '/stoic-brands' },
+    { label: 'Exclusive Distribution', href: '/exclusive-distribution' },
     { label: 'Free Amazon Audit', href: '/amazon-audit' },
     { label: 'Case Studies', href: '/case-studies' },
     { label: 'Services', href: '/services' },

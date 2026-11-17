@@ -351,7 +351,7 @@ export default function AmazonAuditLanding() {
             <LandingFAQ items={faqs} />
             <p className="text-center text-obg-gray text-sm mt-8">
               Would you rather sell to us than manage the channel?{' '}
-              <Link href="/stoic-brands" className="text-obg-orange hover:underline">See how Stoic Brands works</Link>.
+              <Link href="/exclusive-distribution" className="text-obg-orange hover:underline">See how Stoic Brands works</Link>.
             </p>
           </div>
         </section>

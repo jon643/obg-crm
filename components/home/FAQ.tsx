@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'How long will it take to see results?',
     answer:
-      'Often with existing Amazon businesses, we can identify and execute on ways to increase profit immediately — within the first 30 days. With a new Amazon business, it will typically take 3–6 months to achieve profitability.',
+      'Often with existing Amazon businesses, we can identify and execute on ways to increase profit immediately - within the first 30 days. With a new Amazon business, it will typically take 3–6 months to achieve profitability.',
   },
   {
     question: 'What is your cancellation policy?',

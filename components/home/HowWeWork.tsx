@@ -37,7 +37,7 @@ const models = [
       ['Best for', 'Brands that want Amazon handled and off their plate'],
     ],
     cta: 'Apply to Work With Us',
-    href: '/stoic-brands',
+    href: '/exclusive-distribution',
     border: 'border-amber-400/30 hover:border-amber-400/60',
     accent: 'text-amber-400',
     btn: 'btn-primary',

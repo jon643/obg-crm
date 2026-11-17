@@ -346,7 +346,7 @@ export default function ServiceDetailPage({
               <h2 className="text-white mb-6">Ready to Talk Through Your Amazon Channel?</h2>
               <p className="text-obg-gray text-lg mb-10">
                 Book a free 45-minute strategy call. We&apos;ll audit your Amazon presence, pinpoint your
-                biggest growth opportunities, and recommend the right approach — no pitch, no pressure.
+                biggest growth opportunities, and recommend the right approach - no pitch, no pressure.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link

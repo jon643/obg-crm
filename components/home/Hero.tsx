@@ -23,7 +23,7 @@ const paths = [
     blurb: 'We buy your product wholesale and sell it on Amazon. Our team runs the channel and charges no fees.',
     points: ['Purchase orders instead of invoices', 'One authorized seller, pricing protected', 'You never manage Amazon again'],
     cta: 'Apply to Work With Us',
-    href: '/stoic-brands',
+    href: '/exclusive-distribution',
     accent: 'border-amber-400/40 hover:border-amber-400',
     eyebrowCls: 'text-amber-400',
     btn: 'btn-primary',

@@ -28,7 +28,7 @@ const caseStudies = [
     model: 'Managed Services',
     headline: "Single-Product Baby Brand 30X'd Amazon Revenue in 18 Months",
     summary:
-      "This baby brand had one hero product with strong customer love — but growth was capped by limited keyword coverage, under-optimized conversion assets, and a need to scale without turning the business into a \"spend more on ads\" treadmill. We treated the hero SKU like a business unit, rebuilt the PDP foundation for SEO + conversion, structured PPC for profitable scaling, and created a system that allowed revenue to expand while maintaining efficiency.",
+      "This baby brand had one hero product with strong customer love - but growth was capped by limited keyword coverage, under-optimized conversion assets, and a need to scale without turning the business into a \"spend more on ads\" treadmill. We treated the hero SKU like a business unit, rebuilt the PDP foundation for SEO + conversion, structured PPC for profitable scaling, and created a system that allowed revenue to expand while maintaining efficiency.",
     metrics: [
       { stat: '30X', label: 'Amazon revenue', detail: 'in 18 months' },
       { stat: '$300K+', label: 'monthly revenue', detail: 'at peak run-rate' },
@@ -47,7 +47,7 @@ const caseStudies = [
       "The brand had a product customers liked, but Amazon performance wasn't compounding.",
       "Keyword coverage and indexing weren't maximizing discoverability in a competitive category.",
       "The PDP wasn't doing enough selling compared to competitors (message hierarchy, imagery, and objections).",
-      "The brand needed to scale responsibly — without sacrificing margin or becoming overly dependent on ads.",
+      "The brand needed to scale responsibly - without sacrificing margin or becoming overly dependent on ads.",
     ],
     whatWeDid: [
       {
@@ -82,15 +82,15 @@ const caseStudies = [
     ],
     results: [
       "Achieved 30X revenue growth in 18 months, reaching $300K+ monthly revenue at peak run-rate.",
-      "Scaled ad investment to ~$33K/month while maintaining 4.2 ROAS — growth without destroying efficiency.",
-      "Built durable momentum around a single hero SKU — proof that single-SKU brands can scale when fundamentals are right.",
+      "Scaled ad investment to ~$33K/month while maintaining 4.2 ROAS - growth without destroying efficiency.",
+      "Built durable momentum around a single hero SKU - proof that single-SKU brands can scale when fundamentals are right.",
     ],
     pullQuote: {
-      text: "OBG built the system behind our hero product. Growth stopped feeling like guesswork — and started feeling repeatable.",
+      text: "OBG built the system behind our hero product. Growth stopped feeling like guesswork - and started feeling repeatable.",
       attribution: 'Founder, Baby Brand',
     },
     takeaway:
-      "Single-product brands win when the PDP becomes a \"sales machine,\" keyword strategy is mapped to real intent, and PPC is structured to scale profitably — not just spend.",
+      "Single-product brands win when the PDP becomes a \"sales machine,\" keyword strategy is mapped to real intent, and PPC is structured to scale profitably - not just spend.",
   },
   {
     id: 'yoga-brand',
@@ -98,7 +98,7 @@ const caseStudies = [
     model: 'Managed Services',
     headline: 'Yoga & Fitness Brand Grew from $0 to $500,000 in Amazon Revenue in 12 Months',
     summary:
-      "This brand had traction outside of Amazon, but the Amazon channel started at $0 — meaning no rank history, no conversion data, and no marketplace momentum. We built an Amazon-ready foundation (positioning + PDP conversion system), launched with a structured PPC plan to discover converting demand, then transitioned the channel toward organic growth by compounding relevance and conversion.",
+      "This brand had traction outside of Amazon, but the Amazon channel started at $0 - meaning no rank history, no conversion data, and no marketplace momentum. We built an Amazon-ready foundation (positioning + PDP conversion system), launched with a structured PPC plan to discover converting demand, then transitioned the channel toward organic growth by compounding relevance and conversion.",
     metrics: [
       { stat: '$0 → $500K', label: 'Amazon revenue', detail: 'in 12 months' },
       { stat: 'From scratch', label: 'Amazon channel', detail: 'to repeatable system' },
@@ -114,7 +114,7 @@ const caseStudies = [
       { label: 'Catalog scope', value: 'Fitness assortment (multi-SKU)' },
     ],
     situation: [
-      "No existing Amazon sales history or keyword rank — everything needed to be built from zero.",
+      "No existing Amazon sales history or keyword rank - everything needed to be built from zero.",
       "DTC success didn't automatically translate to Amazon conversion (different shopper behavior, different objections).",
       "Early Amazon growth often becomes ad-only; the goal was to build a channel that could compound organically.",
       "The brand needed a roadmap that balanced speed, efficiency, and long-term durability.",
@@ -140,7 +140,7 @@ const caseStudies = [
         bullets: [
           "Used PPC to quickly identify converting search terms and isolate what wasn't working.",
           "Scaled winners while tightening spend control, so growth wasn't fueled by waste.",
-          "Expanded campaigns based on performance — so the catalog gained search footprint over time.",
+          "Expanded campaigns based on performance - so the catalog gained search footprint over time.",
         ],
       },
       {
@@ -154,15 +154,15 @@ const caseStudies = [
     ],
     results: [
       "Grew from $0 to $500,000 in Amazon revenue in 12 months.",
-      "Built a real Amazon channel — not a short-lived launch spike — by focusing on conversion and compounding relevance.",
+      "Built a real Amazon channel - not a short-lived launch spike - by focusing on conversion and compounding relevance.",
       "Created a scalable structure the brand could keep building on as they expanded their catalog.",
     ],
     pullQuote: {
-      text: "OBG gave us a real Amazon launch system. We didn't just get sales — we built a channel.",
+      text: "OBG gave us a real Amazon launch system. We didn't just get sales - we built a channel.",
       attribution: 'Founder, Fitness Brand',
     },
     takeaway:
-      "The fastest sustainable growth happens when you treat Amazon like a system: market-ready positioning, conversion-first pages, and PPC designed to feed organic momentum — not replace it.",
+      "The fastest sustainable growth happens when you treat Amazon like a system: market-ready positioning, conversion-first pages, and PPC designed to feed organic momentum - not replace it.",
   },
   {
     id: 'self-defense-brand',
@@ -170,7 +170,7 @@ const caseStudies = [
     model: 'Managed Services',
     headline: 'Self Defense Brand Grew Contribution Profit Over 3X in 2.5 Years',
     summary:
-      "When we took over this self-defense brand's Amazon channel, performance was being held back by weak PDP foundations, recurring product takedowns, inefficient PPC, and fragile profitability concentrated in one product family. We rebuilt the fundamentals (SEO + CRO + compliance + PPC), restored suppressed listings, reduced reseller disruption, and supported the launch of 20+ new products. Over time, the channel shifted from PPC-heavy revenue to primarily organic sales — driving a major profitability increase.",
+      "When we took over this self-defense brand's Amazon channel, performance was being held back by weak PDP foundations, recurring product takedowns, inefficient PPC, and fragile profitability concentrated in one product family. We rebuilt the fundamentals (SEO + CRO + compliance + PPC), restored suppressed listings, reduced reseller disruption, and supported the launch of 20+ new products. Over time, the channel shifted from PPC-heavy revenue to primarily organic sales - driving a major profitability increase.",
     metrics: [
       { stat: '3.4X', label: 'contribution profit', detail: '$230K → $780K' },
       { stat: '+$550K', label: 'profit increase', detail: 'over 2.5 years' },
@@ -210,7 +210,7 @@ const caseStudies = [
       {
         title: 'Overhauled PPC to eliminate leakage and scale what worked',
         bullets: [
-          "Rebuilt campaign structure around intent and profitability — less waste, more control.",
+          "Rebuilt campaign structure around intent and profitability - less waste, more control.",
           "Protected winners, tightened targeting, and expanded converting keyword coverage.",
         ],
       },
@@ -234,7 +234,7 @@ const caseStudies = [
       "The channel moved from fragile profitability to healthier, diversified contribution across more of the catalog.",
     ],
     pullQuote: {
-      text: "OBG didn't just optimize ads — they rebuilt our Amazon business from the ground up. Profitability finally scaled once the foundations were fixed.",
+      text: "OBG didn't just optimize ads - they rebuilt our Amazon business from the ground up. Profitability finally scaled once the foundations were fixed.",
       attribution: 'Director of Ecommerce, Self Defense Brand',
     },
     takeaway:
@@ -349,7 +349,7 @@ function CaseStudyBlock({ cs, index }: { cs: typeof caseStudies[0]; index: numbe
           <div className="mb-10 pl-6 border-l-4 border-obg-orange">
             <Quote size={20} className="text-obg-orange/40 mb-2" />
             <p className="text-obg-offwhite text-lg italic leading-relaxed mb-3">&ldquo;{cs.pullQuote.text}&rdquo;</p>
-            <p className="text-obg-gray text-sm">— {cs.pullQuote.attribution}</p>
+            <p className="text-obg-gray text-sm">- {cs.pullQuote.attribution}</p>
           </div>
         </AnimatedSection>
 
@@ -383,7 +383,7 @@ export default function CaseStudiesPage() {
               <SectionLabel>Proven Results</SectionLabel>
               <h1 className="text-white mb-6">Case Studies</h1>
               <p className="text-obg-gray text-xl leading-relaxed mb-4 max-w-2xl mx-auto">Real outcomes. Repeatable systems. Profitable Amazon growth.</p>
-              <p className="text-obg-gray/80 text-base leading-relaxed max-w-3xl mx-auto">At Online Brand Growth, we operate Amazon as a business system — improving traffic quality, conversion, profitability, and operational stability. Below are three examples of what that looks like in practice (Managed Services model).</p>
+              <p className="text-obg-gray/80 text-base leading-relaxed max-w-3xl mx-auto">At Online Brand Growth, we operate Amazon as a business system - improving traffic quality, conversion, profitability, and operational stability. Below are three examples of what that looks like in practice (Managed Services model).</p>
             </AnimatedSection>
             <AnimatedSection delay={150}>
               <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
@@ -404,7 +404,7 @@ export default function CaseStudiesPage() {
             <AnimatedSection>
               <SectionLabel>Ready to Scale?</SectionLabel>
               <h2 className="text-white mb-4">Want Results Like This?</h2>
-              <p className="text-obg-gray text-lg leading-relaxed mb-10">If you&apos;re looking for a team that can operate your Amazon channel like a business system — not a collection of tactics — let&apos;s talk.</p>
+              <p className="text-obg-gray text-lg leading-relaxed mb-10">If you&apos;re looking for a team that can operate your Amazon channel like a business system - not a collection of tactics - let&apos;s talk.</p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="https://app.usemotion.com/meet/dan-balda/obg-intro-45" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-8 py-4">Get Your OBG360 Audit</Link>
                 <Link href="/#book-call" className="btn-secondary text-base px-8 py-4">Request an Amazon Growth Audit</Link>

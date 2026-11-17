@@ -40,7 +40,7 @@ const problems = [
 const consequences = [
   { icon: ThumbsDown, text: 'Brand trust erodes' },
   { icon: AlertTriangle, text: 'Your retail partners get angry' },
-  { icon: ThumbsDown, text: 'Bad reviews pile up — damaging your reputation everywhere' },
+  { icon: ThumbsDown, text: 'Bad reviews pile up - damaging your reputation everywhere' },
 ]
 
 const features = [
@@ -54,7 +54,7 @@ const features = [
     icon: FileText,
     title: 'Automated Cease & Desist Enforcement',
     description:
-      'Our system instantly generates and sends cease and desist notices — removing most violators before you even know they were there.',
+      'Our system instantly generates and sends cease and desist notices - removing most violators before you even know they were there.',
   },
   {
     icon: ShoppingCart,
@@ -66,7 +66,7 @@ const features = [
     icon: Lock,
     title: 'Amazon Transparency Enrollment',
     description:
-      'If the problem persists, we fast-track you into Amazon\'s Transparency program — giving you total control over your listings once and for all.',
+      'If the problem persists, we fast-track you into Amazon\'s Transparency program - giving you total control over your listings once and for all.',
   },
 ]
 
@@ -124,7 +124,7 @@ export default function BrandProtectionPage() {
                 <SectionLabel>The Problem</SectionLabel>
                 <h2 className="text-white mb-4">They&apos;re Hijacking Your Brand</h2>
                 <p className="text-obg-gray">
-                  Unauthorized resellers are actively undermining your brand on Amazon — right now.
+                  Unauthorized resellers are actively undermining your brand on Amazon - right now.
                   Here&apos;s what they&apos;re doing:
                 </p>
               </div>
@@ -176,7 +176,7 @@ export default function BrandProtectionPage() {
             <AnimatedSection>
               <p className="text-obg-gray text-lg mb-4">But here&apos;s what you might not know:</p>
               <h2 className="text-white mb-6">
-                There Is a New Way to Monitor and Shut Down Unauthorized Sellers —{' '}
+                There Is a New Way to Monitor and Shut Down Unauthorized Sellers  -{' '}
                 <span className="text-gradient-orange">Fast.</span>
               </h2>
               <p className="text-obg-gray text-lg leading-relaxed">
@@ -195,7 +195,7 @@ export default function BrandProtectionPage() {
                 <SectionLabel>The System</SectionLabel>
                 <h2 className="text-white mb-4">Here&apos;s How It Works</h2>
                 <p className="text-obg-gray">
-                  Four automated, escalating steps — built to win.
+                  Four automated, escalating steps - built to win.
                 </p>
               </div>
             </AnimatedSection>
@@ -233,7 +233,7 @@ export default function BrandProtectionPage() {
                 </p>
                 <p className="text-obg-gray text-sm max-w-xl mx-auto">
                   This is automated, relentless enforcement backed by Amazon-compliant escalation
-                  steps — designed to protect your brand at every level.
+                  steps - designed to protect your brand at every level.
                 </p>
               </div>
             </AnimatedSection>

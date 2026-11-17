@@ -33,17 +33,3 @@ export default function LandingHeader({ ctaLabel, ctaHref, coBrand }: Props) {
     </header>
   )
 }
-
-/** Text lockup for Stoic Brands. Swap for the logo file once it is in /public/logos. */
-export function StoicLockup({ className = '' }: { className?: string }) {
-  return (
-    <span className={`inline-flex flex-col leading-none ${className}`}>
-      <span className="font-display font-bold tracking-[0.2em] text-white text-sm md:text-base">
-        STOIC BRANDS
-      </span>
-      <span className="text-[10px] md:text-xs tracking-widest uppercase text-amber-400 mt-1">
-        Powered by Online Brand Growth
-      </span>
-    </span>
-  )
-}
