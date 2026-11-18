@@ -240,6 +240,136 @@ const caseStudies = [
     takeaway:
       "Profit growth at this level is rarely one tactic. It's the compounding effect of stable listings, conversion-first pages, accountable PPC, and a catalog strategy that diversifies profit.",
   },
+  {
+    id: 'cocktail-mixer-brand',
+    tag: 'Cocktail Mixers',
+    model: 'Managed Services',
+    headline: 'Craft Cocktail Mixer Brand Doubled Amazon Revenue Year Over Year, Almost Entirely on Organic Sales',
+    summary:
+      "This craft mixer brand saw Amazon as a place to meet customers, not as a profit center. Sales were growing, but the channel ran with no advertising, frequent stockouts and listings that were not built to rank. We took over the account, rebuilt the foundation, and used a small, disciplined advertising budget to win organic rankings on the category's biggest search terms. In our first six months, revenue doubled against the same months a year earlier.",
+    metrics: [
+      { stat: '2X', label: 'Amazon revenue', detail: 'first 6 months vs the same months last year' },
+      { stat: '#1', label: 'organic ranking', detail: "on the category's biggest keyword (75K searches/mo)" },
+      { stat: '<4%', label: 'ad spend', detail: 'as a share of sales' },
+      { stat: '18%', label: 'non-branded ACoS', detail: 'in the first month of advertising' },
+      { stat: '4.8★', label: 'average rating', detail: 'with a 1.7% refund rate' },
+    ],
+    quickFacts: [
+      { label: 'Category', value: 'Cocktail mixers (grocery)' },
+      { label: 'Starting point', value: 'Growing on brand demand alone, with no advertising and no inventory plan' },
+      { label: 'Primary constraint', value: 'Stockouts on best sellers, and heavy cases with a high Amazon fee load' },
+      { label: 'Timeline', value: 'First 6 months of the engagement' },
+      { label: 'Catalog scope', value: 'Multi-flavor line in cans and bottles' },
+    ],
+    situation: [
+      "Customers were finding the brand on their own, but nothing was being done to win shoppers searching the category.",
+      "Best sellers kept going out of stock, and every stockout cost organic rank that took weeks to rebuild.",
+      "Amazon fees were the largest line on the P&L because of heavy multi-can cases.",
+      "Other sellers were taking a share of the Buy Box on the brand's own listings.",
+    ],
+    whatWeDid: [
+      {
+        title: 'Rebuilt listings to rank on category terms, not just the brand name',
+        bullets: [
+          "Keyword research and listing optimization across the catalog, including new bottle formats built and optimized before launch.",
+          "Multiple pack sizes now earn page-1 organic placements on the same search, so the brand holds several slots at once.",
+        ],
+      },
+      {
+        title: 'Turned on non-branded advertising with a profit ceiling',
+        bullets: [
+          "Launched non-branded campaigns at an 18% ACoS in the first month, with the best keyword campaign running near 5%.",
+          "Used paid clicks to win organic rank: the brand reached the #1 organic result on the category's biggest keyword within two weeks.",
+        ],
+      },
+      {
+        title: 'Made inventory the priority',
+        bullets: [
+          "Set a standing target of 90 to 120 days of cover at Amazon on the products being grown.",
+          "Sequenced advertising behind restocks, so budget was never spent sending shoppers to an empty listing.",
+        ],
+      },
+      {
+        title: 'Worked the economics',
+        bullets: [
+          "Ran a controlled price test on the best-selling pack size with the Buy Box as the guardrail.",
+          "Scheduled Prime event deals around stock availability, and began removing other sellers from the Buy Box.",
+        ],
+      },
+    ],
+    results: [
+      "Revenue for the first six months was $236K, against $116K for the same months a year earlier: up 104%.",
+      "The best month on record came on essentially zero ad spend. Even with advertising live, ad spend stayed under 4% of sales.",
+      "First organic result on the category's biggest keyword, plus the top organic slots on several high-intent cocktail terms.",
+    ],
+    takeaway:
+      "When a brand already has demand, the fastest profitable growth comes from organic rank and staying in stock. Advertising works best as a small accelerant on top, not as the engine.",
+  },
+  {
+    id: 'pet-supplement-brand',
+    tag: 'Pet Supplements',
+    model: 'Managed Services',
+    headline: 'Pet Supplement Brand Cut Ad Spend 40% and Grew Net Profit 44% in the First 30 Days',
+    summary:
+      "This established pet supplement brand had lost half its Amazon sales in seven months as the social media wave behind it faded. Advertising costs kept climbing while returns fell, and profit was shrinking faster than revenue. Our OBG360 audit found the waste, and the first 30 days of the engagement went straight at it. Profit rose 44% in the first month on nearly flat revenue.",
+    metrics: [
+      { stat: '+44%', label: 'net profit', detail: 'first month vs the month before' },
+      { stat: '-40%', label: 'ad spend', detail: 'in the first month' },
+      { stat: '16% → 25%', label: 'net margin', detail: 'in the first month' },
+      { stat: '22% → 15%', label: 'ad spend as a share of sales', detail: 'in the first month' },
+      { stat: '30%', label: 'net margin', detail: 'six weeks in' },
+    ],
+    quickFacts: [
+      { label: 'Category', value: 'Pet supplements' },
+      { label: 'Starting point', value: 'Profitable but shrinking: sales down by half from their peak seven months earlier' },
+      { label: 'Primary constraint', value: 'Advertising returning less than it cost on a large share of spend' },
+      { label: 'Timeline', value: 'First 6 weeks of the engagement' },
+      { label: 'Catalog scope', value: 'One hero product family plus a second product line' },
+    ],
+    situation: [
+      "Branded search had fallen sharply as off-Amazon attention faded, so the brand now had to compete as a category product.",
+      "Roughly a third of monthly ad spend was returning less than it cost, much of it on a second product line running far above breakeven.",
+      "Listings had not been updated to Amazon's current title and highlights format.",
+      "The subscriber base, the most profitable revenue in the account, was shrinking month over month.",
+    ],
+    whatWeDid: [
+      {
+        title: 'Started with a full OBG360 audit',
+        bullets: [
+          "Rebuilt true contribution profit by product and set a breakeven ACoS for each product family.",
+          "Identified the specific campaigns losing money and the dollar cost of each.",
+        ],
+      },
+      {
+        title: 'Held every campaign to its breakeven',
+        bullets: [
+          "Removed the wasted spend first, then scaled only what earned its keep.",
+          "Kept the smaller trial size as the advertised entry point, so new customers start at the lowest commitment and trade up on repeat.",
+        ],
+      },
+      {
+        title: 'Brought listings up to Amazon\'s current standard',
+        bullets: [
+          "Titles, highlights, backend keywords and attributes rebuilt to the OBG360 listing standard, hero family first.",
+          "Repositioned the hero product around claims it can deliver on consistently.",
+        ],
+      },
+      {
+        title: 'Protected the repeat buyers',
+        bullets: [
+          "Restored subscription and repeat-customer promotions.",
+          "Planned stock and Q4 deals so the account goes into the holidays in stock.",
+        ],
+      },
+    ],
+    results: [
+      "Ad spend fell 40% in the first month while net profit rose 44%, on revenue that dipped less than 10%.",
+      "Net margin went from 16% to 25% in the first month, and reached 30% six weeks in.",
+      "Ad spend as a share of sales dropped from 22% to 15% in the first month.",
+    ],
+    takeaway:
+      "When sales are falling, the instinct is to spend more on ads. The faster win is usually to stop paying for clicks that lose money, then rebuild demand on a profitable base.",
+  },
 ]
 
 function MetricTile({ stat, label, detail }: { stat: string; label: string; detail: string }) {
@@ -345,6 +475,7 @@ function CaseStudyBlock({ cs, index }: { cs: typeof caseStudies[0]; index: numbe
           </div>
         </AnimatedSection>
 
+        {cs.pullQuote && (
         <AnimatedSection delay={320}>
           <div className="mb-10 pl-6 border-l-4 border-obg-orange">
             <Quote size={20} className="text-obg-orange/40 mb-2" />
@@ -352,6 +483,7 @@ function CaseStudyBlock({ cs, index }: { cs: typeof caseStudies[0]; index: numbe
             <p className="text-obg-gray text-sm">- {cs.pullQuote.attribution}</p>
           </div>
         </AnimatedSection>
+        )}
 
         <AnimatedSection delay={360}>
           <div className="card-glass border-obg-blue-light/20 p-6">

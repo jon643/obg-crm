@@ -34,6 +34,26 @@ const cases = [
       'Yoga fitness brand launched on Amazon from zero, achieving half a million in annual revenue within the first 12 months.',
     tags: ['New Launch', 'SEO', 'Advertising'],
   },
+  {
+    id: 'cocktail-mixer-brand',
+    category: 'Cocktail Mixers',
+    stat: '2X',
+    statDetail: 'Amazon Revenue',
+    timeframe: 'Year Over Year, First 6 Months',
+    description:
+      'Craft cocktail mixer brand doubled revenue against the same months a year earlier, with advertising at under 4% of sales and a #1 organic ranking on its biggest keyword.',
+    tags: ['Organic Growth', 'SEO', 'Inventory'],
+  },
+  {
+    id: 'pet-supplement-brand',
+    category: 'Pet Supplements',
+    stat: '+44%',
+    statDetail: 'Net Profit',
+    timeframe: 'in the First 30 Days',
+    description:
+      'Established pet supplement brand cut ad spend 40% and grew profit 44% in the first month by holding every campaign to its breakeven. Net margin rose from 16% to 25%.',
+    tags: ['Profitability', 'PPC', 'Turnaround'],
+  },
 ]
 
 export default function CaseStudies() {
