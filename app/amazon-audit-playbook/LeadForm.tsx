@@ -11,6 +11,12 @@ interface LeadFormProps {
   location?: string
 }
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void
+  }
+}
+
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
 export default function LeadForm({ location = 'hero' }: LeadFormProps) {
@@ -42,6 +48,7 @@ export default function LeadForm({ location = 'hero' }: LeadFormProps) {
         throw new Error(data?.error || 'Something went wrong. Please try again.')
       }
 
+      if (typeof window.fbq === 'function') window.fbq('track', 'Lead', { content_name: 'amazon-audit-playbook' })
       setStatus('success')
       router.push(THANK_YOU_PATH)
     } catch (err) {
