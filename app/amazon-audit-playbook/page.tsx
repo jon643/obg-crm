@@ -40,17 +40,17 @@ const sections = [
   { n: '03', title: 'Listing Quality & Visibility', get: 'The 2026 format field by field: 75-character title, Item Highlights, attributes, and how to prove you are indexed.' },
   { n: '04', title: 'Conversion', get: 'The traffic and conversion matrix, the five reasons a page loses the sale, and two AI prompts that do the review reading for you.' },
   { n: '05', title: 'Advertising', get: 'Break-even ACOS per product, the four tiers, the rank check before any cut, and the search term rules with exact thresholds.' },
-  { n: '06', title: 'Promotions & Retention', get: 'Return on every promotion, the 45-day rule that removes your strike-through price, and a straight call on each lever.' },
+  { n: '06', title: 'Promotions & Retention', get: 'Return on every promotion, the 45-day rule that removes your strike-through price (and which discounts count toward it), and a straight call on each lever.' },
   { n: '07', title: 'Logistics & Inventory', get: 'Days of cover bands, the reorder formula, and the 2027 storage and low-inventory fees.' },
-  { n: '08', title: 'Profitability', get: 'Contribution profit per SKU, the January 2027 fee impact by size, and how to collect what Amazon owes you.' },
-  { n: '09', title: 'Account Health & Compliance', get: 'The one-time check plus the daily, weekly and monthly routine our own team runs.' },
+  { n: '08', title: 'Profitability', get: 'Contribution profit per SKU, the January 2027 fee increase by size and price, and how to collect what Amazon owes you inside the 60-day claim window.' },
+  { n: '09', title: 'Account Health & Compliance', get: 'The one-time check, how to spot unauthorized sellers and AI edits to your listings, and the daily, weekly and monthly routine our own team runs.' },
   { n: '10', title: '90-Day Roadmap', get: 'How to turn findings into recommendations ranked by monthly profit, with a 30, 60 and 90 day plan.' },
 ]
 
 const changes = [
-  { when: 'July 2026', what: 'Titles capped at 75 characters. A new searchable field, Item Highlights, stays locked until yours fits.' },
+  { when: 'July 2026', what: 'Titles capped at 75 characters. A new searchable field, Item Highlights, stays locked until yours fits, and Amazon’s AI is rewriting the titles that are still too long.' },
   { when: 'May 2026', what: 'Alexa for Shopping replaced Rufus and now sits in the main search bar. Blank attributes are a visibility problem.' },
-  { when: 'May 2026', what: 'Discount more than half of any 90 days and your strike-through price can disappear.' },
+  { when: 'May 2026', what: 'Hold a sale price for more than half of any 90 days and your strike-through price can disappear.' },
   { when: 'March 2026', what: 'AI prompts were attached to your ad campaigns automatically and are billed per click.' },
   { when: 'March 2026', what: 'Commingling ended. Barcode and labeling rules changed for every FBA shipment.' },
   { when: 'January 2027', what: 'FBA fees rise again, storage becomes age-based, and the low-inventory fee changes.' },
@@ -251,8 +251,8 @@ export default function AmazonAuditPlaybookPage() {
 
             <AnimatedSection delay={200}>
               <p className="text-center text-obg-offwhite text-base max-w-2xl mx-auto mt-10">
-                Plus the eight data pulls to start with, a one-page checklist, and every formula on a single
-                page.
+                Plus the eight data pulls to start with, and a printable page with the full checklist and every
+                formula.
               </p>
             </AnimatedSection>
           </div>

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Your OBG360 Audit Playbook is Ready',
     description:
-      'Download the DIY Audit Playbook and the four moves to run your first audit right.',
+      'Download the DIY Audit Playbook and four rules for running your first audit.',
     url: PAGE_URL,
   },
 }
