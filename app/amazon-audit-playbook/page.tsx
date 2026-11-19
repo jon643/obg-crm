@@ -15,7 +15,7 @@ const PAGE_URL = 'https://www.onlinebrandgrowth.com/amazon-audit-playbook'
 export const metadata: Metadata = {
   title: 'Free DIY Playbook: The OBG360 Amazon Audit (Updated Nov 2026) | OBG',
   description:
-    'The exact ten-section Amazon audit Online Brand Growth runs on every brand, written so you can run it on your own account. Break-even ACOS by product, the search term rules, the 75-character title format, 2027 fees and a 90-day plan. Free, 31 pages.',
+    'The exact ten-section Amazon audit Online Brand Growth runs on every brand, written so you can run it on your own account. Break-even ACOS by product, the search term rules, the 75-character title format, 2027 fees and a 90-day plan. Free, 29 pages.',
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'The OBG360 Amazon Audit - DIY Playbook (Free, Updated Nov 2026)',
@@ -99,7 +99,7 @@ const faqs = [
   },
   {
     q: 'How long does it take?',
-    a: 'A proper first pass is 8 to 10 hours. Each section lists its own time, so you can do the advertising section alone in about 2 hours if that is where the money is.',
+    a: 'A proper first pass is 10 to 12 hours. Each section lists its own time, so you can do the advertising section alone in about 2 hours if that is where the money is.',
   },
   {
     q: 'What tools do I need?',
@@ -141,7 +141,7 @@ export default function AmazonAuditPlaybookPage() {
                     Run the Exact Amazon Audit We Run for Brands. On Your Own Account.
                   </h1>
                   <p className="text-obg-offwhite text-xl leading-relaxed mb-6 text-balance">
-                    31 pages. Ten sections. Every report to open, every number to write down, and the rule
+                    29 pages. Ten sections. Every report to open, every number to write down, and the rule
                     we use to judge it. Nothing held back.
                   </p>
                   <ul className="space-y-3 mb-8 max-w-xl">

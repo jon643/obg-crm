@@ -40,7 +40,7 @@ const bestPractices = [
     icon: CalendarClock,
     title: 'Block the time like it’s a client meeting.',
     body:
-      'A proper first pass takes 8 to 10 hours. Book two half-days, work the sections in order, and save all eight data pulls for the same dates before you start so every number is comparable.',
+      'A proper first pass takes 10 to 12 hours. Book three half-days, work the sections in order, and save all eight data pulls for the same dates before you start so every number is comparable.',
   },
   {
     icon: Crosshair,
@@ -122,7 +122,7 @@ export default function AuditThankYouPage() {
               </div>
 
               <p className="text-obg-gray text-xs">
-                31 pages · 2.7 MB · PDF · Updated November 2026
+                29 pages · 0.6 MB · PDF · Updated November 2026
               </p>
             </AnimatedSection>
           </div>
