@@ -11,6 +11,12 @@ interface LeadFormProps {
   location?: string
 }
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void
+  }
+}
+
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
 export default function LeadForm({ location = 'hero' }: LeadFormProps) {
@@ -42,6 +48,7 @@ export default function LeadForm({ location = 'hero' }: LeadFormProps) {
         throw new Error(data?.error || 'Something went wrong. Please try again.')
       }
 
+      if (typeof window.fbq === 'function') window.fbq('track', 'Lead', { content_name: 'amazon-audit-playbook' })
       setStatus('success')
       router.push(THANK_YOU_PATH)
     } catch (err) {
@@ -53,7 +60,7 @@ export default function LeadForm({ location = 'hero' }: LeadFormProps) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-3 sm:flex-row sm:items-stretch w-full max-w-xl"
+      className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-xl"
       noValidate
     >
       <label className="sr-only" htmlFor={`firstName-${location}`}>First name</label>
@@ -87,7 +94,7 @@ export default function LeadForm({ location = 'hero' }: LeadFormProps) {
       <button
         type="submit"
         disabled={status === 'submitting' || status === 'success'}
-        className="inline-flex items-center justify-center gap-2 font-semibold rounded-full bg-obg-orange hover:bg-obg-orange-dark text-white shadow-glow-orange hover:shadow-none hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 px-7 py-3.5 text-base whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+        className="inline-flex items-center justify-center gap-2 font-semibold rounded-full bg-obg-orange hover:bg-obg-orange-dark text-white shadow-glow-orange hover:shadow-none hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 px-7 py-3.5 text-base whitespace-nowrap sm:col-span-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
       >
         {status === 'submitting' || status === 'success' ? (
           <>
@@ -103,7 +110,7 @@ export default function LeadForm({ location = 'hero' }: LeadFormProps) {
       </button>
 
       {status === 'error' && (
-        <div className="sm:col-span-3 sm:basis-full flex items-start gap-2 text-red-400 text-sm pt-1 px-1">
+        <div className="sm:col-span-2 flex items-start gap-2 text-red-400 text-sm pt-1 px-1">
           <AlertCircle size={14} className="mt-0.5 flex-shrink-0" />
           <span>{errorMsg}</span>
         </div>
