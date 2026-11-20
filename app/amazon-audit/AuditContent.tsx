@@ -13,6 +13,9 @@ import Testimonials from '@/components/home/Testimonials'
 import AuditDeepDive from './AuditDeepDive'
 
 
+// Revenue choices for the audit form. The audit offer is for brands at $500K+ a year.
+const AUDIT_REVENUE = ['Under $500K', '$500K to $1M', '$1M to $5M', '$5M to $20M', 'Over $20M']
+
 const operatorPoints = [
   {
     icon: Users,
@@ -334,6 +337,7 @@ export default function AuditContent({ variant }: { variant: 'site' | 'landing' 
                   submitLabel="Continue to Pick a Time"
                   bookingHeading="Got it. Now pick a time."
                   bookingBlurb="Choose a slot for your intro call. We will send the access guide before we talk so the audit can start right away."
+                  revenueOptions={AUDIT_REVENUE}
                 />
               </div>
             </div>

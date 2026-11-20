@@ -18,6 +18,8 @@ interface Props {
   submitLabel: string
   bookingHeading: string
   bookingBlurb: string
+  /** Annual revenue choices. Defaults to the shared list below. */
+  revenueOptions?: string[]
 }
 
 type Status = 'idle' | 'submitting' | 'booked-step' | 'error'
@@ -41,7 +43,7 @@ const inputCls =
   'w-full rounded-xl bg-obg-blue-darker/80 border border-obg-blue-light/40 text-white placeholder-obg-gray px-4 py-3 text-base focus:outline-none focus:border-obg-orange focus:ring-2 focus:ring-obg-orange/30 transition-colors disabled:opacity-50'
 const labelCls = 'block text-sm font-semibold text-white mb-1.5'
 
-export default function LeadBookingForm({ source, submitLabel, bookingHeading, bookingBlurb }: Props) {
+export default function LeadBookingForm({ source, submitLabel, bookingHeading, bookingBlurb, revenueOptions = REVENUE }: Props) {
   const [status, setStatus] = useState<Status>('idle')
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
   const [f, setF] = useState({
@@ -143,7 +145,7 @@ export default function LeadBookingForm({ source, submitLabel, bookingHeading, b
         <label className={labelCls} htmlFor="lf-rev">Annual revenue, all channels</label>
         <select id="lf-rev" className={inputCls} required value={f.revenue} onChange={set('revenue')} disabled={busy}>
           <option value="" disabled>Select one</option>
-          {REVENUE.map((o) => <option key={o}>{o}</option>)}
+          {revenueOptions.map((o) => <option key={o}>{o}</option>)}
         </select>
       </div>
       <div>
